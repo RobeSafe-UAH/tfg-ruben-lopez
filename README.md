@@ -1,6 +1,10 @@
 # mvsim_docker
 Este repositorio almacena una imagen de docker que contiene el simulador MVSIM y se lanza con GPU.
 
+## ¡ATENCIÓN!
+
+La carpeta 'src/' tiene, a su vez, las carpetas: 'launch/' (contiene el mapa demo de e1 robot .py, .rviz y .xml), 'sensores/' (lidar2d y rgbd) y 'vehiculo/' (vehículo jackal .dae y .xml, también wheel.dae).
+Estas 
 
 ## Proceso de instalación
 
