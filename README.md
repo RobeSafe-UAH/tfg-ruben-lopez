@@ -1,5 +1,5 @@
 # mvsim_docker
-Este repositorio almacena una imagen de docker que contiene el simulador MVSIM y se lanza con GPU.
+Este repositorio almacena una imagen de docker que contiene el simulador MVSIM (https://github.com/MRPT/mvsim) y se lanza con GPU.
 
 ## ¡ATENCIÓN!
 
