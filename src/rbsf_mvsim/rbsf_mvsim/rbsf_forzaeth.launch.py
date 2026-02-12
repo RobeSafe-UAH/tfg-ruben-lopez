@@ -12,16 +12,15 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # Get mvsim package directory
-    mvsim_dir = get_package_share_directory('mvsim')
+    pkgDir = get_package_share_directory('rbsf_mvsim')
 
     # World and configuration files
     world_file = os.path.join(
-        mvsim_dir, 'mvsim_tutorial', 'demo_1robot.world.xml'
+        pkgDir, 'rbsf_mvsim', 'rbsf_forzaeth.world.xml'
     )
     rviz_config_file = os.path.join(
-        mvsim_dir, 'mvsim_tutorial', 'demo_1robot_ros2.rviz'
+        pkgDir, 'rbsf_mvsim', 'rbsf_forzaeth_ros2.rviz'
     )
-
     # Launch configuration variables (no defaults here)
     headless = LaunchConfiguration('headless')
     do_fake_localization = LaunchConfiguration('do_fake_localization')
@@ -74,7 +73,7 @@ def generate_launch_description():
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
-                    get_package_share_directory('mvsim'),
+                    get_package_share_directory('rbsf_mvsim'),
                     'launch',
                     'launch_world.launch.py'
                 )

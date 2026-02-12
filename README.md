@@ -3,28 +3,57 @@ Este repositorio almacena una imagen de docker que contiene el simulador MVSIM (
 
 ## ¡ATENCIÓN!
 
-La carpeta 'src/' tiene, a su vez, las carpetas: 'launch/' (contiene el mapa demo de e1 robot .py, .rviz y .xml), 'sensores/' (lidar2d y rgbd) y 'vehiculo/' (vehículo jackal .dae y .xml, también wheel.dae).
-Estas 
+La carpeta 'src/' contiene el paquete 'rbsf_mvsim' con el trabajo desarrollado por **Fernando Villa Castell**
 
-## Proceso de instalación
+## MANUAL DE USO
 
-Primero, en nuestra terminal principal clonamos el repositorio y compilamos el docker-compose:
+Primero, se abre una terminal y se accede al directorio donde se desee clonar el repositorio. Una vez en dicho repositorio, ejecutar:
 
 ~~~bash
 git clone https://github.com/fvilla12/mvsim_docker
 cd mvsim_docker
-
-docker compose up -build
 ~~~
 
-Luego, en otra terminal, abrimos el contenedor *mvsim_container*:
+La carpeta 'mvsim_docker' se organiza como:
 
+mvsim_docker
+|----- src/
+|----- docker-compose.yml
+|----- Dockerfile
+|----- Makefile
+|----- README.md (Este texto)
+
+
+>Para facilitar el uso del repositorio, se hará uso del la herramienta ==make==. Esta tiene diferentes usos, como: build, up down y shell. A continuación se expone el propósito de cada una:
+>
+>make build
+>: Compila la imagen de Dockerfile
+>make up
+>: Arranca el contenedor
+>make shell
+>: Entra al contenedor en ejecución
+>make down
+>: Detiene los contedores 
+
+Situados en la carpeta 'mvsim_docker' ejecutamos:
 ~~~bash
-docker exec -it mvsim_container /bin/bash
+make build
 ~~~
-
-Dentro de este contenedor lanzamos un mapa de un almacén predefinido con el comando *RUN_DEMO_WAREHOUSE*:
-
+Una vez termine el proceso ejecutamos:
 ~~~bash
-RUN_DEMO_WAREHOUSE
+make up
 ~~~
+Terminado este último proceso, se abre una nueva terminal (situada, también, en 'mvsim_docker/') y se ejecuta:
+~~~bash
+make shell
+~~~
+Llegado este punto, todo está en preparado para ejecutar el simulador **MVSim**. 
+
+Dentro de este contenedor podemos llamar al simulador a través de ROS2:
+~~~bash
+$ ros2 launch mvsim <nombre_del_mapa>.world.xml
+~~~
+> Si se deja el espacio *nombre_del_mapa.world.xml* en blanco y tabulamos, se muestra una lista con los mapas de demostración que integra el paquete 'mvsim'.
+
+Para facilitar la ejecución, y ahorrar tiempo, se brindan los alias: RUN_DEMO_1ROBOT, RUN_DEMO_WAREHOUSE y RBSF_FORZAETH.
+Los dos primeros lanzan los mundos *demo_1robot* y *demo_warehouse*, respectivamente. Mientras que el segundo lanza el mundo creado en el marco del laboratorio de investigación ==ROBESAFE==.

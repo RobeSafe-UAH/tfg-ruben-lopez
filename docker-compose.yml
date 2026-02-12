@@ -1,6 +1,11 @@
 services:
   mvsim:
-    build: .
+    build:
+      context: .
+      args:
+        - USERNAME=${USER_NAME}
+        - USER_UID=${USER_ID}
+        - USER_GID=${USER_GID}
     image: mvsim
     container_name: mvsim_container
     runtime: nvidia
@@ -15,6 +20,7 @@ services:
       - NVIDIA_DRIVER_CAPABILITIES=all
       - __NV_PRIME_RENDER_OFFLOAD=1
       - __GLX_VENDOR_LIBRARY_NAME=nvidia
+    entrypoint: /bin/bash
 
     # Configuración de volúmenes
     volumes:
