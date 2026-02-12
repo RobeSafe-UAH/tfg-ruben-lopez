@@ -24,7 +24,7 @@ mvsim_docker
 |----- README.md (Este texto)
 
 
->Para facilitar el uso del repositorio, se hará uso del la herramienta ==make==. Esta tiene diferentes usos, como: build, up down y shell. A continuación se expone el propósito de cada una:
+>Para facilitar el uso del repositorio, se hará uso del la herramienta **make**. Esta tiene diferentes usos, como: build, up down y shell. A continuación se expone el propósito de cada una:
 >
 >make build
 >: Compila la imagen de Dockerfile
@@ -56,4 +56,4 @@ $ ros2 launch mvsim <nombre_del_mapa>.world.xml
 > Si se deja el espacio *nombre_del_mapa.world.xml* en blanco y tabulamos, se muestra una lista con los mapas de demostración que integra el paquete 'mvsim'.
 
 Para facilitar la ejecución, y ahorrar tiempo, se brindan los alias: RUN_DEMO_1ROBOT, RUN_DEMO_WAREHOUSE y RBSF_FORZAETH.
-Los dos primeros lanzan los mundos *demo_1robot* y *demo_warehouse*, respectivamente. Mientras que el segundo lanza el mundo creado en el marco del laboratorio de investigación ==ROBESAFE==.
+Los dos primeros lanzan los mundos *demo_1robot* y *demo_warehouse*, respectivamente. Mientras que el segundo lanza el mundo creado en el marco del laboratorio de investigación **ROBESAFE**.
