@@ -24,17 +24,11 @@ cd mvsim_docker
 La carpeta 'mvsim_docker' se organiza como:
 
 - mvsim_docker
-    -
-src/
-    -
-docker-compose.yml
-    -
-Dockerfile
-    -
-Makefile
-    -
-README.md (Este texto)
-
+    - src/
+    - docker-compose.yml
+    - Dockerfile
+    - Makefile
+    - README.md (Este texto)
 
 >Para facilitar el uso del repositorio, se hará uso del la herramienta **make**. Esta tiene diferentes usos, como: build, up down y shell. A continuación se expone el propósito de cada una:
 >
