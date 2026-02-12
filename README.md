@@ -57,7 +57,7 @@ Llegado este punto, todo está en preparado para ejecutar el simulador **MVSim**
 
 Dentro de este contenedor podemos llamar al simulador a través de ROS2:
 ~~~bash
-$ ros2 launch mvsim <nombre_del_mapa>.world.xml
+ros2 launch mvsim <nombre_del_mapa>.world.xml
 ~~~
 > Si se deja el espacio *nombre_del_mapa.world.xml* en blanco y tabulamos, se muestra una lista con los mapas de demostración que integra el paquete 'mvsim'.
 
