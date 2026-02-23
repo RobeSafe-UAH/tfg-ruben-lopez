@@ -10,6 +10,7 @@ build:
 	docker-compose build --build-arg USERNAME=$(USER_NAME) \
                          --build-arg USER_UID=$(USER_ID) \
                          --build-arg USER_GID=$(USER_GID)
+	docker compose up
 # Levantar el contenedor
 up:
 	docker compose up

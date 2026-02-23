@@ -4,13 +4,22 @@
   <name>rbsf_mvsim</name>
   <version>0.0.0</version>
   <description>ROS2 package for saving some custom mvsim worlds developed as part of Fernando Villa`s final degree project</description>
-  <maintainer email="fernando.villa@edu.uah.es">Fernando Villa Castell</maintainer>
+  <maintainer email="fernando.villa@edu.uah.es">Fernando Villa</maintainer>
   <license>Apache-2.0</license>
   
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>message_filters</depend>
+
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>
   <test_depend>python3-pytest</test_depend>
+
+  <exec_depend>python3-pandas</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">ros2launch</exec_depend>
+
 
   <export>
     <build_type>ament_python</build_type>
