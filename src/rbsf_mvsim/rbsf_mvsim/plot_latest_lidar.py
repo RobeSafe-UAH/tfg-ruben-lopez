@@ -1,8 +1,18 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
-def plot_latest_lidar(filename='lidar_data.csv'):
+LOG_DIR = os.path.join('/','sim_ws','src','rbsf_mvsim','LiDARs_data')
+
+def plot_latest_lidar(filename=os.path.join(LOG_DIR,'lidar_data.csv')):
+    """
+    Args: filename (Por defecto) LOG_DIR/lidar_data.csv
+    Ret: ultima_captura_lidar.png
+    -------------------------------------------------------
+    Función de python que genera una imagen .png con la reconstrucción espacial
+    del entorno de un robot que incorpora un LiDAR2D.
+    """
     # Cargar los datos
     try:
         df = pd.read_csv(filename)
@@ -40,7 +50,7 @@ def plot_latest_lidar(filename='lidar_data.csv'):
     plt.title(f"Captura de LiDAR\n(TS: {ultimo_ts})")
     
     output_name = "ultima_captura_lidar.png"
-    plt.savefig(output_name)
+    plt.savefig(os.path.join(LOG_DIR,output_name))
     print(f"Imagen guardada exitosamente como: {output_name}")
     plt.close()
 

@@ -8,6 +8,10 @@ import os
 RBSF_DIR = os.path.join('/','sim_ws','src','rbsf_mvsim')
 
 class LidarLoggerNode(Node):
+    """
+    Nodo de ROS2 que escribe la información de un LiDAR2D que se publica
+    en el Topic '/laser1' y la escribe en un fichero .csv
+    """
     # Constructor
     def __init__(self):
         super().__init__('lidar_logger_node')
