@@ -26,14 +26,15 @@ RUN apt-get update --fix-missing && \
                        libgl1-mesa-glx \
                        libgl1-mesa-dri \
 #
+                       '~nros-humble-rqt*' \
                        ros-humble-rviz2 \
                        ros-humble-mvsim \
                        ros-humble-teleop-twist-keyboard \
-# Librerías para python3
     && pip install pandas \
                    matplotlib \
+                   "numpy<2" \
+                   scikit-learn \
     && rm -rf /var/lib/apt/lists/* 
-
 
 # Crear espacio de trabajo
 RUN mkdir -p /sim_ws/src && chown -R $USER_UID:$USER_GID /sim_ws
@@ -54,6 +55,8 @@ RUN echo "source /sim_ws/install/local_setup.bash" >> ~/.bashrc
 # Alias
 RUN echo "alias RUN_DEMO_1ROBOT='ros2 launch mvsim demo_1robot.launch.py'" >> ~/.bashrc
 RUN echo "alias RUN_DEMO_WAREHOUSE='ros2 launch mvsim demo_warehouse.launch.py'" >> ~/.bashrc
-RUN echo "alias RBSF_FORZAETH='ros2 launch /sim_ws/src/rbsf_mvsim/rbsf_mvsim/rbsf_forzaeth.launch.py'" >> ~/.bashrc
+RUN echo "alias RBSF_FORZAETH='ros2 launch rbsf_mvsim rbsf_forzaeth.launch.py'" >> ~/.bashrc
+RUN echo 'alias GRABAR_TOPICS_R1="ros2 bag record -e \"/r1/*\""' >> ~/.bashrc
+RUN echo 'alias TELEOP_R1="ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/r1/cmd_vel"' >> ~/.bashrc
 
 WORKDIR /sim_ws/src

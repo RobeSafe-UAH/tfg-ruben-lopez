@@ -7,14 +7,14 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
    # *** REMEMBER: Change this to your actual world file ***
-   world_file = '/sim_ws/src/rbsf_mvsim/rbsf_mvsim/rbsf_forzaeth.world.xml'
-   rviz_config_file = '/sim_ws/src/rbsf_mvsim/rbsf_mvsim/rbsf_forzaeth_ros2.rviz'
+   world_file = os.path.join(get_package_share_directory('rbsf_mvsim'),'rbsf_mvsim','rbsf_forzaeth.world.xml')
+   rviz_config_file = os.path.join(get_package_share_directory('rbsf_mvsim'),'rbsf_mvsim','rbsf_forzaeth_ro2.rviz')
 
    headless = 'False'
    do_fake_localization = 'True'
    publish_tf_odom2baselink = 'True'
    force_publish_vehicle_namespace = 'False'
-   use_rviz = 'True'
+   use_rviz = 'False'
 
    # Create LaunchDescription
    ld = LaunchDescription()

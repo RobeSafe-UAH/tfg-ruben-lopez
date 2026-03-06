@@ -1,4 +1,3 @@
 src/rbsf_mvsim/rbsf_mvsim/__pycache__
-src/rbsf_mvsim/rbsf_mvsim/*.png
-src/rbsf_mvsim/rbsf_mvsim/*.csv
-src/rbsf_mvsim/LiDARs_data/
+src/LiDARs_data/
+src/rosbag2*

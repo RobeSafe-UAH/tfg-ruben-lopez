@@ -5,7 +5,7 @@ import message_filters
 import csv
 import os
 
-RBSF_DIR = os.path.join('/','sim_ws','src','rbsf_mvsim')
+LIDAR_DIR = os.path.join('/','sim_ws','src','LiDARs_data')
 
 class LidarLoggerNode(Node):
     """
@@ -17,7 +17,7 @@ class LidarLoggerNode(Node):
         super().__init__('lidar_logger_node')
 
         # Configuración del fichero .csv
-        self.filename = os.path.join(RBSF_DIR,'LiDARs_data','lidar_data.csv')
+        self.filename = os.path.join(LIDAR_DIR,'lidar_data.csv')
         self.file_exists = os.path.isfile(self.filename)
         self.file = open(self.filename, 'a', newline = '')
         self.writer = csv.writer(self.file)
@@ -29,7 +29,7 @@ class LidarLoggerNode(Node):
         # Suscripcion a topic '/laser1'
         self.subscription = self.create_subscription(
             LaserScan,
-            '/laser1',
+            '/r1/laser1',
             self.callback,
             10
         )
