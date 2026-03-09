@@ -53,10 +53,15 @@ RUN echo "source /sim_ws/install/setup.bash" >> ~/.bashrc
 RUN echo "source /sim_ws/install/local_setup.bash" >> ~/.bashrc
 
 # Alias
+## Para lanzar el mapa DEMO_1ROBOT de MVSIM
 RUN echo "alias RUN_DEMO_1ROBOT='ros2 launch mvsim demo_1robot.launch.py'" >> ~/.bashrc
+## Para lanzar el mapa DEMO_WAREHOUSE de MVSIM
 RUN echo "alias RUN_DEMO_WAREHOUSE='ros2 launch mvsim demo_warehouse.launch.py'" >> ~/.bashrc
+## Para lanzar el mapa RBSF_FORZAETH de RBSF_MVSIM
 RUN echo "alias RBSF_FORZAETH='ros2 launch rbsf_mvsim rbsf_forzaeth.launch.py'" >> ~/.bashrc
-RUN echo 'alias GRABAR_TOPICS_R1="ros2 bag record -e \"/r1/*\""' >> ~/.bashrc
+## Para grabar un rosbag con los topics que se publiqun en el namespace '/r1'
+RUN echo 'alias GRABAR_TOPICS_R1="ros2 bag record -e \"/r1/*|/tf|/tf_static\""' >> ~/.bashrc
+## Para lanzar el nodo de teleop para escribir en el topic '/r1/cmd_vel'
 RUN echo 'alias TELEOP_R1="ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/r1/cmd_vel"' >> ~/.bashrc
 
 WORKDIR /sim_ws/src

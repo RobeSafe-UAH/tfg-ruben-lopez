@@ -8,7 +8,6 @@ from launch.actions import DeclareLaunchArgument
 from launch.conditions import IfCondition
 import os
 
-
 def generate_launch_description():
 
     # args that can be set from the command line or a default will be used
@@ -30,13 +29,15 @@ def generate_launch_description():
 
     use_rviz_arg = DeclareLaunchArgument(
         'use_rviz', default_value='True',
-        description='Whether to launch RViz2'
-    )
+        description='Whether to launch RViz2')
 
     rviz_config_file_arg = DeclareLaunchArgument(
         'rviz_config_file', default_value='',
-        description='If use_rviz:="True", the configuration file for rviz'
-    )
+        description='If use_rviz:="True", the configuration file for rviz')
+
+    vehicle_name_arg = DeclareLaunchArgument(
+        "vehicle_name", default_value='r1',
+        description='Name of the vehicle defined in the world.xml for TF remapping')
 
     mvsim_node = Node(
         package='mvsim',
@@ -50,7 +51,11 @@ def generate_launch_description():
                 "do_fake_localization": LaunchConfiguration('do_fake_localization'),
                 "publish_tf_odom2baselink": LaunchConfiguration('publish_tf_odom2baselink'),
                 "force_publish_vehicle_namespace": LaunchConfiguration('force_publish_vehicle_namespace'),
-            }]
+            }],
+        remappings=[
+            (['/', LaunchConfiguration('vehicle_name'), '/tf'], '/tf'),
+            (['/', LaunchConfiguration('vehicle_name'), '/tf_static'], '/tf_static')
+        ]
     )
 
     rviz2_node = Node(
@@ -71,5 +76,6 @@ def generate_launch_description():
         use_rviz_arg,
         rviz_config_file_arg,
         mvsim_node,
-        rviz2_node
+        rviz2_node,
+        vehicle_name_arg
     ])

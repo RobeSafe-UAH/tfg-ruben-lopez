@@ -19,12 +19,9 @@ class LidarLoggerNode(Node):
         # Configuración del fichero .csv
         self.filename = os.path.join(LIDAR_DIR,'lidar_data.csv')
         self.file_exists = os.path.isfile(self.filename)
-        self.file = open(self.filename, 'a', newline = '')
+        self.file = open(self.filename, 'w', newline = '')
         self.writer = csv.writer(self.file)
-
-        # Únicamnete escribe las cabeceras si no existe el fichero previamente
-        if not self.file_exists: 
-            self.writer.writerow(['timestamp', 'index', 'values'])
+        self.writer.writerow(['timestamp', 'index', 'values'])
 
         # Suscripcion a topic '/laser1'
         self.subscription = self.create_subscription(
