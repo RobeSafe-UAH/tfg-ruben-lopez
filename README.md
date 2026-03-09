@@ -53,7 +53,20 @@ Terminado este último proceso, se abre una nueva terminal (situada, también, e
 ~~~bash
 make shell
 ~~~
-Llegado este punto, todo está en preparado para ejecutar el simulador **MVSim**. 
+Llegado este punto, todo está en preparado para ejecutar el simulador **MVSim** a través del paquete de *MVSIM*-
+
+Para poder utilizar el paquete **rbsf_mvsim** debe situarse en el directorio:
+> /sim_ws/
+Y ejecutar:
+~~~bash
+colcon build
+
+source install/local_setup.bash
+~~~
+Una vez ejecutado, se ha de acceder al directorio:
+> /sim_ws/src/
+
+Aquí pueden ejecutarse las llamadas del paquete **rbsf_mvsim** que se enumeran a continicuación.
 
 Dentro de este contenedor podemos llamar al simulador a través de ROS2:
 ~~~bash
