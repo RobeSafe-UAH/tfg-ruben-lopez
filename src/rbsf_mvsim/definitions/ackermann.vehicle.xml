@@ -9,13 +9,15 @@
     <!--  Dynamical model -->
     <dynamics class="ackermann">
         <!-- Rear wheels -->
-        <rl_wheel pos="0  1" mass="6.0" width="0.30" diameter="0.62" />
-        <rr_wheel pos="0 -1" mass="6.0" width="0.30" diameter="0.62" />
+        <rl_wheel pos="0  1" mass="6.0" width="0.30" diameter="0.76" />
+        <rr_wheel pos="0 -1" mass="6.0" width="0.30" diameter="0.76" />
         
         <!-- Front wheels -->
-        <fl_wheel mass="6.0" width="0.30" diameter="0.62" />
-        <fr_wheel mass="6.0" width="0.30" diameter="0.62" />
+        <fl_wheel mass="6.0" width="0.30" diameter="0.76" />
+        <fr_wheel mass="6.0" width="0.30" diameter="0.76" />
+        <!-- Wheelbase: Distancia entre ejes a lo largo -->
         <f_wheels_x>1.3</f_wheels_x>
+        <!-- Track width: Distancia entre ejes a lo ancho -->
         <f_wheels_d>2.0</f_wheels_d>
         <max_steer_ang_deg>30.0</max_steer_ang_deg>
 

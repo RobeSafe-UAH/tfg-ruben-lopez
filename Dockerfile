@@ -34,6 +34,7 @@ RUN apt-get update --fix-missing && \
                    matplotlib \
                    "numpy<2" \
                    scikit-learn \
+                   norfair \
     && rm -rf /var/lib/apt/lists/* 
 
 # Crear espacio de trabajo
@@ -59,9 +60,11 @@ RUN echo "alias RUN_DEMO_1ROBOT='ros2 launch mvsim demo_1robot.launch.py'" >> ~/
 RUN echo "alias RUN_DEMO_WAREHOUSE='ros2 launch mvsim demo_warehouse.launch.py'" >> ~/.bashrc
 ## Para lanzar el mapa RBSF_FORZAETH de RBSF_MVSIM
 RUN echo "alias RBSF_FORZAETH='ros2 launch rbsf_mvsim rbsf_forzaeth.launch.py'" >> ~/.bashrc
-## Para grabar un rosbag con los topics que se publiqun en el namespace '/r1'
-RUN echo 'alias GRABAR_TOPICS_R1="ros2 bag record -e \"/r1/*|/tf|/tf_static\""' >> ~/.bashrc
+## Para grabar un rosbag con los topics que se publiquen en el namespace '/r1'. AÑADIR (-o <fichero_salida>)
+RUN echo 'alias GRABAR_TOPICS_R1="ros2 bag record -e \"/r1/*|/perception/*\""' >> ~/.bashrc
 ## Para lanzar el nodo de teleop para escribir en el topic '/r1/cmd_vel'
 RUN echo 'alias TELEOP_R1="ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/r1/cmd_vel"' >> ~/.bashrc
+## Separación de dominio de ROS para no saturar la red de comunicación
+RUN echo 'export ROS_DOMAIN_ID=4' >> ~/.bashrc
 
 WORKDIR /sim_ws/src

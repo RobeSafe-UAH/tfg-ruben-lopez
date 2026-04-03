@@ -14,7 +14,7 @@ def generate_launch_description():
    do_fake_localization = 'True'
    publish_tf_odom2baselink = 'True'
    force_publish_vehicle_namespace = 'True'
-   use_rviz = 'False'
+   use_rviz = 'True'
    vehicle_name = 'r1'
 
    # Create LaunchDescription
@@ -32,7 +32,7 @@ def generate_launch_description():
             'publish_tf_odom2baselink': publish_tf_odom2baselink,
             'force_publish_vehicle_namespace': force_publish_vehicle_namespace,
             'use_rviz': use_rviz,
-            # 'rviz_config_file': rviz_config_file,
+            'rviz_config_file': rviz_config_file,
             'vehicle_name': vehicle_name,
       }.items()
    ))

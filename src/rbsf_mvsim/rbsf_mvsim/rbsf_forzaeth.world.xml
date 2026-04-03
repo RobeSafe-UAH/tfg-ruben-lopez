@@ -32,16 +32,9 @@
 		default_sensors="false"
 	/>
 
-	<!-- <include file="../definitions/jackal.vehicle.xml"
+	<include file="../definitions/traxxas-ford-st.vehicle.xml" 
 		default_sensors="false"
-	/> -->
-
-	<!-- <include file="../definitions/small_robot.vehicle.xml" /> -->
-
-	<!-- ========================
-		   Vehicle(s) definition
-	     ======================== -->
-
+	/>
 	<!-- =======================================================
 		   ACKERMANN(s) definition
 	     ======================================================= -->
@@ -49,11 +42,11 @@
 
 	<vehicle name="r1" class="car_ackermann">
 		
-		<!-- <init_pose>35 35 0</init_pose>  -->
+		<!-- <init_pose>35 35 0</init_pose> -->
 		<init_pose>20 30 -60</init_pose> 
 		<init_vel>0 0 0</init_vel>  
 		 
-		<include file="../definitions/lidar2d.sensor.xml" 
+		<include file="../definitions/hokuyo-ust-10lx.sensor.xml" 
 			sensor_x="1.65" 
 			sensor_z="1.08" 
 			sensor_yaw="0" 
@@ -61,17 +54,9 @@
 			sensor_name="laser1"
 		/>
 
-		<!-- Láser desactivado para simular nuestro modelo-->
-		<!-- <include file="../definitions/lidar2d.sensor.xml"
-		 	sensor_x="-0.5"
-			sensor_z="1.01"
-			sensor_yaw="180"
-			max_range="70.0"
-			sensor_name="laser2" 
-		/> -->
-
 		<include file="../definitions/rgbd_camera.sensor.xml" 
-		  sensor_x="1.7" sensor_z="1.04"
+		  sensor_x="1.7"
+		  sensor_z="1.04"
 		  sensor_period_sec="0.03"
 		  show_3d_pointcloud="false"
 		/>
@@ -91,24 +76,8 @@
 	      Obstacle blocks classes definition
 	     ====================================== -->
 
-	<!-- <block:class name="cylinder">
-		<static>true</static>
-			<visual>
-			<model_uri>../models/cylinder.stl</model_uri>
-		</visual>
-	</block:class> -->
-
 	<!-- ======================================
 	      Object instances
 	     ====================================== -->
-	<!--
-	<block class="cylinder">
-			<init_pose>-30 -30 0</init_pose>
-	</block> -->
-	
-	<!-- <for var="iX" from="0" to="2">
-		<block class="cylinder">
-			<init_pose>$f{90+iX*3} 20 90</init_pose>
-		</block>
-	</for> -->
+
 </mvsim_world>

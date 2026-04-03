@@ -1,0 +1,92 @@
+<mvsim_world version="1.0">
+	<!-- General simulation options -->
+	<simul_timestep>0</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
+
+	<!-- GUI options -->
+	<gui>
+		<ortho>false</ortho>
+		<show_forces>true</show_forces>  <force_scale>0.01</force_scale>
+		<cam_distance>35</cam_distance>
+		<fov_deg>60</fov_deg>
+		<refresh_fps>20</refresh_fps>
+		<follow_vehicle>r1</follow_vehicle>
+	</gui>
+
+	<!-- Light parameters -->
+	<lights>
+	</lights>
+
+	<!-- ========================
+		   Scenario definition
+	     ======================== -->
+	<element class="occupancy_grid">
+		<!-- File can be an image or an MRPT .gridmap file -->
+		<file>Circuito1_10.png</file>
+		<!--<show_collisions>true</show_collisions>-->
+	</element>
+	
+	<!-- =============================
+		   Vehicle classes definition
+	     ============================= -->
+	<include file="../definitions/traxxas-ford-st.vehicle.xml" 
+		default_sensors="false"
+	/>
+
+	<vehicle name="r1" class="traxxas-ford-st">
+		
+		<!-- Ideal initial pose to start racing -->
+        <!-- <init_pose>5 35 0</init_pose>  -->
+		<!-- Initial pose to evaluate tracker node -->
+		<init_pose>29 35 -45</init_pose>
+		<init_vel>0 0 0</init_vel>  
+		 
+		<include file="../definitions/lidar2d.sensor.xml" 
+			sensor_x="0.4" 
+			sensor_z="0.2709" 
+			sensor_yaw="0" 
+			max_range="70.0" 
+			sensor_name="laser1"
+		/>
+
+		<include file="../definitions/rgbd_camera.sensor.xml" 
+		  sensor_x="0.45"
+		  sensor_z="0.2409"
+		  sensor_period_sec="0.03"
+		  show_3d_pointcloud="false"
+		/>
+	</vehicle>
+
+	<!--
+	<vehicle name="r3" class="traxxas-ford-st">
+		<init_pose>12 40 90</init_pose> 
+		<init_vel>0 0 0</init_vel>  
+	</vehicle> -->
+
+	<!-- ======================================
+	      Obstacle blocks classes definition
+	     ====================================== -->
+
+	<block:class name="f110">
+		<mass>2.63</mass>
+		<zmin>0.021</zmin>
+		<zmax>0.206</zmax>
+		<ground_friction>100.0</ground_friction>
+		<shape>
+                <pt> 0.43  0.14</pt>
+                <pt> 0.43 -0.14</pt>
+                <pt>-0.11 -0.14</pt>
+                <pt>-0.11  0.14</pt>
+        </shape>
+	</block:class>
+
+	<!-- ======================================
+	      Object instances
+	     ====================================== -->
+	<block class="f110"> 
+			<init_pose>32 35 90</init_pose>
+			<animation type="keyframes">
+				<time_pose>0.0   1   0  0</time_pose>
+				<time_pose>5.0  -8   0  0</time_pose>
+			</animation>
+	</block>
+</mvsim_world>

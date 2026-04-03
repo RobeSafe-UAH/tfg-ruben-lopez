@@ -19,6 +19,8 @@ setup(
             glob(os.path.join(package_name,'*world.xml'))),
         (os.path.join('share', package_name, package_name),
             glob(os.path.join(package_name,'*.png'))),
+        (os.path.join('share', package_name, package_name),
+            glob(os.path.join(package_name, '*.rviz'))),
         (os.path.join('share', package_name,'definitions'),
             glob(os.path.join('definitions', '*.xml'))),
         (os.path.join('share', package_name, 'models'),
@@ -37,8 +39,10 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'vel_set = rbsf_mvsim.vel_set:main',
-            'lidar_logger = rbsf_mvsim.lidar_logger_node:main',
+            'lidar_logger = rbsf_mvsim.nodes.lidar_logger_node:main',
+            'perception = rbsf_mvsim.nodes.perception:main',
+            'detector_l_shape = rbsf_mvsim.nodes.detector_l_shape:main',
+            'detector_w_track = rbsf_mvsim.nodes.detector_w_track:main',
         ],
     },
 )

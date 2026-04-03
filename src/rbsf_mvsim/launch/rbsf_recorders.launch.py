@@ -9,7 +9,8 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
 
     bag_file_arg = DeclareLaunchArgument(
-        'rosbag_file', description='Path to the rosbag file to play')
+        'rosbag_file',
+        description='Path to the rosbag file to play')
     
     lector_node = Node(
             package='rbsf_mvsim',
@@ -19,7 +20,8 @@ def generate_launch_description():
     )
     
     play_bag = ExecuteProcess(
-        cmd=['ros2','bag','play', LaunchConfiguration('rosbag_file')]
+        cmd=['ros2','bag','play',
+        LaunchConfiguration('rosbag_file')]
     )
 
     return LaunchDescription([
@@ -28,13 +30,11 @@ def generate_launch_description():
         RegisterEventHandler(
             OnProcessStart(
                 target_action = lector_node,
-                on_start=[play_bag]
-            )
+                on_start=[play_bag])
         ),
         RegisterEventHandler(
             OnProcessExit(
                 target_action= play_bag,
-                on_exit= [EmitEvent(event= Shutdown())]
-            )
+                on_exit= [EmitEvent(event= Shutdown())])
         )
     ])
