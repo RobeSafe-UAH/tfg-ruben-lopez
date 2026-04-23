@@ -45,7 +45,7 @@ class Dectector(Node):
         self.min_samples = self.get_parameter('min_samples').value
         self.car_height = self.get_parameter('car_height').value
         self.max_obs_size = self.get_parameter('max_obs_size').value
-
+    
         # *
         # Instancia del Detector
         self.tracker = Tracker(

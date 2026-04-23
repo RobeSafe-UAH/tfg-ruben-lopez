@@ -1,3 +1,5 @@
 src/rbsf_mvsim/rbsf_mvsim/__pycache__
+src/rbsf_mvsim/rbsf_mvsim/nodes/__pycache__
+src/rbsf_mvsim/rbsf_mvsim/nodes/libraries/__pycache__
 src/*
 !src/rbsf_mvsim

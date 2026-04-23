@@ -1,0 +1,151 @@
+<mvsim_world version="1.0">
+	<!-- General simulation options -->
+	<simul_timestep>0</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
+
+	<!-- GUI options -->
+	<gui>
+		<ortho>true</ortho>
+		<show_forces>true</show_forces>  <force_scale>0.01</force_scale>
+		<cam_distance>20</cam_distance>
+		<fov_deg>20</fov_deg>
+		<refresh_fps>20</refresh_fps>
+	</gui>
+
+	<!-- Light parameters -->
+	<lights>
+	</lights>
+
+	<!-- ========================
+		   Scenario definition
+	     ======================== -->
+	
+    <!-- ground -->
+	<element class="horizontal_plane">
+		<cull_face>BACK</cull_face>
+		<x_min>-10</x_min> <y_min>-10</y_min>
+		<x_max> 10</x_max> <y_max> 10</y_max>
+		<z>0.0</z>
+		<texture>https://mrpt.github.io/mvsim-models/textures-cgbookcase/PavingStone07_1K_BaseColor.png</texture>
+		<texture_size_x>3.0</texture_size_x>
+		<texture_size_y>2.0</texture_size_y>
+	</element>
+
+	<!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>3</x0>
+		<y0>3</y0>
+		<x1>3</x1>
+		<y1>-3</y1>
+		<z>0.0</z>
+        <height>1.0</height>
+        <texture>https://mrpt.github.io/mvsim-models/textures-cgbookcase/BrickWall01_1K_BaseColor.png</texture>
+		<texture_size_x>3.0</texture_size_x>
+		<texture_size_y>2.0</texture_size_y>
+	</element>
+
+	<!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>3</x0>
+		<y0>-3</y0>
+		<x1>-3</x1>
+		<y1>-3</y1>
+		<z>0.0</z>
+		<height>1.0</height>
+        <texture>https://mrpt.github.io/mvsim-models/textures-cgbookcase/BrickWall01_1K_BaseColor.png</texture>
+		<texture_size_x>3.0</texture_size_x>
+		<texture_size_y>2.0</texture_size_y>
+	</element>
+
+	<!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>-3</x0>
+		<y0>-3</y0>
+		<x1>-3</x1>
+		<y1>3</y1>
+		<z>0.0</z>
+		<height>1.0</height>
+        <texture>https://mrpt.github.io/mvsim-models/textures-cgbookcase/BrickWall01_1K_BaseColor.png</texture>
+		<texture_size_x>3.0</texture_size_x>
+		<texture_size_y>2.0</texture_size_y>
+	</element>
+
+    <!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>3</x0>
+		<y0>3</y0>
+		<x1>-3</x1>
+		<y1>3</y1>
+		<z>0.0</z>
+		<height>1.0</height>
+        <texture>https://mrpt.github.io/mvsim-models/textures-cgbookcase/BrickWall01_1K_BaseColor.png</texture>
+		<texture_size_x>3.0</texture_size_x>
+		<texture_size_y>2.0</texture_size_y>
+	</element>
+
+    <!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>-2</x0>
+		<y0>-1</y0>
+		<x1>-1</x1>
+		<y1>-2</y1>
+		<z>0.0</z>
+		<height>1.0</height>
+	</element>
+
+    <!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>-2</x0>
+		<y0>1</y0>
+		<x1>-1</x1>
+		<y1>2</y1>
+		<z>0.0</z>
+		<height>1.0</height>
+	</element>
+
+     <!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>3</x0>
+		<y0>0</y0>
+		<x1>-1</x1>
+		<y1>0</y1>
+		<z>0.0</z>
+		<height>1.0</height>
+	</element>
+
+	<!-- =============================
+		   Vehicle classes definition
+	     ============================= -->
+    <include file="../definitions/traxxas-ford-st.vehicle.xml" 
+		default_sensors="false"
+	/>
+
+    <vehicle name="r1" class="traxxas-ford-st">
+		<init_pose>-2.5 -2.5 0</init_pose>
+		<init_vel>0 0 0</init_vel>  
+
+        <animation type="keyframes">
+			<time_pose>0.0  0  0 0</time_pose>
+			<time_pose>4.0  2.5  0 0</time_pose>
+            <time_pose> 6.0 2.5 0 90</time_pose>
+			<time_pose> 8.0 2.5 1.7 90</time_pose>
+			<time_pose> 10.0 2.5 1.7 180</time_pose>
+			<time_pose> 12.0 0.2 1.7 180</time_pose>
+			<time_pose> 14.0 0.2 1.7 270</time_pose>
+			<time_pose> 16.0 0 0 270</time_pose>
+			<time_pose> 18.0 0 0 360</time_pose>
+		</animation>
+		 
+		<include file="../definitions/lidar2d.sensor.xml" 
+			sensor_x="0.4" 
+			sensor_z="0.2709" 
+			sensor_yaw="0" 
+			max_range="30.0" 
+			sensor_name="laser1"
+		/>
+	</vehicle>
+
+	<!-- ======================================
+	      Obstacle blocks classes definition
+	     ====================================== -->
+
+</mvsim_world>

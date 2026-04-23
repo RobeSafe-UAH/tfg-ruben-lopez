@@ -21,63 +21,80 @@
 	     ======================== -->
 	<element class="occupancy_grid">
 		<!-- File can be an image or an MRPT .gridmap file -->
-		<file>CircuitoEliptico.png</file>
+		<file>Circuito1_10_obs.png</file>
 		<!--<show_collisions>true</show_collisions>-->
 	</element>
 	
 	<!-- =============================
 		   Vehicle classes definition
 	     ============================= -->
-	<include file="../definitions/ackermann.vehicle.xml" 
-		default_sensors="false"
-	/>
-
 	<include file="../definitions/traxxas-ford-st.vehicle.xml" 
 		default_sensors="false"
 	/>
-	<!-- =======================================================
-		   ACKERMANN(s) definition
-	     ======================================================= -->
-		<!-- Configuración extraída de 'demo_1robot.world.xml' -->
 
-	<vehicle name="r1" class="car_ackermann">
+	<vehicle name="r1" class="traxxas-ford-st">
 		
-		<!-- <init_pose>35 35 0</init_pose> -->
-		<init_pose>20 30 -60</init_pose> 
-		<init_vel>0 0 0</init_vel>  
+		<!-- Ideal initial pose to start racing -->
+        <!-- <init_pose>5 35 0</init_pose>  -->
+		<!-- Initial pose to evaluate tracker node -->
+		<init_pose>5 36 0</init_pose>
+		<animation type="keyframes">
+			<time_pose>0.0   0   0  0</time_pose>
+			<time_pose>6.0  20   0  0</time_pose>
+		</animation>
 		 
-		<include file="../definitions/hokuyo-ust-10lx.sensor.xml" 
-			sensor_x="1.65" 
-			sensor_z="1.08" 
+		<include file="../definitions/lidar2d.sensor.xml" 
+			sensor_x="0.4" 
+			sensor_z="0.2709" 
 			sensor_yaw="0" 
-			max_range="70.0" 
+			max_range="30.0" 
 			sensor_name="laser1"
 		/>
 
 		<include file="../definitions/rgbd_camera.sensor.xml" 
-		  sensor_x="1.7"
-		  sensor_z="1.04"
+		  sensor_x="0.45"
+		  sensor_z="0.2409"
 		  sensor_period_sec="0.03"
 		  show_3d_pointcloud="false"
 		/>
 	</vehicle>
 
-	<vehicle name="r2" class="car_ackermann">
-		<init_pose>88 17 45</init_pose> 
-		<init_vel>0 0 0</init_vel>  
-	</vehicle>
+	<vehicle name="r2" class="traxxas-ford-st">
 
-	<vehicle name="r3" class="car_ackermann">
-		<init_pose>12 40 90</init_pose> 
-		<init_vel>0 0 0</init_vel>  
+		<init_pose>5 34 0</init_pose>
+		
+		<animation type="keyframes">
+			<time_pose>0.0   0   0  0</time_pose>
+			<time_pose>5.0  20   0  0</time_pose>
+		</animation>
+		 
+		<include file="../definitions/lidar2d.sensor.xml" 
+			sensor_x="0.4" 
+			sensor_z="0.2709" 
+			sensor_yaw="0" 
+			max_range="30.0" 
+			sensor_name="laser1"
+		/>
 	</vehicle>
 
 	<!-- ======================================
 	      Obstacle blocks classes definition
 	     ====================================== -->
 
+	<block:class name="f110">
+		<mass>2.63</mass>
+		<zmin>0.021</zmin>
+		<zmax>0.206</zmax>
+		<ground_friction>100.0</ground_friction>
+		<shape>
+                <pt> 0.43  0.14</pt>
+                <pt> 0.43 -0.14</pt>
+                <pt>-0.11 -0.14</pt>
+                <pt>-0.11  0.14</pt>
+        </shape>
+	</block:class>
+
 	<!-- ======================================
 	      Object instances
 	     ====================================== -->
-
 </mvsim_world>

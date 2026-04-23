@@ -6,18 +6,17 @@ class LShapeDetector:
         Clase independiente que encapsula el clustering y el ajuste L-Shape.
     """
 
-    def __init__(self, eps=1.0, min_samples=15, max_obs_size=0.55):
+    def __init__(self, eps=1.0, min_samples=15, max_obs_size=0.55, min_range=0.01):
         self.eps = eps
         self.min_samples = min_samples
         self.max_obs_size = max_obs_size
+        self.min_range = min_range
 
     def fit_bounding_box(self, cluster_points):
         """
             Función que implementa el algoritmo que busca el rectángulo
             que encaja con el obstáculo detectado.
         """
-        
-        min_dist = 0.01
         
         # Evaluar posibles ángulos entre 0 y 90 grados
         # Crea un vector de 0 a 'pi/2-pi/180' con 90 valores.
@@ -63,7 +62,7 @@ class LShapeDetector:
         D = np.minimum(D10, D20)
         # Saturación de valor. Máscara 'D < min_dist'.
         # Sustituir por 'min_dist' cualquier valor menor a este
-        D[D < min_dist] = min_dist
+        D[D < self.min_range] = self.min_range
 
         # Extraer el ángulo óptimo y las dimensiones
         # theta_opt: Estimación de orientación del obstáculo
@@ -146,9 +145,9 @@ class LShapeDetector:
             cluster_points = points[labels == label]
             try:
                 center_x, center_y, size, theta_opt = self.fit_bounding_box(cluster_points)
-            except Exception:
+            except Exception as e:
+                print("Excepción en el método 'fit_bounding_box'.\n")
                 continue
-            
             if size > self.max_obs_size:
                 continue
             

@@ -1,0 +1,59 @@
+<mvsim_world version="1.0">
+	<!-- General simulation options -->
+	<simul_timestep>0</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
+
+	<!-- GUI options -->
+	<gui>
+		<ortho>false</ortho>
+		<show_forces>true</show_forces>  <force_scale>0.01</force_scale>
+		<cam_distance>35</cam_distance>
+		<fov_deg>60</fov_deg>
+		<refresh_fps>20</refresh_fps>
+		<follow_vehicle>r1</follow_vehicle>
+	</gui>
+
+	<!-- Light parameters -->
+	<lights>
+	</lights>
+
+	<!-- ========================
+		   Scenario definition
+	     ======================== -->
+	<element class="occupancy_grid">
+		<!-- File can be an image or an MRPT .gridmap file -->
+		<file>CircuitoEliptico1_10.png</file>
+		<!--<show_collisions>true</show_collisions>-->
+	</element>
+	
+	<!-- =============================
+		   Vehicle classes definition
+	     ============================= -->
+	<include file="../definitions/traxxas-ford-st.vehicle.xml" 
+		default_sensors="false"
+	/>
+
+	<vehicle name="r1" class="traxxas-ford-st">
+		<init_pose>10 10 0</init_pose>
+		<init_vel>0 0 0</init_vel>  
+		 
+		<include file="../definitions/lidar2d.sensor.xml" 
+			sensor_x="0.4" 
+			sensor_z="0.2709" 
+			sensor_yaw="0" 
+			max_range="30.0" 
+			sensor_name="laser1"
+		/>
+
+		<include file="../definitions/rgbd_camera.sensor.xml" 
+		  sensor_x="0.45"
+		  sensor_z="0.2409"
+		  sensor_period_sec="0.03"
+		  show_3d_pointcloud="false"
+		/>
+	</vehicle>
+
+	<!-- ======================================
+	      Obstacle blocks classes definition
+	     ====================================== -->
+
+</mvsim_world>

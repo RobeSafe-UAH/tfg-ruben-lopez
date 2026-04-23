@@ -47,7 +47,7 @@
 			sensor_x="1.65" 
 			sensor_z="1.08" 
 			sensor_yaw="0" 
-			max_range="70.0" 
+			max_range="30.0" 
 			sensor_name="laser1"
 		/>
 

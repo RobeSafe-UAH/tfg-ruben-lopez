@@ -24,7 +24,11 @@ setup(
         (os.path.join('share', package_name,'definitions'),
             glob(os.path.join('definitions', '*.xml'))),
         (os.path.join('share', package_name, 'models'),
-            glob(os.path.join('models', '*')))
+            glob(os.path.join('models', '*'))),
+        (os.path.join('share', package_name, 'rosbags'),
+            glob(os.path.join('rosbags', 'traxxas*'))),
+        (os.path.join('share', package_name, 'config'),
+            glob(os.path.join('config', '*.yaml')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -40,8 +44,10 @@ setup(
     entry_points={
         'console_scripts': [
             'lidar_logger = rbsf_mvsim.nodes.lidar_logger_node:main',
-            'perception = rbsf_mvsim.nodes.perception:main',
-            'detector_l_shape = rbsf_mvsim.nodes.detector_l_shape:main',
+            'detector_node = rbsf_mvsim.nodes.detector_node:main',
+            'visualization_detector_node = rbsf_mvsim.nodes.visualization_detector_node:main',
+            'tracker_node = rbsf_mvsim.nodes.tracker_node:main',
+            'visualization_tracker_node = rbsf_mvsim.nodes.visualization_tracker_node:main',
             'detector_w_track = rbsf_mvsim.nodes.detector_w_track:main',
         ],
     },

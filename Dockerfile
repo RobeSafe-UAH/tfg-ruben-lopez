@@ -27,14 +27,17 @@ RUN apt-get update --fix-missing && \
                        libgl1-mesa-dri \
 #
                        '~nros-humble-rqt*' \
-                       ros-humble-rviz2 \
-                       ros-humble-mvsim \
-                       ros-humble-teleop-twist-keyboard \
+                       ros-$ROS_DISTRO-rviz2 \
+                       ros-$ROS_DISTRO-mvsim \
+                       ros-$ROS_DISTRO-teleop-twist-keyboard \
+                       ros-$ROS_DISTRO-slam-toolbox \
     && pip install pandas \
                    matplotlib \
                    "numpy<2" \
                    scikit-learn \
                    norfair \
+                   optuna \
+                   rosbags \
     && rm -rf /var/lib/apt/lists/* 
 
 # Crear espacio de trabajo
@@ -62,6 +65,8 @@ RUN echo "alias RUN_DEMO_WAREHOUSE='ros2 launch mvsim demo_warehouse.launch.py'"
 RUN echo "alias RBSF_FORZAETH='ros2 launch rbsf_mvsim rbsf_forzaeth.launch.py'" >> ~/.bashrc
 ## Para grabar un rosbag con los topics que se publiquen en el namespace '/r1'. AÑADIR (-o <fichero_salida>)
 RUN echo 'alias GRABAR_TOPICS_R1="ros2 bag record -e \"/r1/*|/perception/*\""' >> ~/.bashrc
+## Compilar el paquete 'rbsf_mvsim'
+RUN echo 'alias COMPILAR="colcon build --symlink-install --packages-select rbsf_mvsim"' >> ~/.bashrc
 ## Para lanzar el nodo de teleop para escribir en el topic '/r1/cmd_vel'
 RUN echo 'alias TELEOP_R1="ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/r1/cmd_vel"' >> ~/.bashrc
 ## Separación de dominio de ROS para no saturar la red de comunicación

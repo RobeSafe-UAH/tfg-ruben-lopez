@@ -1,0 +1,55 @@
+<mvsim_world version="1.0">
+	<!-- General simulation options -->
+	<simul_timestep>0</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
+
+	<!-- GUI options -->
+	<gui>
+		<ortho>false</ortho>
+		<show_forces>true</show_forces>  <force_scale>0.01</force_scale>
+		<cam_distance>20</cam_distance>
+		<fov_deg>20</fov_deg>
+		<refresh_fps>20</refresh_fps>
+		<follow_vehicle>r1</follow_vehicle>
+	</gui>
+
+	<!-- Light parameters -->
+	<lights>
+	</lights>
+
+	<!-- ========================
+		   Scenario definition
+	     ======================== -->
+	
+	<element class="occupancy_grid">
+		<!-- File can be an image or an MRPT .gridmap file -->
+		<file>CircuitoEliptico1_1.png</file>
+		<!--<show_collisions>true</show_collisions>-->
+	</element>
+
+	<!-- Wall definition -->
+	<element class="vertical_plane">
+		<x0>10</x0>
+		<y0>27</y0>
+		<x1>40</x1>
+		<y1>27</y1>
+		<z>0.0</z>
+        <height>1.0</height>
+    </element>
+
+	<!-- =============================
+		   Vehicle classes definition
+	     ============================= -->
+    <include file="../definitions/ackermann.vehicle.xml" 
+		default_sensors="true"
+	/>
+
+    <vehicle name="r1" class="car_ackermann">
+		<init_pose>8 25 -30</init_pose>
+		<init_vel>0 0 0</init_vel>  
+	</vehicle>
+
+	<!-- ======================================
+	      Obstacle blocks classes definition
+	     ====================================== -->
+
+</mvsim_world>
