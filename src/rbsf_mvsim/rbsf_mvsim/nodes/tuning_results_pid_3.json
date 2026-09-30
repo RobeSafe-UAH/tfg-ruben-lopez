@@ -1,0 +1,528 @@
+{
+  "params_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/nodes/params.yaml",
+  "iterations": 20,
+  "tunable_keys": [
+    "geometric_optimizer.v_min",
+    "geometric_optimizer.v_max"
+  ],
+  "bounds": {
+    "geometric_optimizer.v_min": [
+      1.0,
+      20.0
+    ],
+    "geometric_optimizer.v_max": [
+      2.0,
+      40.0
+    ]
+  },
+  "best_params": {
+    "geometric_optimizer.v_min": 1.0620968022669515,
+    "geometric_optimizer.v_max": 4.414407845849527
+  },
+  "best_result": {
+    "objective_score": 83.02395504534175,
+    "score": 83.02395504534175,
+    "lap_completed": true,
+    "lap_time": 82.13207912445068,
+    "avg_cte": 0.16685456202588062,
+    "avg_speed_error": 0.05760311076166707,
+    "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777370509.json",
+    "lap_time_source": "metrics_file.lap_time",
+    "reason": "ok",
+    "objective_breakdown": {
+      "lap_time_term": 82.13207912445068,
+      "cte_term": 0.834272810129403,
+      "speed_error_term": 0.05760311076166707
+    }
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "params": {
+        "geometric_optimizer.v_min": 1.1293361250380742,
+        "geometric_optimizer.v_max": 2.5
+      },
+      "result": {
+        "objective_score": 138.5686589741167,
+        "score": 138.5686589741167,
+        "lap_completed": true,
+        "lap_time": 137.9998435974121,
+        "avg_cte": 0.11192028434524583,
+        "avg_speed_error": 0.009213954978346886,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777367471.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 137.9998435974121,
+          "cte_term": 0.5596014217262292,
+          "speed_error_term": 0.009213954978346886
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 3.2448918538034763
+      },
+      "result": {
+        "objective_score": 108.19260602155694,
+        "score": 108.19260602155694,
+        "lap_completed": true,
+        "lap_time": 107.54204034805298,
+        "avg_cte": 0.12606654453620816,
+        "avg_speed_error": 0.02023295082291021,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777367615.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 107.54204034805298,
+          "cte_term": 0.6303327226810408,
+          "speed_error_term": 0.02023295082291021
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 2,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 2.0453500901095323
+      },
+      "result": {
+        "objective_score": 169.22693697009302,
+        "score": 169.22693697009302,
+        "lap_completed": true,
+        "lap_time": 168.6311628818512,
+        "avg_cte": 0.11759462359532726,
+        "avg_speed_error": 0.007800970265173261,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777367821.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 168.6311628818512,
+          "cte_term": 0.5879731179766363,
+          "speed_error_term": 0.007800970265173261
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 3,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 2.6807429658926067
+      },
+      "result": {
+        "objective_score": 129.5580958411904,
+        "score": 129.5580958411904,
+        "lap_completed": true,
+        "lap_time": 128.96078848838806,
+        "avg_cte": 0.11714252850005788,
+        "avg_speed_error": 0.011594710302055621,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777367987.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 128.96078848838806,
+          "cte_term": 0.5857126425002894,
+          "speed_error_term": 0.011594710302055621
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 4,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 3.633209349083412
+      },
+      "result": {
+        "objective_score": 97.58346357393499,
+        "score": 97.58346357393499,
+        "lap_completed": true,
+        "lap_time": 96.90047597885132,
+        "avg_cte": 0.13063661738079768,
+        "avg_speed_error": 0.029804508179685343,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777368120.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 96.90047597885132,
+          "cte_term": 0.6531830869039884,
+          "speed_error_term": 0.029804508179685343
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 5,
+      "params": {
+        "geometric_optimizer.v_min": 1.3881806588821417,
+        "geometric_optimizer.v_max": 2.886862461112173
+      },
+      "result": {
+        "objective_score": 120.5347678471278,
+        "score": 120.5347678471278,
+        "lap_completed": true,
+        "lap_time": 119.9490373134613,
+        "avg_cte": 0.11444195553070921,
+        "avg_speed_error": 0.013520756012946689,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777368285.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 119.9490373134613,
+          "cte_term": 0.5722097776535461,
+          "speed_error_term": 0.013520756012946689
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 6,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 3.9560492920173935
+      },
+      "result": {
+        "objective_score": 90.61355896554922,
+        "score": 90.61355896554922,
+        "lap_completed": true,
+        "lap_time": 89.86500239372253,
+        "avg_cte": 0.14198892807486488,
+        "avg_speed_error": 0.038611931452371705,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777368412.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 89.86500239372253,
+          "cte_term": 0.7099446403743244,
+          "speed_error_term": 0.038611931452371705
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 7,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 4.230978156187829
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 8,
+      "params": {
+        "geometric_optimizer.v_min": 1.0953472511827191,
+        "geometric_optimizer.v_max": 4.308770441412008
+      },
+      "result": {
+        "objective_score": 84.97566077872114,
+        "score": 84.97566077872114,
+        "lap_completed": true,
+        "lap_time": 84.05148029327393,
+        "avg_cte": 0.17433037252797243,
+        "avg_speed_error": 0.052528622807344,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777368754.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 84.05148029327393,
+          "cte_term": 0.8716518626398622,
+          "speed_error_term": 0.052528622807344
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 9,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 3.790925452922877
+      },
+      "result": {
+        "objective_score": 93.89744472208686,
+        "score": 93.89744472208686,
+        "lap_completed": true,
+        "lap_time": 93.19167947769165,
+        "avg_cte": 0.13448841963399757,
+        "avg_speed_error": 0.033323146225211105,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777368883.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 93.19167947769165,
+          "cte_term": 0.6724420981699879,
+          "speed_error_term": 0.033323146225211105
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 10,
+      "params": {
+        "geometric_optimizer.v_min": 1.1665603060112297,
+        "geometric_optimizer.v_max": 4.635898758088546
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 11,
+      "params": {
+        "geometric_optimizer.v_min": 1.1881341513101589,
+        "geometric_optimizer.v_max": 4.2147522454185165
+      },
+      "result": {
+        "objective_score": 86.9107878664789,
+        "score": 86.9107878664789,
+        "lap_completed": true,
+        "lap_time": 85.98214077949524,
+        "avg_cte": 0.17308927479951686,
+        "avg_speed_error": 0.06320071298607428,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777369226.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 85.98214077949524,
+          "cte_term": 0.8654463739975843,
+          "speed_error_term": 0.06320071298607428
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 12,
+      "params": {
+        "geometric_optimizer.v_min": 1.0185971877437963,
+        "geometric_optimizer.v_max": 4.145353101218998
+      },
+      "result": {
+        "objective_score": 88.37352958071642,
+        "score": 88.37352958071642,
+        "lap_completed": true,
+        "lap_time": 87.4017448425293,
+        "avg_cte": 0.18231000787073762,
+        "avg_speed_error": 0.060234698833434824,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777369350.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 87.4017448425293,
+          "cte_term": 0.9115500393536881,
+          "speed_error_term": 0.060234698833434824
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 13,
+      "params": {
+        "geometric_optimizer.v_min": 1.0582048456973097,
+        "geometric_optimizer.v_max": 4.404624992571334
+      },
+      "result": {
+        "objective_score": 83.10409121415775,
+        "score": 83.10409121415775,
+        "lap_completed": true,
+        "lap_time": 82.22864079475403,
+        "avg_cte": 0.16382373778697273,
+        "avg_speed_error": 0.05633173046885104,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777369469.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 82.22864079475403,
+          "cte_term": 0.8191186889348636,
+          "speed_error_term": 0.05633173046885104
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 14,
+      "params": {
+        "geometric_optimizer.v_min": 1.0889661423388775,
+        "geometric_optimizer.v_max": 4.4704975385542465
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 15,
+      "params": {
+        "geometric_optimizer.v_min": 1.0972579292465943,
+        "geometric_optimizer.v_max": 4.3325426931687465
+      },
+      "result": {
+        "objective_score": 84.45923992249769,
+        "score": 84.45923992249769,
+        "lap_completed": true,
+        "lap_time": 83.54001545906067,
+        "avg_cte": 0.17313642437154508,
+        "avg_speed_error": 0.05354234157928851,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777369811.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 83.54001545906067,
+          "cte_term": 0.8656821218577254,
+          "speed_error_term": 0.05354234157928851
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 16,
+      "params": {
+        "geometric_optimizer.v_min": 1.0346818236640523,
+        "geometric_optimizer.v_max": 4.374444875114686
+      },
+      "result": {
+        "objective_score": 85.08134799841073,
+        "score": 85.08134799841073,
+        "lap_completed": true,
+        "lap_time": 84.02000188827515,
+        "avg_cte": 0.19825371315018375,
+        "avg_speed_error": 0.07007754438467083,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777369931.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 84.02000188827515,
+          "cte_term": 0.9912685657509188,
+          "speed_error_term": 0.07007754438467083
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 17,
+      "params": {
+        "geometric_optimizer.v_min": 1.0704643572656556,
+        "geometric_optimizer.v_max": 4.366900898525396
+      },
+      "result": {
+        "objective_score": 83.68245521181564,
+        "score": 83.68245521181564,
+        "lap_completed": true,
+        "lap_time": 82.82017850875854,
+        "avg_cte": 0.1614148393700409,
+        "avg_speed_error": 0.05520250620688549,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777370050.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 82.82017850875854,
+          "cte_term": 0.8070741968502044,
+          "speed_error_term": 0.05520250620688549
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 18,
+      "params": {
+        "geometric_optimizer.v_min": 1.0500790466849048,
+        "geometric_optimizer.v_max": 4.375533523059644
+      },
+      "result": {
+        "objective_score": 83.73339043457077,
+        "score": 83.73339043457077,
+        "lap_completed": true,
+        "lap_time": 82.83265471458435,
+        "avg_cte": 0.16898065806853108,
+        "avg_speed_error": 0.055832429643758626,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777370169.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 82.83265471458435,
+          "cte_term": 0.8449032903426554,
+          "speed_error_term": 0.055832429643758626
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 19,
+      "params": {
+        "geometric_optimizer.v_min": 1.0641947876561237,
+        "geometric_optimizer.v_max": 4.382574314722463
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 20,
+      "params": {
+        "geometric_optimizer.v_min": 1.0620968022669515,
+        "geometric_optimizer.v_max": 4.414407845849527
+      },
+      "result": {
+        "objective_score": 83.02395504534175,
+        "score": 83.02395504534175,
+        "lap_completed": true,
+        "lap_time": 82.13207912445068,
+        "avg_cte": 0.16685456202588062,
+        "avg_speed_error": 0.05760311076166707,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777370509.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 82.13207912445068,
+          "cte_term": 0.834272810129403,
+          "speed_error_term": 0.05760311076166707
+        }
+      },
+      "status": "MEJORA"
+    }
+  ],
+  "timestamp": 1777370510
+}

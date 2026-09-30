@@ -1,0 +1,620 @@
+{
+  "params_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/nodes/params.yaml",
+  "iterations": 20,
+  "tunable_keys": [
+    "mpc_controller.w_x",
+    "mpc_controller.w_y",
+    "mpc_controller.w_yaw",
+    "mpc_controller.w_delta",
+    "mpc_controller.w_delta_rate",
+    "mpc_controller.w_v"
+  ],
+  "bounds": {
+    "mpc_controller.w_x": [
+      0.0,
+      10.0
+    ],
+    "mpc_controller.w_y": [
+      0.0,
+      10.0
+    ],
+    "mpc_controller.w_yaw": [
+      0.0,
+      20.0
+    ],
+    "mpc_controller.w_delta": [
+      0.0,
+      1.0
+    ],
+    "mpc_controller.w_delta_rate": [
+      0.0,
+      10.0
+    ],
+    "mpc_controller.w_v": [
+      0.0,
+      5.0
+    ]
+  },
+  "best_params": {
+    "mpc_controller.w_x": 0.3852878129246453,
+    "mpc_controller.w_y": 5.771610911883425,
+    "mpc_controller.w_yaw": 8.773529881415588,
+    "mpc_controller.w_delta": 0.04135338921585934,
+    "mpc_controller.w_delta_rate": 4.7125598211576065,
+    "mpc_controller.w_v": 1.1690416832427664
+  },
+  "best_result": {
+    "objective_score": 65.04043579706124,
+    "score": 65.04043579706124,
+    "lap_completed": true,
+    "lap_time": 63.12901520729065,
+    "avg_cte": 0.29225672487233934,
+    "avg_speed_error": 0.4501369654088929,
+    "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493492.json",
+    "lap_time_source": "metrics_file.lap_time",
+    "reason": "ok",
+    "objective_breakdown": {
+      "lap_time_term": 63.12901520729065,
+      "cte_term": 1.4612836243616967,
+      "speed_error_term": 0.4501369654088929
+    }
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "params": {
+        "mpc_controller.w_x": 0.3652615648124609,
+        "mpc_controller.w_y": 5.782200280409613,
+        "mpc_controller.w_yaw": 8.753261213867047,
+        "mpc_controller.w_delta": 0.04219282797050671,
+        "mpc_controller.w_delta_rate": 4.702212425330639,
+        "mpc_controller.w_v": 1.1625494269003949
+      },
+      "result": {
+        "objective_score": 65.22055682549514,
+        "score": 65.22055682549514,
+        "lap_completed": true,
+        "lap_time": 63.31969118118286,
+        "avg_cte": 0.2844924233042613,
+        "avg_speed_error": 0.47840352779097867,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778491341.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.31969118118286,
+          "cte_term": 1.4224621165213063,
+          "speed_error_term": 0.47840352779097867
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "params": {
+        "mpc_controller.w_x": 0.0,
+        "mpc_controller.w_y": 6.527092134213089,
+        "mpc_controller.w_yaw": 7.516789999703034,
+        "mpc_controller.w_delta": 0.0,
+        "mpc_controller.w_delta_rate": 4.4373138156116045,
+        "mpc_controller.w_v": 0.796218980205025
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 2,
+      "params": {
+        "mpc_controller.w_x": 0.0,
+        "mpc_controller.w_y": 6.286508715838101,
+        "mpc_controller.w_yaw": 9.669862533541526,
+        "mpc_controller.w_delta": 0.0,
+        "mpc_controller.w_delta_rate": 4.28286363708476,
+        "mpc_controller.w_v": 1.4348043964854695
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 3,
+      "params": {
+        "mpc_controller.w_x": 0.0,
+        "mpc_controller.w_y": 6.077283315904339,
+        "mpc_controller.w_yaw": 9.045652238515444,
+        "mpc_controller.w_delta": 0.06923411573899554,
+        "mpc_controller.w_delta_rate": 4.400928137590654,
+        "mpc_controller.w_v": 0.8016360647254491
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 4,
+      "params": {
+        "mpc_controller.w_x": 0.563790032753372,
+        "mpc_controller.w_y": 6.238186080248391,
+        "mpc_controller.w_yaw": 9.122792999690116,
+        "mpc_controller.w_delta": 0.03283193979081211,
+        "mpc_controller.w_delta_rate": 4.483881204885379,
+        "mpc_controller.w_v": 0.9301124377462973
+      },
+      "result": {
+        "objective_score": 67.08229997373645,
+        "score": 67.08229997373645,
+        "lap_completed": true,
+        "lap_time": 65.29218578338623,
+        "avg_cte": 0.23228650718904134,
+        "avg_speed_error": 0.628681654405011,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778492094.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 65.29218578338623,
+          "cte_term": 1.1614325359452067,
+          "speed_error_term": 0.628681654405011
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 5,
+      "params": {
+        "mpc_controller.w_x": 0.15394325818055718,
+        "mpc_controller.w_y": 6.0548781154774955,
+        "mpc_controller.w_yaw": 8.912364462594223,
+        "mpc_controller.w_delta": 0.05071045987491842,
+        "mpc_controller.w_delta_rate": 4.8464909539613386,
+        "mpc_controller.w_v": 1.0293982496700729
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 6,
+      "params": {
+        "mpc_controller.w_x": 0.19145367568007793,
+        "mpc_controller.w_y": 5.670702223283046,
+        "mpc_controller.w_yaw": 8.88266634511468,
+        "mpc_controller.w_delta": 0.03223792211231331,
+        "mpc_controller.w_delta_rate": 4.640946870603136,
+        "mpc_controller.w_v": 1.052879903032586
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 7,
+      "params": {
+        "mpc_controller.w_x": 0.45558551113012635,
+        "mpc_controller.w_y": 5.615946228535308,
+        "mpc_controller.w_yaw": 8.837101014148473,
+        "mpc_controller.w_delta": 0.047461337846901014,
+        "mpc_controller.w_delta_rate": 4.740029025202599,
+        "mpc_controller.w_v": 1.1186294370740502
+      },
+      "result": {
+        "objective_score": 66.02712789502532,
+        "score": 66.02712789502532,
+        "lap_completed": true,
+        "lap_time": 64.1505479812622,
+        "avg_cte": 0.2696307040251308,
+        "avg_speed_error": 0.5284263936374645,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778492623.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 64.1505479812622,
+          "cte_term": 1.348153520125654,
+          "speed_error_term": 0.5284263936374645
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 8,
+      "params": {
+        "mpc_controller.w_x": 0.4679585143614144,
+        "mpc_controller.w_y": 5.897317005512677,
+        "mpc_controller.w_yaw": 8.824250327591571,
+        "mpc_controller.w_delta": 0.03803588640814073,
+        "mpc_controller.w_delta_rate": 4.650502895062549,
+        "mpc_controller.w_v": 1.1356672819673936
+      },
+      "result": {
+        "objective_score": 65.91490880598698,
+        "score": 65.91490880598698,
+        "lap_completed": true,
+        "lap_time": 64.06899547576904,
+        "avg_cte": 0.2629611089049332,
+        "avg_speed_error": 0.5311077856932752,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778492710.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 64.06899547576904,
+          "cte_term": 1.314805544524666,
+          "speed_error_term": 0.5311077856932752
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 9,
+      "params": {
+        "mpc_controller.w_x": 0.29077576069487115,
+        "mpc_controller.w_y": 5.845406079177341,
+        "mpc_controller.w_yaw": 8.80408481131177,
+        "mpc_controller.w_delta": 0.045159147673377635,
+        "mpc_controller.w_delta_rate": 4.6681919304119885,
+        "mpc_controller.w_v": 1.128487801315021
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 10,
+      "params": {
+        "mpc_controller.w_x": 0.4164540995108175,
+        "mpc_controller.w_y": 5.806878616482897,
+        "mpc_controller.w_yaw": 8.779820253229873,
+        "mpc_controller.w_delta": 0.0392594921410304,
+        "mpc_controller.w_delta_rate": 4.73191042227553,
+        "mpc_controller.w_v": 1.1422176317613524
+      },
+      "result": {
+        "objective_score": 65.60308530948492,
+        "score": 65.60308530948492,
+        "lap_completed": true,
+        "lap_time": 63.716840505599976,
+        "avg_cte": 0.27599317945948076,
+        "avg_speed_error": 0.5062789065875454,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493018.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.716840505599976,
+          "cte_term": 1.3799658972974038,
+          "speed_error_term": 0.5062789065875454
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 11,
+      "params": {
+        "mpc_controller.w_x": 0.3265478073850845,
+        "mpc_controller.w_y": 5.820099118729682,
+        "mpc_controller.w_yaw": 8.734820120372992,
+        "mpc_controller.w_delta": 0.040724833718814614,
+        "mpc_controller.w_delta_rate": 4.686691193074009,
+        "mpc_controller.w_v": 1.1698863930081522
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 12,
+      "params": {
+        "mpc_controller.w_x": 0.3925234012142505,
+        "mpc_controller.w_y": 5.796821668693659,
+        "mpc_controller.w_yaw": 8.726013461540878,
+        "mpc_controller.w_delta": 0.04161381385405467,
+        "mpc_controller.w_delta_rate": 4.715223465197626,
+        "mpc_controller.w_v": 1.1563367506612532
+      },
+      "result": {
+        "objective_score": 65.38463517018334,
+        "score": 65.38463517018334,
+        "lap_completed": true,
+        "lap_time": 63.48874521255493,
+        "avg_cte": 0.2812175425261132,
+        "avg_speed_error": 0.48980224499785374,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493325.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.48874521255493,
+          "cte_term": 1.406087712630566,
+          "speed_error_term": 0.48980224499785374
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 13,
+      "params": {
+        "mpc_controller.w_x": 0.3852878129246453,
+        "mpc_controller.w_y": 5.771610911883425,
+        "mpc_controller.w_yaw": 8.773529881415588,
+        "mpc_controller.w_delta": 0.04135338921585934,
+        "mpc_controller.w_delta_rate": 4.7125598211576065,
+        "mpc_controller.w_v": 1.1690416832427664
+      },
+      "result": {
+        "objective_score": 65.04043579706124,
+        "score": 65.04043579706124,
+        "lap_completed": true,
+        "lap_time": 63.12901520729065,
+        "avg_cte": 0.29225672487233934,
+        "avg_speed_error": 0.4501369654088929,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493492.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.12901520729065,
+          "cte_term": 1.4612836243616967,
+          "speed_error_term": 0.4501369654088929
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 14,
+      "params": {
+        "mpc_controller.w_x": 0.3947428600954879,
+        "mpc_controller.w_y": 5.763023383021585,
+        "mpc_controller.w_yaw": 8.756959928526516,
+        "mpc_controller.w_delta": 0.04052479154350398,
+        "mpc_controller.w_delta_rate": 4.708213017546327,
+        "mpc_controller.w_v": 1.1634924623223697
+      },
+      "result": {
+        "objective_score": 65.82233880746568,
+        "score": 65.82233880746568,
+        "lap_completed": true,
+        "lap_time": 63.883533000946045,
+        "avg_cte": 0.2880572700792563,
+        "avg_speed_error": 0.4985194561233678,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493579.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.883533000946045,
+          "cte_term": 1.4402863503962815,
+          "speed_error_term": 0.4985194561233678
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 15,
+      "params": {
+        "mpc_controller.w_x": 0.3707971027957051,
+        "mpc_controller.w_y": 5.7608022477703145,
+        "mpc_controller.w_yaw": 8.785988602429546,
+        "mpc_controller.w_delta": 0.04079959230629117,
+        "mpc_controller.w_delta_rate": 4.716519175872904,
+        "mpc_controller.w_v": 1.1760091982050718
+      },
+      "result": {
+        "objective_score": 65.5920535197189,
+        "score": 65.5920535197189,
+        "lap_completed": true,
+        "lap_time": 63.63012456893921,
+        "avg_cte": 0.29378149635978784,
+        "avg_speed_error": 0.4930214689807604,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493665.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.63012456893921,
+          "cte_term": 1.4689074817989392,
+          "speed_error_term": 0.4930214689807604
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 16,
+      "params": {
+        "mpc_controller.w_x": 0.38085387277697363,
+        "mpc_controller.w_y": 5.777984359411563,
+        "mpc_controller.w_yaw": 8.780744324276231,
+        "mpc_controller.w_delta": 0.04091569761599881,
+        "mpc_controller.w_delta_rate": 4.710468608679908,
+        "mpc_controller.w_v": 1.173893188413592
+      },
+      "result": {
+        "objective_score": 65.25385272382421,
+        "score": 65.25385272382421,
+        "lap_completed": true,
+        "lap_time": 63.370445251464844,
+        "avg_cte": 0.2793051249038223,
+        "avg_speed_error": 0.48688184784024513,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778493751.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.370445251464844,
+          "cte_term": 1.3965256245191116,
+          "speed_error_term": 0.48688184784024513
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 17,
+      "params": {
+        "mpc_controller.w_x": 0.38137809173004084,
+        "mpc_controller.w_y": 5.766199098489001,
+        "mpc_controller.w_yaw": 8.768715522646586,
+        "mpc_controller.w_delta": 0.04160474669398556,
+        "mpc_controller.w_delta_rate": 4.710097156984374,
+        "mpc_controller.w_v": 1.1676040096641744
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 18,
+      "params": {
+        "mpc_controller.w_x": 0.37991771735585705,
+        "mpc_controller.w_y": 5.769175130087015,
+        "mpc_controller.w_yaw": 8.777117357194104,
+        "mpc_controller.w_delta": 0.04160972929093473,
+        "mpc_controller.w_delta_rate": 4.710953224262654,
+        "mpc_controller.w_v": 1.1704403299484798
+      },
+      "result": {
+        "objective_score": 65.35688688954258,
+        "score": 65.35688688954258,
+        "lap_completed": true,
+        "lap_time": 63.46091389656067,
+        "avg_cte": 0.2815705037580569,
+        "avg_speed_error": 0.48812047419163807,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778494058.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.46091389656067,
+          "cte_term": 1.4078525187902846,
+          "speed_error_term": 0.48812047419163807
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 19,
+      "params": {
+        "mpc_controller.w_x": 0.3872972151737631,
+        "mpc_controller.w_y": 5.773286494825652,
+        "mpc_controller.w_yaw": 8.775366431833346,
+        "mpc_controller.w_delta": 0.04121531156970375,
+        "mpc_controller.w_delta_rate": 4.710963076579307,
+        "mpc_controller.w_v": 1.1683377938220052
+      },
+      "result": {
+        "objective_score": 65.5565342537944,
+        "score": 65.5565342537944,
+        "lap_completed": true,
+        "lap_time": 63.628756284713745,
+        "avg_cte": 0.28684641866888466,
+        "avg_speed_error": 0.49354587573622744,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778494144.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.628756284713745,
+          "cte_term": 1.4342320933444233,
+          "speed_error_term": 0.49354587573622744
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 20,
+      "params": {
+        "mpc_controller.w_x": 0.38708417364488273,
+        "mpc_controller.w_y": 5.770613398575393,
+        "mpc_controller.w_yaw": 8.771109282381687,
+        "mpc_controller.w_delta": 0.04125531486269505,
+        "mpc_controller.w_delta_rate": 4.7117503749391325,
+        "mpc_controller.w_v": 1.1680753736874072
+      },
+      "result": {
+        "objective_score": 65.33871410974966,
+        "score": 65.33871410974966,
+        "lap_completed": true,
+        "lap_time": 63.44014620780945,
+        "avg_cte": 0.28205020958349725,
+        "avg_speed_error": 0.48831685402272845,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1778494229.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 63.44014620780945,
+          "cte_term": 1.4102510479174861,
+          "speed_error_term": 0.48831685402272845
+        }
+      },
+      "status": "sin mejora"
+    }
+  ],
+  "timestamp": 1778494231
+}

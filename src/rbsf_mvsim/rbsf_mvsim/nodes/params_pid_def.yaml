@@ -1,0 +1,148 @@
+controller_type: pid_controller
+pid_controller:
+  kp: 0.5963597997145224
+  kd: 1.563271520903253
+  ki: 0.0
+pure_pursuit:
+  lookahead_distance: 1.5
+map_controller:
+  k_lookahead: 0.6
+  min_lookahead: 0.5
+  max_lookahead: 1.5
+  understeer_gradient: 0.0
+mpc_controller:
+  horizon: 10
+  dt: 0.1
+  w_y: 50.0
+  w_yaw: 50.0
+  w_x: 1.0
+  w_v: 1.0
+  w_delta: 0.1
+  w_delta_rate: 100.0
+path_optimizer_type: geometric_optimizer
+geometric_optimizer:
+  curvature_weight: 262.28790450430864
+  distance_weight: 0.0
+kinematic_optimizer:
+  dt: 0.1
+  num_steps: 1000
+generic:
+  v_min: 2.3619897562242773
+  v_max: 1.1657029587122227
+  lat_accel: 3.0
+  forward_accel: 2.0
+  braking_accel: 2.0
+  wheelbase: 0.33
+  max_steer: 0.4
+  max_deviation: 0.8
+  closure_threshold: 0.25
+auto_tuner:
+  iterations: 100
+  tunable:
+  - pid_controller.kp
+  - pid_controller.ki
+  - pid_controller.kd
+  - geometric_optimizer.curvature_weight
+  - geometric_optimizer.distance_weight
+  - generic.v_min
+  - generic.v_max
+  bounds:
+    pid_controller.kp:
+    - 0.0
+    - 5.0
+    pid_controller.ki:
+    - 0.0
+    - 2.0
+    pid_controller.kd:
+    - 0.0
+    - 5.0
+    pure_pursuit.lookahead_distance:
+    - 0.5
+    - 7.0
+    geometric_optimizer.curvature_weight:
+    - 0.0
+    - 2000.0
+    geometric_optimizer.distance_weight:
+    - 0.0
+    - 10.0
+    map_controller.k_lookahead:
+    - 0.0
+    - 1.0
+    map_controller.min_lookahead:
+    - 0.0
+    - 5.0
+    map_controller.max_lookahead:
+    - 0.0
+    - 20.0
+    map_controller.understeer_gradient:
+    - 0.0
+    - 0.01
+    mpc_controller.w_x:
+    - 0.0
+    - 10.0
+    mpc_controller.w_y:
+    - 0.0
+    - 100.0
+    mpc_controller.w_yaw:
+    - 0.0
+    - 100.0
+    mpc_controller.w_delta:
+    - 0.0
+    - 1.0
+    mpc_controller.w_delta_rate:
+    - 0.0
+    - 200.0
+    mpc_controller.w_v:
+    - 0.0
+    - 5.0
+    generic.v_min:
+    - 1.0
+    - 20.0
+    generic.v_max:
+    - 1.0
+    - 20.0
+  steps:
+    pid_controller.kp: 0.2
+    pid_controller.ki: 0.05
+    pid_controller.kd: 0.2
+    pure_pursuit.lookahead_distance: 0.1
+    map_controller.k_lookahead: 0.05
+    map_controller.min_lookahead: 0.1
+    map_controller.max_lookahead: 0.5
+    map_controller.understeer_gradient: 0.0001
+    mpc_controller.w_x: 1.0
+    mpc_controller.w_y: 1.0
+    mpc_controller.w_yaw: 1.0
+    mpc_controller.w_delta: 0.05
+    mpc_controller.w_delta_rate: 0.5
+    mpc_controller.w_v: 0.5
+    geometric_optimizer.curvature_weight: 100.0
+    geometric_optimizer.distance_weight: 0.01
+    generic.v_min: 0.5
+    generic.v_max: 0.5
+  objective:
+    lap_time_weight: 1.0
+    cte_weight: 5.0
+    speed_error_weight: 1.0
+    crash_penalty: 1000000.0
+  workflow:
+    source_cmd: /sim_ws/install/setup.bash
+    use_interactive_shell: false
+    alias_setup_cmd: source ~/.bashrc
+    build_cmd: cd /sim_ws && colcon build
+    simulation_cmd: cd /sim_ws && RUN_SIM
+    simulation_use_interactive_shell: true
+    node_start_order:
+    - cd /sim_ws && ros2 run ruben_f1tenth path_publisher
+    - cd /sim_ws && ros2 run ruben_f1tenth offline_planner_node
+    - cd /sim_ws && ros2 run ruben_f1tenth metrics_evaluator
+    - cd /sim_ws && ros2 run ruben_f1tenth controller_node
+    stop_cmd: ''
+    rebuild_every_iteration: true
+    settle_time_sec: 5.0
+    node_start_gap_sec: 1.0
+    shutdown_grace_sec: 8.0
+    lap_timeout_sec: 200.0
+    metrics_read_timeout_sec: 10.0
+    metrics_stable_wait_sec: 0.4
+    metrics_glob: /sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_*.json

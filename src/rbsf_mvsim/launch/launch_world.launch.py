@@ -1,16 +1,17 @@
-# Generic ROS2 launch file
-# Read: https://mvsimulator.readthedocs.io/en/latest/mvsim_node.html
-
+"""Generic ROS2 launch file for world execution."""
 from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument
 from launch.conditions import IfCondition
-import os
 
 def generate_launch_description():
+    """
+    Generates the launch description for the world execution.
 
-    # args that can be set from the command line or a default will be used
+    Returns:
+        LaunchDescription: The configured launch description.
+    """
     world_file_launch_arg = DeclareLaunchArgument(
         "world_file", description='Path to the *.world.xml file to load')
 
@@ -18,10 +19,10 @@ def generate_launch_description():
         "headless", default_value='False')
 
     do_fake_localization_arg = DeclareLaunchArgument(
-        "do_fake_localization", default_value='True', description='publish fake identity tf "map" -> "odom"')
+        "do_fake_localization", default_value='True', description='Publish fake identity tf "map" -> "odom"')
 
     publish_tf_odom2baselink_arg = DeclareLaunchArgument(
-        "publish_tf_odom2baselink", default_value='True', description='publish tf "odom" -> "base_link"')
+        "publish_tf_odom2baselink", default_value='True', description='Publish tf "odom" -> "base_link"')
 
     force_publish_vehicle_namespace_arg = DeclareLaunchArgument(
         "force_publish_vehicle_namespace", default_value='False',

@@ -21,5 +21,8 @@ import pytest
 @pytest.mark.copyright
 @pytest.mark.linter
 def test_copyright():
+    """
+    Test function.
+    """
     rc = main(argv=['.', 'test'])
     assert rc == 0, 'Found errors'

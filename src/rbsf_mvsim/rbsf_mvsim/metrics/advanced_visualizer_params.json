@@ -1,0 +1,30 @@
+{
+    "metrics_path": "/home/ruben/mvsim_docker/src/rbsf_mvsim/rbsf_mvsim/metrics/",
+    "centerline_path": "/home/ruben/mvsim_docker/src/rbsf_mvsim/rbsf_mvsim/algorithms/centerline.csv",
+    "map_image": "Catalunya_map.png",
+    "map_resolution": 0.06016,
+    "map_origin": [-91.90749878749725, -75.75284314488522],
+    "folders": [
+        {"folder": "test_pid_controller_4", "label": "PID"},
+        {"folder": "test_pure_pursuit_4", "label": "Pure Pursuit"},
+        {"folder": "test_map_controller_4", "label": "MAP"},
+        {"folder": "test_mpc_controller_4", "label": "MPC"}
+    ],
+    "segments": [
+        {
+            "name": "Straight",
+            "start": [-35.214439392089844, -55.149742126464844],
+            "end": [10.854530334472656, 16.45475959777832]
+        },
+        {
+            "name": "Curve",
+            "start": [-48.767696380615234, -52.15336227416992],
+            "end": [-54.80536651611328, -43.164737701416016]
+        },
+        {
+            "name": "S-Bend",
+            "start": [-56.98856735229492, -64.08026885986328],
+            "end": [-35.214439392089844, -55.149742126464844]
+        }
+    ]
+}

@@ -1,0 +1,636 @@
+{
+  "params_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/nodes/params.yaml",
+  "iterations": 20,
+  "tunable_keys": [
+    "geometric_optimizer.v_min",
+    "geometric_optimizer.v_max",
+    "map_controller.k_lookahead",
+    "map_controller.min_lookahead",
+    "map_controller.max_lookahead",
+    "map_controller.understeer_gradient"
+  ],
+  "bounds": {
+    "geometric_optimizer.v_min": [
+      1.0,
+      20.0
+    ],
+    "geometric_optimizer.v_max": [
+      5.0,
+      40.0
+    ],
+    "map_controller.k_lookahead": [
+      0.25,
+      0.75
+    ],
+    "map_controller.min_lookahead": [
+      0.5,
+      1.5
+    ],
+    "map_controller.max_lookahead": [
+      5.0,
+      15.0
+    ],
+    "map_controller.understeer_gradient": [
+      -0.001,
+      0.001
+    ]
+  },
+  "best_params": {
+    "geometric_optimizer.v_min": 1.0427543012112146,
+    "geometric_optimizer.v_max": 12.738954189579257,
+    "map_controller.k_lookahead": 0.5122071317448933,
+    "map_controller.min_lookahead": 0.7376454050725596,
+    "map_controller.max_lookahead": 8.14350678188019,
+    "map_controller.understeer_gradient": 0.00020415633851765134
+  },
+  "best_result": {
+    "objective_score": 54.30939660792927,
+    "score": 54.30939660792927,
+    "lap_completed": true,
+    "lap_time": 53.42681670188904,
+    "avg_cte": 0.09401067218939493,
+    "avg_speed_error": 0.41252654509325987,
+    "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777238008.json",
+    "lap_time_source": "metrics_file.lap_time",
+    "reason": "ok",
+    "objective_breakdown": {
+      "lap_time_term": 53.42681670188904,
+      "cte_term": 0.4700533609469747,
+      "speed_error_term": 0.41252654509325987
+    }
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "params": {
+        "geometric_optimizer.v_min": 1.0823562098770578,
+        "geometric_optimizer.v_max": 11.142580370350704,
+        "map_controller.k_lookahead": 0.5,
+        "map_controller.min_lookahead": 1.0,
+        "map_controller.max_lookahead": 10.0,
+        "map_controller.understeer_gradient": 0.0
+      },
+      "result": {
+        "objective_score": 54.528154424382905,
+        "score": 54.528154424382905,
+        "lap_completed": true,
+        "lap_time": 53.60069537162781,
+        "avg_cte": 0.10323670077923716,
+        "avg_speed_error": 0.4112755488589127,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777236253.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.60069537162781,
+          "cte_term": 0.5161835038961858,
+          "speed_error_term": 0.4112755488589127
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 11.88747222415418,
+        "map_controller.k_lookahead": 0.4381764392917994,
+        "map_controller.min_lookahead": 0.8909507487550961,
+        "map_controller.max_lookahead": 9.47020278056193,
+        "map_controller.understeer_gradient": -0.0007326608933907396
+      },
+      "result": {
+        "objective_score": 54.51390105843481,
+        "score": 54.51390105843481,
+        "lap_completed": true,
+        "lap_time": 53.63164210319519,
+        "avg_cte": 0.0947498983450071,
+        "avg_speed_error": 0.40850946351458395,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777236343.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.63164210319519,
+          "cte_term": 0.47374949172503555,
+          "speed_error_term": 0.40850946351458395
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 2,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 12.679956908398946,
+        "map_controller.k_lookahead": 0.5101951144090798,
+        "map_controller.min_lookahead": 0.7524819383708217,
+        "map_controller.max_lookahead": 8.152249446074881,
+        "map_controller.understeer_gradient": 0.00012299758244806646
+      },
+      "result": {
+        "objective_score": 54.44797221852676,
+        "score": 54.44797221852676,
+        "lap_completed": true,
+        "lap_time": 53.52875089645386,
+        "avg_cte": 0.10118965953625338,
+        "avg_speed_error": 0.41327302439163727,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777236433.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.52875089645386,
+          "cte_term": 0.5059482976812669,
+          "speed_error_term": 0.41327302439163727
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 3,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 13.408631342987963,
+        "map_controller.k_lookahead": 0.5462964552075044,
+        "map_controller.min_lookahead": 0.8860327881662156,
+        "map_controller.max_lookahead": 6.664273984175361,
+        "map_controller.understeer_gradient": -0.001
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 4,
+      "params": {
+        "geometric_optimizer.v_min": 1.245121883886227,
+        "geometric_optimizer.v_max": 13.805962659021233,
+        "map_controller.k_lookahead": 0.5558209777607037,
+        "map_controller.min_lookahead": 0.7062506130751871,
+        "map_controller.max_lookahead": 7.073960561426859,
+        "map_controller.understeer_gradient": -0.001
+      },
+      "result": {
+        "objective_score": 54.64079134041355,
+        "score": 54.64079134041355,
+        "lap_completed": true,
+        "lap_time": 53.54078817367554,
+        "avg_cte": 0.1379690305303057,
+        "avg_speed_error": 0.41015801408648445,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777236626.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.54078817367554,
+          "cte_term": 0.6898451526515286,
+          "speed_error_term": 0.41015801408648445
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 5,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 13.353304215403309,
+        "map_controller.k_lookahead": 0.529839495119272,
+        "map_controller.min_lookahead": 0.7945486102252631,
+        "map_controller.max_lookahead": 8.864808709924457,
+        "map_controller.understeer_gradient": -0.000534606190811891
+      },
+      "result": {
+        "objective_score": 54.52069806447313,
+        "score": 54.52069806447313,
+        "lap_completed": true,
+        "lap_time": 53.560410022735596,
+        "avg_cte": 0.10694209675526008,
+        "avg_speed_error": 0.42557755796123037,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777236715.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.560410022735596,
+          "cte_term": 0.5347104837763004,
+          "speed_error_term": 0.42557755796123037
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 6,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 12.404624971412932,
+        "map_controller.k_lookahead": 0.5261726867365938,
+        "map_controller.min_lookahead": 0.7033168931119889,
+        "map_controller.max_lookahead": 7.849672624767619,
+        "map_controller.understeer_gradient": -0.00041863557624601064
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 7,
+      "params": {
+        "geometric_optimizer.v_min": 1.1115224235146686,
+        "geometric_optimizer.v_max": 12.269411188464437,
+        "map_controller.k_lookahead": 0.5205467632193375,
+        "map_controller.min_lookahead": 0.7785019259236262,
+        "map_controller.max_lookahead": 8.3390171434017,
+        "map_controller.understeer_gradient": -9.391338771469728e-05
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 8,
+      "params": {
+        "geometric_optimizer.v_min": 1.1267992948512588,
+        "geometric_optimizer.v_max": 12.964224739775899,
+        "map_controller.k_lookahead": 0.5189600968179241,
+        "map_controller.min_lookahead": 0.7319517371852591,
+        "map_controller.max_lookahead": 7.89686768434268,
+        "map_controller.understeer_gradient": -9.767296608796812e-06
+      },
+      "result": {
+        "objective_score": 54.51070988000829,
+        "score": 54.51070988000829,
+        "lap_completed": true,
+        "lap_time": 53.52082371711731,
+        "avg_cte": 0.11291546014242648,
+        "avg_speed_error": 0.4253088621788507,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237007.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.52082371711731,
+          "cte_term": 0.5645773007121324,
+          "speed_error_term": 0.4253088621788507
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 9,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 12.836036533927414,
+        "map_controller.k_lookahead": 0.5164702728690914,
+        "map_controller.min_lookahead": 0.7671319254747965,
+        "map_controller.max_lookahead": 7.984229858925626,
+        "map_controller.understeer_gradient": -4.522513983071859e-05
+      },
+      "result": {
+        "objective_score": 54.4686329608692,
+        "score": 54.4686329608692,
+        "lap_completed": true,
+        "lap_time": 53.508525133132935,
+        "avg_cte": 0.10714300768934337,
+        "avg_speed_error": 0.42439278928954927,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237097.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.508525133132935,
+          "cte_term": 0.5357150384467169,
+          "speed_error_term": 0.42439278928954927
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 10,
+      "params": {
+        "geometric_optimizer.v_min": 1.063207109168379,
+        "geometric_optimizer.v_max": 12.740897289314606,
+        "map_controller.k_lookahead": 0.5134743427385717,
+        "map_controller.min_lookahead": 0.7379948512129999,
+        "map_controller.max_lookahead": 8.298921186088425,
+        "map_controller.understeer_gradient": 2.2583410536877453e-05
+      },
+      "result": {
+        "objective_score": 54.51492443888772,
+        "score": 54.51492443888772,
+        "lap_completed": true,
+        "lap_time": 53.4829843044281,
+        "avg_cte": 0.12123181446110662,
+        "avg_speed_error": 0.4257810621540872,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237187.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.4829843044281,
+          "cte_term": 0.6061590723055331,
+          "speed_error_term": 0.4257810621540872
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 11,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 12.773543835679115,
+        "map_controller.k_lookahead": 0.5079182038858344,
+        "map_controller.min_lookahead": 0.7452318443114444,
+        "map_controller.max_lookahead": 8.075593564317646,
+        "map_controller.understeer_gradient": 0.00015923321098025578
+      },
+      "result": {
+        "objective_score": 54.405415356974636,
+        "score": 54.405415356974636,
+        "lap_completed": true,
+        "lap_time": 53.49820566177368,
+        "avg_cte": 0.09886511272440693,
+        "avg_speed_error": 0.41288413157891724,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237277.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.49820566177368,
+          "cte_term": 0.4943255636220346,
+          "speed_error_term": 0.41288413157891724
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 12,
+      "params": {
+        "geometric_optimizer.v_min": 1.05289432106528,
+        "geometric_optimizer.v_max": 12.830281642693881,
+        "map_controller.k_lookahead": 0.5026315044184685,
+        "map_controller.min_lookahead": 0.7407381545796796,
+        "map_controller.max_lookahead": 8.176571372264933,
+        "map_controller.understeer_gradient": 0.00011101704728172843
+      },
+      "result": {
+        "objective_score": 54.429541222904724,
+        "score": 54.429541222904724,
+        "lap_completed": true,
+        "lap_time": 53.51111817359924,
+        "avg_cte": 0.09863051103233209,
+        "avg_speed_error": 0.4252704941438206,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237367.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.51111817359924,
+          "cte_term": 0.49315255516166046,
+          "speed_error_term": 0.4252704941438206
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 13,
+      "params": {
+        "geometric_optimizer.v_min": 1.0388555921826785,
+        "geometric_optimizer.v_max": 12.73245214615038,
+        "map_controller.k_lookahead": 0.5118507981288529,
+        "map_controller.min_lookahead": 0.7387170164255222,
+        "map_controller.max_lookahead": 8.155899009482036,
+        "map_controller.understeer_gradient": 0.0002096191771125961
+      },
+      "result": {
+        "objective_score": 54.37936311794212,
+        "score": 54.37936311794212,
+        "lap_completed": true,
+        "lap_time": 53.46875047683716,
+        "avg_cte": 0.1002642774343424,
+        "avg_speed_error": 0.40929125393325044,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237458.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.46875047683716,
+          "cte_term": 0.5013213871717119,
+          "speed_error_term": 0.40929125393325044
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 14,
+      "params": {
+        "geometric_optimizer.v_min": 1.0572005889529286,
+        "geometric_optimizer.v_max": 12.699128528322074,
+        "map_controller.k_lookahead": 0.5086358407971688,
+        "map_controller.min_lookahead": 0.7322863254523153,
+        "map_controller.max_lookahead": 8.122163758131519,
+        "map_controller.understeer_gradient": 0.0001665520456545903
+      },
+      "result": {
+        "objective_score": 54.4820911285241,
+        "score": 54.4820911285241,
+        "lap_completed": true,
+        "lap_time": 53.48853039741516,
+        "avg_cte": 0.11376433406941118,
+        "avg_speed_error": 0.42473906076187956,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237548.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.48853039741516,
+          "cte_term": 0.5688216703470559,
+          "speed_error_term": 0.42473906076187956
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 15,
+      "params": {
+        "geometric_optimizer.v_min": 1.01074023477507,
+        "geometric_optimizer.v_max": 12.690509487449068,
+        "map_controller.k_lookahead": 0.5142680805879752,
+        "map_controller.min_lookahead": 0.7344190357454333,
+        "map_controller.max_lookahead": 8.186627295931366,
+        "map_controller.understeer_gradient": 0.00026369359352558974
+      },
+      "result": {
+        "objective_score": 54.54219280323806,
+        "score": 54.54219280323806,
+        "lap_completed": true,
+        "lap_time": 53.54043006896973,
+        "avg_cte": 0.11534161322723102,
+        "avg_speed_error": 0.4250546681321782,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237638.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.54043006896973,
+          "cte_term": 0.5767080661361551,
+          "speed_error_term": 0.4250546681321782
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 16,
+      "params": {
+        "geometric_optimizer.v_min": 1.030252714141059,
+        "geometric_optimizer.v_max": 12.757184095596301,
+        "map_controller.k_lookahead": 0.5132505683107065,
+        "map_controller.min_lookahead": 0.7353201212685871,
+        "map_controller.max_lookahead": 8.139669249669696,
+        "map_controller.understeer_gradient": 0.0002472713834237848
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 17,
+      "params": {
+        "geometric_optimizer.v_min": 1.0312698211768205,
+        "geometric_optimizer.v_max": 12.711451785718957,
+        "map_controller.k_lookahead": 0.5109167002394156,
+        "map_controller.min_lookahead": 0.7406677849583851,
+        "map_controller.max_lookahead": 8.136786437968492,
+        "map_controller.understeer_gradient": 0.00019846148887291221
+      },
+      "result": {
+        "objective_score": 54.45285353421604,
+        "score": 54.45285353421604,
+        "lap_completed": true,
+        "lap_time": 53.44007635116577,
+        "avg_cte": 0.11772186419592143,
+        "avg_speed_error": 0.4241678620706619,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237829.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.44007635116577,
+          "cte_term": 0.5886093209796072,
+          "speed_error_term": 0.4241678620706619
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 18,
+      "params": {
+        "geometric_optimizer.v_min": 1.028436354278805,
+        "geometric_optimizer.v_max": 12.723000176555564,
+        "map_controller.k_lookahead": 0.5125468521027894,
+        "map_controller.min_lookahead": 0.7407064545591977,
+        "map_controller.max_lookahead": 8.143430318711294,
+        "map_controller.understeer_gradient": 0.00022047398040883309
+      },
+      "result": {
+        "objective_score": 54.435832245172655,
+        "score": 54.435832245172655,
+        "lap_completed": true,
+        "lap_time": 53.491655111312866,
+        "avg_cte": 0.10396161854213025,
+        "avg_speed_error": 0.4243690411491363,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777237918.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.491655111312866,
+          "cte_term": 0.5198080927106512,
+          "speed_error_term": 0.4243690411491363
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 19,
+      "params": {
+        "geometric_optimizer.v_min": 1.0427543012112146,
+        "geometric_optimizer.v_max": 12.738954189579257,
+        "map_controller.k_lookahead": 0.5122071317448933,
+        "map_controller.min_lookahead": 0.7376454050725596,
+        "map_controller.max_lookahead": 8.14350678188019,
+        "map_controller.understeer_gradient": 0.00020415633851765134
+      },
+      "result": {
+        "objective_score": 54.30939660792927,
+        "score": 54.30939660792927,
+        "lap_completed": true,
+        "lap_time": 53.42681670188904,
+        "avg_cte": 0.09401067218939493,
+        "avg_speed_error": 0.41252654509325987,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777238008.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.42681670188904,
+          "cte_term": 0.4700533609469747,
+          "speed_error_term": 0.41252654509325987
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 20,
+      "params": {
+        "geometric_optimizer.v_min": 1.048231293569606,
+        "geometric_optimizer.v_max": 12.732871477233196,
+        "map_controller.k_lookahead": 0.5114691061210836,
+        "map_controller.min_lookahead": 0.7364493146063552,
+        "map_controller.max_lookahead": 8.133634976728436,
+        "map_controller.understeer_gradient": 0.00019237146704741882
+      },
+      "result": {
+        "objective_score": 54.55441237247089,
+        "score": 54.55441237247089,
+        "lap_completed": true,
+        "lap_time": 53.52040219306946,
+        "avg_cte": 0.12147012423692649,
+        "avg_speed_error": 0.4266595582168043,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777238097.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.52040219306946,
+          "cte_term": 0.6073506211846325,
+          "speed_error_term": 0.4266595582168043
+        }
+      },
+      "status": "sin mejora"
+    }
+  ],
+  "timestamp": 1777238099
+}

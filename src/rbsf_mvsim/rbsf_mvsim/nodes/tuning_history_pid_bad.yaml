@@ -1,0 +1,2882 @@
+metadata:
+  tunable_keys:
+  - pid_controller.kp
+  - pid_controller.ki
+  - pid_controller.kd
+  - geometric_optimizer.curvature_weight
+  - geometric_optimizer.distance_weight
+  - generic.v_min
+  - generic.v_max
+  bounds:
+    pid_controller.kp:
+      low: 0.0
+      high: 5.0
+    pid_controller.ki:
+      low: 0.0
+      high: 2.0
+    pid_controller.kd:
+      low: 0.0
+      high: 5.0
+    geometric_optimizer.curvature_weight:
+      low: 0.0
+      high: 2000.0
+    geometric_optimizer.distance_weight:
+      low: 0.0
+      high: 10.0
+    generic.v_min:
+      low: 1.0
+      high: 20.0
+    generic.v_max:
+      low: 1.0
+      high: 20.0
+tuning_history:
+- iteration: 1
+  current_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  current_score: 994.1221146703102
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 2
+  current_params:
+    pid_controller.kp: 3.9827149343011654
+    pid_controller.ki: 0.36686957973232764
+    pid_controller.kd: 3.8984550013638475
+    geometric_optimizer.curvature_weight: 1193.7003158929742
+    geometric_optimizer.distance_weight: 4.4583275285359125
+    generic.v_min: 2.8995234005420554
+    generic.v_max: 9.725728947351477
+  current_score: 996.7043997975641
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 3
+  current_params:
+    pid_controller.kp: 1.6685430556951095
+    pid_controller.ki: 0.2857336358438816
+    pid_controller.kd: 3.254442364744265
+    geometric_optimizer.curvature_weight: 112.82315805420053
+    geometric_optimizer.distance_weight: 7.2199877226682485
+    generic.v_min: 18.832501471299256
+    generic.v_max: 1.0147965509792722
+  current_score: 1010.4079135601221
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 4
+  current_params:
+    pid_controller.kp: 4.961057796456089
+    pid_controller.ki: 1.2349630192554333
+    pid_controller.kd: 3.058265802441405
+    geometric_optimizer.curvature_weight: 14.132610439434815
+    geometric_optimizer.distance_weight: 0.2306242504141576
+    generic.v_min: 10.970718544909396
+    generic.v_max: 8.597358462589856
+  current_score: 1007.1532431522946
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 5
+  current_params:
+    pid_controller.kp: 0.23332831606807716
+    pid_controller.ki: 1.9475110376829188
+    pid_controller.kd: 1.1638567021515214
+    geometric_optimizer.curvature_weight: 181.21286906564163
+    geometric_optimizer.distance_weight: 6.183860093330874
+    generic.v_min: 8.266777834076095
+    generic.v_max: 19.68138683032898
+  current_score: 999.9256944494037
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 6
+  current_params:
+    pid_controller.kp: 2.3338144662399003
+    pid_controller.ki: 1.7198808134726415
+    pid_controller.kd: 3.401537692938899
+    geometric_optimizer.curvature_weight: 900.9985039390862
+    geometric_optimizer.distance_weight: 0.1326496115986653
+    generic.v_min: 18.901833358012208
+    generic.v_max: 11.702476139065249
+  current_score: 1015.914540867753
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 7
+  current_params:
+    pid_controller.kp: 1.927082512699581
+    pid_controller.ki: 0.031932504440428396
+    pid_controller.kd: 1.1544691281107453
+    geometric_optimizer.curvature_weight: 482.05093205202354
+    geometric_optimizer.distance_weight: 6.832635188254583
+    generic.v_min: 12.5899364978698
+    generic.v_max: 16.830703322987127
+  current_score: 1002.9875895052742
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 8
+  current_params:
+    pid_controller.kp: 0.8668232675388605
+    pid_controller.ki: 0.7821212151464818
+    pid_controller.kd: 0.9111804389403118
+    geometric_optimizer.curvature_weight: 1510.7228206353054
+    geometric_optimizer.distance_weight: 4.251558744912448
+    generic.v_min: 4.950891594495589
+    generic.v_max: 11.78630622857984
+  current_score: 1001.5069420385721
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 9
+  current_params:
+    pid_controller.kp: 0.15656646227779294
+    pid_controller.ki: 1.6845695491899975
+    pid_controller.kd: 2.248770666848829
+    geometric_optimizer.curvature_weight: 790.3004720036291
+    geometric_optimizer.distance_weight: 9.266588657937945
+    generic.v_min: 14.818167921271998
+    generic.v_max: 7.204274607310873
+  current_score: 1003.0985726009167
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 10
+  current_params:
+    pid_controller.kp: 2.8522198720269976
+    pid_controller.ki: 1.0416685200516476
+    pid_controller.kd: 4.805860121746747
+    geometric_optimizer.curvature_weight: 1689.0676973563031
+    geometric_optimizer.distance_weight: 7.47320110137381
+    generic.v_min: 11.254150515392517
+    generic.v_max: 12.148272147613119
+  current_score: 1007.3157388401156
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 11
+  current_params:
+    pid_controller.kp: 4.826276536320691
+    pid_controller.ki: 1.2140684953733696
+    pid_controller.kd: 1.379995910112717
+    geometric_optimizer.curvature_weight: 592.5470114081648
+    geometric_optimizer.distance_weight: 1.6526693906300252
+    generic.v_min: 1.2970917280826848
+    generic.v_max: 9.044628133421025
+  current_score: 1001.0699566602523
+  best_params:
+    pid_controller.kp: 1.0
+    pid_controller.ki: 0.005
+    pid_controller.kd: 0.001
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 994.1221146703102
+- iteration: 12
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 1.0
+  current_score: 939.0951393004202
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 1.0
+  best_score: 939.0951393004202
+- iteration: 13
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 0.0
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 1.0
+  current_score: 992.1606752062182
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 1.0
+  best_score: 939.0951393004202
+- iteration: 14
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  current_score: 936.3313733943645
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 15
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  current_score: 976.8067300628713
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 16
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 2.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  current_score: 1001.2969855720977
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 17
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  current_score: 989.7778340885218
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 18
+  current_params:
+    pid_controller.kp: 0.022516232723312494
+    pid_controller.ki: 0.18391173123542595
+    pid_controller.kd: 4.6831230423282975
+    geometric_optimizer.curvature_weight: 1795.8925103654324
+    geometric_optimizer.distance_weight: 2.191961770536423
+    generic.v_min: 10.321899151062231
+    generic.v_max: 11.271501021699098
+  current_score: 996.6873706108714
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 19
+  current_params:
+    pid_controller.kp: 3.1155129673078004
+    pid_controller.ki: 0.012161993778900596
+    pid_controller.kd: 4.723201296257362
+    geometric_optimizer.curvature_weight: 475.03394361759956
+    geometric_optimizer.distance_weight: 6.075413783303749
+    generic.v_min: 1.1227349903645543
+    generic.v_max: 5.542616248447903
+  current_score: 997.992623346068
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 20
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 1.0
+  current_score: 943.4093053909418
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 21
+  current_params:
+    pid_controller.kp: 5.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 0.0
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 7.981449627259184
+    generic.v_min: 20.0
+    generic.v_max: 1.289794967733414
+  current_score: 1016.676238486903
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 22
+  current_params:
+    pid_controller.kp: 4.030139862188405
+    pid_controller.ki: 1.9475321455793833
+    pid_controller.kd: 4.941278522580269
+    geometric_optimizer.curvature_weight: 1749.7142510138376
+    geometric_optimizer.distance_weight: 2.729960524843034
+    generic.v_min: 1.7387030476465413
+    generic.v_max: 3.258511388733271
+  current_score: 1001.3772577115133
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 23
+  current_params:
+    pid_controller.kp: 0.08244222376905809
+    pid_controller.ki: 0.8642441938870276
+    pid_controller.kd: 4.6948901573583965
+    geometric_optimizer.curvature_weight: 222.46392299712687
+    geometric_optimizer.distance_weight: 9.067229417288935
+    generic.v_min: 2.2430306758956124
+    generic.v_max: 5.888190810976212
+  current_score: 997.0778255071269
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 24
+  current_params:
+    pid_controller.kp: 4.72769805654608
+    pid_controller.ki: 1.8825688344745417
+    pid_controller.kd: 0.26406384120835463
+    geometric_optimizer.curvature_weight: 617.2022355331933
+    geometric_optimizer.distance_weight: 5.646444164363716
+    generic.v_min: 19.374616010020592
+    generic.v_max: 15.697296041973663
+  current_score: 1016.6832120752784
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 25
+  current_params:
+    pid_controller.kp: 4.733018502858724
+    pid_controller.ki: 0.01230635207892217
+    pid_controller.kd: 0.17705779750414322
+    geometric_optimizer.curvature_weight: 1578.1182188471237
+    geometric_optimizer.distance_weight: 2.4224275384779554
+    generic.v_min: 2.4036227403479127
+    generic.v_max: 12.302869345738939
+  current_score: 997.0875460821854
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 26
+  current_params:
+    pid_controller.kp: 0.04241572694560936
+    pid_controller.ki: 0.1350175263606819
+    pid_controller.kd: 4.966426831013137
+    geometric_optimizer.curvature_weight: 68.84699855192935
+    geometric_optimizer.distance_weight: 1.7440248422887408
+    generic.v_min: 7.168651418673737
+    generic.v_max: 15.55281711618585
+  current_score: 987.947616750025
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 27
+  current_params:
+    pid_controller.kp: 0.15608474403710773
+    pid_controller.ki: 0.2377794974559227
+    pid_controller.kd: 0.12526636422346973
+    geometric_optimizer.curvature_weight: 1996.4342898429418
+    geometric_optimizer.distance_weight: 7.564126960928194
+    generic.v_min: 19.77934650729544
+    generic.v_max: 6.173924158319561
+  current_score: 1011.3986836726118
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 28
+  current_params:
+    pid_controller.kp: 1.1245240687683102
+    pid_controller.ki: 1.9574939046281308
+    pid_controller.kd: 0.027067475591598392
+    geometric_optimizer.curvature_weight: 357.5316779216101
+    geometric_optimizer.distance_weight: 9.52700254827911
+    generic.v_min: 1.038623061606065
+    generic.v_max: 11.766405350939714
+  current_score: 998.1669645662989
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 29
+  current_params:
+    pid_controller.kp: 4.8591191555331665
+    pid_controller.ki: 1.9949006741082775
+    pid_controller.kd: 0.4017571391785974
+    geometric_optimizer.curvature_weight: 125.82048021064932
+    geometric_optimizer.distance_weight: 1.4563685663516481
+    generic.v_min: 2.508028064482673
+    generic.v_max: 3.0261044711866534
+  current_score: 1000.1187460938736
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 30
+  current_params:
+    pid_controller.kp: 4.916957904597142
+    pid_controller.ki: 0.04733859671527686
+    pid_controller.kd: 4.8896083511002635
+    geometric_optimizer.curvature_weight: 795.6777601377242
+    geometric_optimizer.distance_weight: 0.7280555334270845
+    generic.v_min: 8.746264055415619
+    generic.v_max: 12.319918867622286
+  current_score: 1006.3477816150162
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 31
+  current_params:
+    pid_controller.kp: 0.12125233634358748
+    pid_controller.ki: 0.19504836311814505
+    pid_controller.kd: 0.5659475474451315
+    geometric_optimizer.curvature_weight: 132.01591175031504
+    geometric_optimizer.distance_weight: 8.8046873981787
+    generic.v_min: 1.5885072975892625
+    generic.v_max: 15.234260664824602
+  current_score: 996.5169118393529
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 32
+  current_params:
+    pid_controller.kp: 0.15505120573745926
+    pid_controller.ki: 1.960303395632975
+    pid_controller.kd: 0.7594990924376289
+    geometric_optimizer.curvature_weight: 1881.313354690449
+    geometric_optimizer.distance_weight: 4.501347289936881
+    generic.v_min: 19.975578908477424
+    generic.v_max: 13.18374921745091
+  current_score: 1011.588284387517
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 33
+  current_params:
+    pid_controller.kp: 4.910081245453675
+    pid_controller.ki: 1.9605328320724738
+    pid_controller.kd: 4.34006064110063
+    geometric_optimizer.curvature_weight: 1817.865985641701
+    geometric_optimizer.distance_weight: 6.739553482873689
+    generic.v_min: 19.977848252209444
+    generic.v_max: 18.121529988159445
+  current_score: 1016.4531066711771
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 34
+  current_params:
+    pid_controller.kp: 0.2765550277159657
+    pid_controller.ki: 1.4802111387273718
+    pid_controller.kd: 4.95721847346975
+    geometric_optimizer.curvature_weight: 1922.1959629571804
+    geometric_optimizer.distance_weight: 2.5425659828588683
+    generic.v_min: 1.482927027938977
+    generic.v_max: 4.6312862358848195
+  current_score: 1004.7738111740338
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 35
+  current_params:
+    pid_controller.kp: 0.03901111566050331
+    pid_controller.ki: 0.1451149569704331
+    pid_controller.kd: 4.8936164141852565
+    geometric_optimizer.curvature_weight: 402.883205206172
+    geometric_optimizer.distance_weight: 1.6110525750428242
+    generic.v_min: 18.65832689874906
+    generic.v_max: 7.127731815999742
+  current_score: 998.2862230759803
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 36
+  current_params:
+    pid_controller.kp: 4.9232350192802325
+    pid_controller.ki: 0.049428180903603694
+    pid_controller.kd: 4.973427670323169
+    geometric_optimizer.curvature_weight: 706.4797141193483
+    geometric_optimizer.distance_weight: 1.0846982028021137
+    generic.v_min: 19.795908179310732
+    generic.v_max: 17.625722428551416
+  current_score: 1013.867945388134
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 37
+  current_params:
+    pid_controller.kp: 0.5675468933517159
+    pid_controller.ki: 0.017895988052746507
+    pid_controller.kd: 4.8588549149391165
+    geometric_optimizer.curvature_weight: 1600.0163775350388
+    geometric_optimizer.distance_weight: 1.7561150270062122
+    generic.v_min: 1.2335899597819686
+    generic.v_max: 6.3176017353523335
+  current_score: 971.0074101925967
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 38
+  current_params:
+    pid_controller.kp: 0.02184599009699806
+    pid_controller.ki: 0.2425158773471366
+    pid_controller.kd: 4.966209607532664
+    geometric_optimizer.curvature_weight: 9.932251505557101
+    geometric_optimizer.distance_weight: 9.013765103685552
+    generic.v_min: 1.3418312272271418
+    generic.v_max: 17.651863051889254
+  current_score: 991.8111628417487
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 39
+  current_params:
+    pid_controller.kp: 4.84844907608858
+    pid_controller.ki: 0.010751410074955505
+    pid_controller.kd: 4.616011816889532
+    geometric_optimizer.curvature_weight: 435.0100329015106
+    geometric_optimizer.distance_weight: 0.8007071052173521
+    generic.v_min: 1.0902612332940838
+    generic.v_max: 10.456028003288294
+  current_score: 998.7948078868205
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 40
+  current_params:
+    pid_controller.kp: 0.015401583085193352
+    pid_controller.ki: 0.7009762651750592
+    pid_controller.kd: 4.440789402869167
+    geometric_optimizer.curvature_weight: 1044.66141736191
+    geometric_optimizer.distance_weight: 0.22740818711409652
+    generic.v_min: 2.397451030889953
+    generic.v_max: 2.3944720568814133
+  current_score: 999.8114110566315
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 41
+  current_params:
+    pid_controller.kp: 4.9680306577795035
+    pid_controller.ki: 0.7058092844512297
+    pid_controller.kd: 2.0878120914980642
+    geometric_optimizer.curvature_weight: 352.85929678927215
+    geometric_optimizer.distance_weight: 8.018572532980672
+    generic.v_min: 19.171297534012993
+    generic.v_max: 13.831428221933095
+  current_score: 1010.011288755663
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 42
+  current_params:
+    pid_controller.kp: 0.0006667180583469491
+    pid_controller.ki: 1.1543523076492674
+    pid_controller.kd: 0.0026769076816568487
+    geometric_optimizer.curvature_weight: 1074.202833003753
+    geometric_optimizer.distance_weight: 6.88958955725573
+    generic.v_min: 19.75376465918664
+    generic.v_max: 13.702701370927025
+  current_score: 1013.4493533804092
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 43
+  current_params:
+    pid_controller.kp: 4.606600392222221
+    pid_controller.ki: 0.6097295837072866
+    pid_controller.kd: 0.01011434420922608
+    geometric_optimizer.curvature_weight: 482.01376535134887
+    geometric_optimizer.distance_weight: 7.651910639982427
+    generic.v_min: 1.2326424898164614
+    generic.v_max: 3.054225977124779
+  current_score: 1000.1979752190296
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 44
+  current_params:
+    pid_controller.kp: 0.10162107026160662
+    pid_controller.ki: 1.3285318244625874
+    pid_controller.kd: 0.08477566540454452
+    geometric_optimizer.curvature_weight: 1600.200081831717
+    geometric_optimizer.distance_weight: 9.207531366867046
+    generic.v_min: 1.9839011439816967
+    generic.v_max: 15.103103460517948
+  current_score: 997.9330263932873
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 45
+  current_params:
+    pid_controller.kp: 4.916592321833663
+    pid_controller.ki: 1.9936329213087278
+    pid_controller.kd: 4.8541429498033555
+    geometric_optimizer.curvature_weight: 1012.5946781476705
+    geometric_optimizer.distance_weight: 2.4266597438855313
+    generic.v_min: 1.5735771238736243
+    generic.v_max: 11.475237512970402
+  current_score: 1000.2909107016759
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 46
+  current_params:
+    pid_controller.kp: 0.10620565930705596
+    pid_controller.ki: 0.02115713522268581
+    pid_controller.kd: 4.720492807377595
+    geometric_optimizer.curvature_weight: 1920.7598379867318
+    geometric_optimizer.distance_weight: 0.5657936874329362
+    generic.v_min: 1.2857658275011274
+    generic.v_max: 18.63701719476562
+  current_score: 980.8824948035362
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 47
+  current_params:
+    pid_controller.kp: 4.817851016220593
+    pid_controller.ki: 1.2800700711625146
+    pid_controller.kd: 4.9261207202122925
+    geometric_optimizer.curvature_weight: 1984.0740605965084
+    geometric_optimizer.distance_weight: 0.10849802892903827
+    generic.v_min: 1.3021344103327759
+    generic.v_max: 6.088484982153566
+  current_score: 997.7216873863954
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 48
+  current_params:
+    pid_controller.kp: 0.49291751038989706
+    pid_controller.ki: 1.9715361714818675
+    pid_controller.kd: 4.986503817351843
+    geometric_optimizer.curvature_weight: 63.79742053479133
+    geometric_optimizer.distance_weight: 5.144888152495206
+    generic.v_min: 17.83093724638527
+    generic.v_max: 7.022305833515983
+  current_score: 1014.836954481924
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 49
+  current_params:
+    pid_controller.kp: 4.859903891582118
+    pid_controller.ki: 1.3530448853728458
+    pid_controller.kd: 0.027103522377182058
+    geometric_optimizer.curvature_weight: 1996.0715440001818
+    geometric_optimizer.distance_weight: 0.45036450643996867
+    generic.v_min: 2.6525293845822264
+    generic.v_max: 17.408107852261164
+  current_score: 1001.4245494607372
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 50
+  current_params:
+    pid_controller.kp: 0.43144035802065
+    pid_controller.ki: 0.023240345954647083
+    pid_controller.kd: 4.61215951220545
+    geometric_optimizer.curvature_weight: 1861.8972555592275
+    geometric_optimizer.distance_weight: 8.120980136781187
+    generic.v_min: 6.985584434275539
+    generic.v_max: 1.1349166525181502
+  current_score: 1006.212205685332
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 51
+  current_params:
+    pid_controller.kp: 0.026071278039909166
+    pid_controller.ki: 0.02388220027065225
+    pid_controller.kd: 0.8285557960485957
+    geometric_optimizer.curvature_weight: 388.837829515262
+    geometric_optimizer.distance_weight: 0.005754038756361491
+    generic.v_min: 5.909109913840825
+    generic.v_max: 1.8735716267696925
+  current_score: 984.7052104157244
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 52
+  current_params:
+    pid_controller.kp: 4.19871450183224
+    pid_controller.ki: 1.9493424426186687
+    pid_controller.kd: 0.0817130769707436
+    geometric_optimizer.curvature_weight: 1815.5761241457249
+    geometric_optimizer.distance_weight: 8.853191272869175
+    generic.v_min: 7.675332253708569
+    generic.v_max: 12.577571100936012
+  current_score: 1000.6288492750978
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 53
+  current_params:
+    pid_controller.kp: 0.09604296857346485
+    pid_controller.ki: 1.3809736990280832
+    pid_controller.kd: 0.1853329928558423
+    geometric_optimizer.curvature_weight: 176.86054921072804
+    geometric_optimizer.distance_weight: 1.7668146947444066
+    generic.v_min: 1.214528029644515
+    generic.v_max: 2.319290427548802
+  current_score: 1001.4857069288403
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 54
+  current_params:
+    pid_controller.kp: 4.330164583797421
+    pid_controller.ki: 1.5260518618421623
+    pid_controller.kd: 4.703009891239902
+    geometric_optimizer.curvature_weight: 0.7007989814737937
+    geometric_optimizer.distance_weight: 9.074712517618122
+    generic.v_min: 1.8884063568052678
+    generic.v_max: 6.800352883099088
+  current_score: 1002.8947686628676
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 55
+  current_params:
+    pid_controller.kp: 0.004255851673516387
+    pid_controller.ki: 1.8657694131540161
+    pid_controller.kd: 0.4576282479298011
+    geometric_optimizer.curvature_weight: 1986.7093605852137
+    geometric_optimizer.distance_weight: 9.550043543039942
+    generic.v_min: 1.9319646611265013
+    generic.v_max: 14.225035941445213
+  current_score: 996.335816818517
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 56
+  current_params:
+    pid_controller.kp: 0.4735552458552218
+    pid_controller.ki: 0.005033752675699167
+    pid_controller.kd: 3.2272504842158383
+    geometric_optimizer.curvature_weight: 161.78601127472695
+    geometric_optimizer.distance_weight: 1.0481746579877373
+    generic.v_min: 1.0896060401794665
+    generic.v_max: 19.109294669855277
+  current_score: 957.6672607990682
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 57
+  current_params:
+    pid_controller.kp: 2.403323790043025
+    pid_controller.ki: 0.44737451157070784
+    pid_controller.kd: 4.943023290148357
+    geometric_optimizer.curvature_weight: 73.16146347890464
+    geometric_optimizer.distance_weight: 1.0905360743194061
+    generic.v_min: 1.543863915593804
+    generic.v_max: 6.766881619453862
+  current_score: 995.9403933642051
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 58
+  current_params:
+    pid_controller.kp: 0.12575909957422363
+    pid_controller.ki: 0.9872035071520175
+    pid_controller.kd: 4.9463415807538516
+    geometric_optimizer.curvature_weight: 1812.0629594666689
+    geometric_optimizer.distance_weight: 1.3887182280725487
+    generic.v_min: 16.294289542076086
+    generic.v_max: 3.4517314496851803
+  current_score: 1010.1566656148517
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 59
+  current_params:
+    pid_controller.kp: 0.3288569561422195
+    pid_controller.ki: 0.01621119848850028
+    pid_controller.kd: 0.24162335966512966
+    geometric_optimizer.curvature_weight: 39.89992194261061
+    geometric_optimizer.distance_weight: 0.16148406756508862
+    generic.v_min: 16.701800981347468
+    generic.v_max: 7.54772254798799
+  current_score: 996.8508628737801
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 60
+  current_params:
+    pid_controller.kp: 4.774644280912156
+    pid_controller.ki: 1.1724480283236332
+    pid_controller.kd: 2.9370772157443796
+    geometric_optimizer.curvature_weight: 1957.6772976581206
+    geometric_optimizer.distance_weight: 0.20194857615174702
+    generic.v_min: 19.770647775512277
+    generic.v_max: 13.726986658058351
+  current_score: 1015.715137966009
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 61
+  current_params:
+    pid_controller.kp: 2.4436376135984794
+    pid_controller.ki: 1.9565524398107381
+    pid_controller.kd: 0.2313121941370844
+    geometric_optimizer.curvature_weight: 1748.121623390964
+    geometric_optimizer.distance_weight: 0.34283123831135304
+    generic.v_min: 2.0181531168299864
+    generic.v_max: 18.8206856557714
+  current_score: 999.485804404075
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 62
+  current_params:
+    pid_controller.kp: 0.1531869026704841
+    pid_controller.ki: 0.8542282067886975
+    pid_controller.kd: 0.06116645021476631
+    geometric_optimizer.curvature_weight: 31.456826725172032
+    geometric_optimizer.distance_weight: 0.787623782477679
+    generic.v_min: 12.241208440452683
+    generic.v_max: 13.123580038994508
+  current_score: 1005.6367759251858
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 63
+  current_params:
+    pid_controller.kp: 4.730326832680505
+    pid_controller.ki: 0.6594718516688843
+    pid_controller.kd: 3.9557047342086262
+    geometric_optimizer.curvature_weight: 1850.6575109025464
+    geometric_optimizer.distance_weight: 9.85622977613396
+    generic.v_min: 1.1587577862506095
+    generic.v_max: 9.090327536118304
+  current_score: 996.6977927419673
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 64
+  current_params:
+    pid_controller.kp: 5.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  current_score: 1003.4812969118168
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 65
+  current_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 12.076769681635493
+  current_score: 974.4168707958556
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 66
+  current_params:
+    pid_controller.kp: 2.491400374263108
+    pid_controller.ki: 0.036317418849480594
+    pid_controller.kd: 0.10349182440394568
+    geometric_optimizer.curvature_weight: 737.5386499443733
+    geometric_optimizer.distance_weight: 0.5406547043472189
+    generic.v_min: 1.760596257034228
+    generic.v_max: 3.85724402598744
+  current_score: 998.1376283750783
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 67
+  current_params:
+    pid_controller.kp: 0.20665334721651
+    pid_controller.ki: 0.5668788907331425
+    pid_controller.kd: 0.0670538113396091
+    geometric_optimizer.curvature_weight: 369.71904778674497
+    geometric_optimizer.distance_weight: 0.001153017140842483
+    generic.v_min: 1.2853479851805447
+    generic.v_max: 17.92334530642673
+  current_score: 997.6635048724884
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 68
+  current_params:
+    pid_controller.kp: 0.030961218809571485
+    pid_controller.ki: 0.03644700551048597
+    pid_controller.kd: 4.983513559682489
+    geometric_optimizer.curvature_weight: 86.53073083388075
+    geometric_optimizer.distance_weight: 7.2289387896316795
+    generic.v_min: 7.952488548425313
+    generic.v_max: 17.875142967090635
+  current_score: 993.3900757765475
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 69
+  current_params:
+    pid_controller.kp: 0.26585371586900947
+    pid_controller.ki: 1.937453836597871
+    pid_controller.kd: 4.548811228883769
+    geometric_optimizer.curvature_weight: 1985.6781045222538
+    geometric_optimizer.distance_weight: 2.860888226151848
+    generic.v_min: 7.804413565990683
+    generic.v_max: 2.4707368435551835
+  current_score: 1008.4269676709227
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 70
+  current_params:
+    pid_controller.kp: 1.7680998840145947
+    pid_controller.ki: 0.03428712476947738
+    pid_controller.kd: 4.686015553517812
+    geometric_optimizer.curvature_weight: 1998.2567407190072
+    geometric_optimizer.distance_weight: 9.817828211178348
+    generic.v_min: 1.0127993086262073
+    generic.v_max: 2.6839090803792667
+  current_score: 975.044533072484
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 71
+  current_params:
+    pid_controller.kp: 4.970706241823377
+    pid_controller.ki: 1.999317480603563
+    pid_controller.kd: 4.274854775981499
+    geometric_optimizer.curvature_weight: 893.3507289547298
+    geometric_optimizer.distance_weight: 6.636044165953038
+    generic.v_min: 10.737119121564046
+    generic.v_max: 2.207825113990898
+  current_score: 1007.0148128673417
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 72
+  current_params:
+    pid_controller.kp: 4.675214706714618
+    pid_controller.ki: 0.02590748142708322
+    pid_controller.kd: 0.2853774758456585
+    geometric_optimizer.curvature_weight: 137.5164095170434
+    geometric_optimizer.distance_weight: 2.414165637546262
+    generic.v_min: 11.035934422123638
+    generic.v_max: 16.960828649040813
+  current_score: 1007.171007289047
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 73
+  current_params:
+    pid_controller.kp: 4.757400394241644
+    pid_controller.ki: 1.0604824792752163
+    pid_controller.kd: 0.16133599099073528
+    geometric_optimizer.curvature_weight: 1925.0527891759266
+    geometric_optimizer.distance_weight: 8.18580305224893
+    generic.v_min: 10.505835998634089
+    generic.v_max: 11.688849907500124
+  current_score: 1007.8499701058978
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 74
+  current_params:
+    pid_controller.kp: 0.6234462227405464
+    pid_controller.ki: 0.003985493093719318
+    pid_controller.kd: 4.637830468424389
+    geometric_optimizer.curvature_weight: 1701.527812050091
+    geometric_optimizer.distance_weight: 8.87075503464909
+    generic.v_min: 19.61097352767926
+    generic.v_max: 13.557461413973078
+  current_score: 1012.9872272176888
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 75
+  current_params:
+    pid_controller.kp: 0.06054286767652574
+    pid_controller.ki: 1.9698046826285782
+    pid_controller.kd: 4.550795506852286
+    geometric_optimizer.curvature_weight: 257.14713877719737
+    geometric_optimizer.distance_weight: 9.183190955497146
+    generic.v_min: 1.481468688133082
+    generic.v_max: 3.517538744861586
+  current_score: 1000.8702889702487
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 76
+  current_params:
+    pid_controller.kp: 0.03209700631943036
+    pid_controller.ki: 0.04847753949794177
+    pid_controller.kd: 0.3833105937141135
+    geometric_optimizer.curvature_weight: 1960.9902346513932
+    geometric_optimizer.distance_weight: 5.083705570151968
+    generic.v_min: 1.2909080011750511
+    generic.v_max: 15.535080557434286
+  current_score: 992.2243643866522
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 77
+  current_params:
+    pid_controller.kp: 1.9122054111408344
+    pid_controller.ki: 1.2903467461540592
+    pid_controller.kd: 4.957169970535951
+    geometric_optimizer.curvature_weight: 7.331475745230966
+    geometric_optimizer.distance_weight: 6.81620519406973
+    generic.v_min: 1.2273843504058355
+    generic.v_max: 14.274954994373427
+  current_score: 999.9522539623889
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 78
+  current_params:
+    pid_controller.kp: 0.07380251781280546
+    pid_controller.ki: 1.2196532648754284
+    pid_controller.kd: 4.829576769952336
+    geometric_optimizer.curvature_weight: 52.41934107228176
+    geometric_optimizer.distance_weight: 5.4552912954641855
+    generic.v_min: 19.854840458281096
+    generic.v_max: 1.40578824168421
+  current_score: 1014.3453945243975
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 79
+  current_params:
+    pid_controller.kp: 4.889292131135581
+    pid_controller.ki: 1.9952674289977765
+    pid_controller.kd: 0.3245114854296683
+    geometric_optimizer.curvature_weight: 505.93913105755973
+    geometric_optimizer.distance_weight: 9.389768812318248
+    generic.v_min: 2.04209211487671
+    generic.v_max: 3.4896212181846464
+  current_score: 1001.3995379678735
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 80
+  current_params:
+    pid_controller.kp: 4.544121534979628
+    pid_controller.ki: 0.007605459401076821
+    pid_controller.kd: 0.09174911710280954
+    geometric_optimizer.curvature_weight: 1965.814602878485
+    geometric_optimizer.distance_weight: 0.9672550345386635
+    generic.v_min: 1.908068916239385
+    generic.v_max: 6.739303385671785
+  current_score: 1000.4288431235027
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 81
+  current_params:
+    pid_controller.kp: 4.873284066871063
+    pid_controller.ki: 0.01001638754891965
+    pid_controller.kd: 4.77147022124449
+    geometric_optimizer.curvature_weight: 1818.948286054648
+    geometric_optimizer.distance_weight: 9.550569725487602
+    generic.v_min: 16.057960389292205
+    generic.v_max: 9.51540165397404
+  current_score: 1010.4640954751789
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 82
+  current_params:
+    pid_controller.kp: 2.704642538445289
+    pid_controller.ki: 0.019344124257638432
+    pid_controller.kd: 4.972848928055528
+    geometric_optimizer.curvature_weight: 1984.163487293639
+    geometric_optimizer.distance_weight: 1.2564465524600745
+    generic.v_min: 1.873534795638393
+    generic.v_max: 9.555438623839958
+  current_score: 1000.0699792478247
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 83
+  current_params:
+    pid_controller.kp: 0.18819227748496484
+    pid_controller.ki: 0.7072999055982204
+    pid_controller.kd: 4.870867058230971
+    geometric_optimizer.curvature_weight: 110.6441956500617
+    geometric_optimizer.distance_weight: 0.26652353774994203
+    generic.v_min: 1.026862243646315
+    generic.v_max: 5.436715337343747
+  current_score: 996.7293942122196
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 84
+  current_params:
+    pid_controller.kp: 2.993123098914335
+    pid_controller.ki: 0.8955554904018936
+    pid_controller.kd: 0.2682075041313981
+    geometric_optimizer.curvature_weight: 79.22289085994461
+    geometric_optimizer.distance_weight: 8.758914475687174
+    generic.v_min: 1.1102743677472025
+    generic.v_max: 8.307301692797022
+  current_score: 997.0907223747967
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 85
+  current_params:
+    pid_controller.kp: 3.821120956221733
+    pid_controller.ki: 1.0909744784311612
+    pid_controller.kd: 0.23530203363525853
+    geometric_optimizer.curvature_weight: 22.006952864028097
+    geometric_optimizer.distance_weight: 8.284672477289654
+    generic.v_min: 19.72025257172411
+    generic.v_max: 7.981884657328157
+  current_score: 1015.8811737192798
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 86
+  current_params:
+    pid_controller.kp: 0.15617680871147402
+    pid_controller.ki: 1.979273008831648
+    pid_controller.kd: 0.15387595254956868
+    geometric_optimizer.curvature_weight: 291.73243550791324
+    geometric_optimizer.distance_weight: 0.17099069388620605
+    generic.v_min: 13.083783931428675
+    generic.v_max: 17.532958950293658
+  current_score: 1002.7210045262766
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 87
+  current_params:
+    pid_controller.kp: 3.2952985740564515
+    pid_controller.ki: 1.9951083000451397
+    pid_controller.kd: 0.2398380161111347
+    geometric_optimizer.curvature_weight: 37.71771805771885
+    geometric_optimizer.distance_weight: 0.5247199586751029
+    generic.v_min: 8.0895883902386
+    generic.v_max: 16.89312802644718
+  current_score: 999.5944871829203
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 88
+  current_params:
+    pid_controller.kp: 4.9336879752142995
+    pid_controller.ki: 0.8307098765001575
+    pid_controller.kd: 4.994251092734915
+    geometric_optimizer.curvature_weight: 10.430230756122596
+    geometric_optimizer.distance_weight: 2.207227220086126
+    generic.v_min: 6.902262159151993
+    generic.v_max: 2.1227016849840625
+  current_score: 994.5457982958212
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 89
+  current_params:
+    pid_controller.kp: 0.010137398171282676
+    pid_controller.ki: 1.3002335315238331
+    pid_controller.kd: 4.537376411801918
+    geometric_optimizer.curvature_weight: 37.86640078460524
+    geometric_optimizer.distance_weight: 9.966017003061042
+    generic.v_min: 9.787587836587527
+    generic.v_max: 13.350496309773343
+  current_score: 1005.3986561158863
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 90
+  current_params:
+    pid_controller.kp: 2.433942052820259
+    pid_controller.ki: 1.998176002013399
+    pid_controller.kd: 4.734305796726776
+    geometric_optimizer.curvature_weight: 1910.6926083205083
+    geometric_optimizer.distance_weight: 6.134374824160118
+    generic.v_min: 1.1205720698425141
+    generic.v_max: 3.0657309812047293
+  current_score: 1000.5947292479229
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 91
+  current_params:
+    pid_controller.kp: 4.767386838600917
+    pid_controller.ki: 0.5823979742857907
+    pid_controller.kd: 0.020528563742023834
+    geometric_optimizer.curvature_weight: 3.4977269739204795
+    geometric_optimizer.distance_weight: 2.626203147710617
+    generic.v_min: 1.3811955556147895
+    generic.v_max: 4.248362685772733
+  current_score: 1000.7514124371977
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 92
+  current_params:
+    pid_controller.kp: 0.06700703169622736
+    pid_controller.ki: 0.009079731664342729
+    pid_controller.kd: 4.997547513760048
+    geometric_optimizer.curvature_weight: 1726.3837213378022
+    geometric_optimizer.distance_weight: 9.768980999369969
+    generic.v_min: 1.242516206322994
+    generic.v_max: 18.418960838336663
+  current_score: 967.5438705000652
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 93
+  current_params:
+    pid_controller.kp: 4.664305792014201
+    pid_controller.ki: 1.280426441308926
+    pid_controller.kd: 4.905588673971675
+    geometric_optimizer.curvature_weight: 85.37514505844192
+    geometric_optimizer.distance_weight: 9.898660338765625
+    generic.v_min: 19.348939390055136
+    generic.v_max: 8.137872908670051
+  current_score: 1010.8747653520503
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 94
+  current_params:
+    pid_controller.kp: 0.0014521770728914698
+    pid_controller.ki: 0.03066828020148394
+    pid_controller.kd: 0.11951882948334105
+    geometric_optimizer.curvature_weight: 1121.932470871277
+    geometric_optimizer.distance_weight: 0.44474598988077046
+    generic.v_min: 10.910372982933753
+    generic.v_max: 8.008803482937964
+  current_score: 993.5450967820418
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 95
+  current_params:
+    pid_controller.kp: 2.798395139697539
+    pid_controller.ki: 1.4257291975546957
+    pid_controller.kd: 0.07361882768423368
+    geometric_optimizer.curvature_weight: 32.76812645051797
+    geometric_optimizer.distance_weight: 9.741989655025275
+    generic.v_min: 9.361944601091999
+    generic.v_max: 18.149305020863764
+  current_score: 1006.2423126439948
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 96
+  current_params:
+    pid_controller.kp: 1.2458081033489457
+    pid_controller.ki: 0.0015709464740643058
+    pid_controller.kd: 4.900702583615965
+    geometric_optimizer.curvature_weight: 129.4221278001986
+    geometric_optimizer.distance_weight: 0.5098651681403922
+    generic.v_min: 4.071345427337031
+    generic.v_max: 7.887595577349455
+  current_score: 998.1545386934006
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 97
+  current_params:
+    pid_controller.kp: 2.3587795825753437
+    pid_controller.ki: 1.9882530330946326
+    pid_controller.kd: 4.93086968705472
+    geometric_optimizer.curvature_weight: 1960.7067415396139
+    geometric_optimizer.distance_weight: 5.0214407518695126
+    generic.v_min: 13.40369547616337
+    generic.v_max: 1.0761630199933814
+  current_score: 1010.5075039051957
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 98
+  current_params:
+    pid_controller.kp: 0.026776225514618116
+    pid_controller.ki: 0.029886467590704686
+    pid_controller.kd: 0.44792755745397655
+    geometric_optimizer.curvature_weight: 385.1844881168042
+    geometric_optimizer.distance_weight: 0.8343308962364794
+    generic.v_min: 19.979160891932132
+    generic.v_max: 8.641275652508094
+  current_score: 1002.6320596417596
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 99
+  current_params:
+    pid_controller.kp: 0.0355367563324216
+    pid_controller.ki: 1.9768891653708547
+    pid_controller.kd: 0.13831471955578936
+    geometric_optimizer.curvature_weight: 1911.4827686219796
+    geometric_optimizer.distance_weight: 7.600384514043617
+    generic.v_min: 1.8276658017013594
+    generic.v_max: 16.216240748846857
+  current_score: 996.1283488113538
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 100
+  current_params:
+    pid_controller.kp: 3.0281406061279132
+    pid_controller.ki: 1.976847457187843
+    pid_controller.kd: 0.003033066874318924
+    geometric_optimizer.curvature_weight: 151.82428340796596
+    geometric_optimizer.distance_weight: 8.91974941265104
+    generic.v_min: 19.611953547288433
+    generic.v_max: 17.321541177219547
+  current_score: 1017.633795517945
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 101
+  current_params:
+    pid_controller.kp: 3.9827149343011654
+    pid_controller.ki: 0.36686957973232764
+    pid_controller.kd: 3.8984550013638475
+    geometric_optimizer.curvature_weight: 1193.7003158929742
+    geometric_optimizer.distance_weight: 4.4583275285359125
+    generic.v_min: 2.8995234005420554
+    generic.v_max: 9.725728947351477
+  current_score: 1000.922258507222
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 102
+  current_params:
+    pid_controller.kp: 1.6685430556951095
+    pid_controller.ki: 0.2857336358438816
+    pid_controller.kd: 3.254442364744265
+    geometric_optimizer.curvature_weight: 112.82315805420053
+    geometric_optimizer.distance_weight: 7.2199877226682485
+    generic.v_min: 18.832501471299256
+    generic.v_max: 1.0147965509792722
+  current_score: 1009.8159856493016
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 103
+  current_params:
+    pid_controller.kp: 4.961057796456089
+    pid_controller.ki: 1.2349630192554333
+    pid_controller.kd: 3.058265802441405
+    geometric_optimizer.curvature_weight: 14.132610439434815
+    geometric_optimizer.distance_weight: 0.2306242504141576
+    generic.v_min: 10.970718544909396
+    generic.v_max: 8.597358462589856
+  current_score: 1008.3569451973673
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 104
+  current_params:
+    pid_controller.kp: 0.23332831606807716
+    pid_controller.ki: 1.9475110376829188
+    pid_controller.kd: 1.1638567021515214
+    geometric_optimizer.curvature_weight: 181.21286906564163
+    geometric_optimizer.distance_weight: 6.183860093330874
+    generic.v_min: 8.266777834076095
+    generic.v_max: 19.68138683032898
+  current_score: 1000.1460101964685
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 105
+  current_params:
+    pid_controller.kp: 2.3338144662399003
+    pid_controller.ki: 1.7198808134726415
+    pid_controller.kd: 3.401537692938899
+    geometric_optimizer.curvature_weight: 900.9985039390862
+    geometric_optimizer.distance_weight: 0.1326496115986653
+    generic.v_min: 18.901833358012208
+    generic.v_max: 11.702476139065249
+  current_score: 1016.1115874859984
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 106
+  current_params:
+    pid_controller.kp: 1.927082512699581
+    pid_controller.ki: 0.031932504440428396
+    pid_controller.kd: 1.1544691281107453
+    geometric_optimizer.curvature_weight: 482.05093205202354
+    geometric_optimizer.distance_weight: 6.832635188254583
+    generic.v_min: 12.5899364978698
+    generic.v_max: 16.830703322987127
+  current_score: 1003.7903642642342
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 107
+  current_params:
+    pid_controller.kp: 0.8668232675388605
+    pid_controller.ki: 0.7821212151464818
+    pid_controller.kd: 0.9111804389403118
+    geometric_optimizer.curvature_weight: 1510.7228206353054
+    geometric_optimizer.distance_weight: 4.251558744912448
+    generic.v_min: 4.950891594495589
+    generic.v_max: 11.78630622857984
+  current_score: 1000.9985245029462
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 108
+  current_params:
+    pid_controller.kp: 0.15656646227779294
+    pid_controller.ki: 1.6845695491899975
+    pid_controller.kd: 2.248770666848829
+    geometric_optimizer.curvature_weight: 790.3004720036291
+    geometric_optimizer.distance_weight: 9.266588657937945
+    generic.v_min: 14.818167921271998
+    generic.v_max: 7.204274607310873
+  current_score: 1012.5400394057336
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 109
+  current_params:
+    pid_controller.kp: 2.8522198720269976
+    pid_controller.ki: 1.0416685200516476
+    pid_controller.kd: 4.805860121746747
+    geometric_optimizer.curvature_weight: 1689.0676973563031
+    geometric_optimizer.distance_weight: 7.47320110137381
+    generic.v_min: 11.254150515392517
+    generic.v_max: 12.148272147613119
+  current_score: 1007.3218370000437
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 110
+  current_params:
+    pid_controller.kp: 4.826276536320691
+    pid_controller.ki: 1.2140684953733696
+    pid_controller.kd: 1.379995910112717
+    geometric_optimizer.curvature_weight: 592.5470114081648
+    geometric_optimizer.distance_weight: 1.6526693906300252
+    generic.v_min: 1.2970917280826848
+    generic.v_max: 9.044628133421025
+  current_score: 1000.9874225255528
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 111
+  current_params:
+    pid_controller.kp: 4.980818465851317
+    pid_controller.ki: 0.5716762893278576
+    pid_controller.kd: 4.908341463188786
+    geometric_optimizer.curvature_weight: 107.30056350750819
+    geometric_optimizer.distance_weight: 8.630231756665133
+    generic.v_min: 13.299641999019503
+    generic.v_max: 17.718107438280082
+  current_score: 1001.9034686549069
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 112
+  current_params:
+    pid_controller.kp: 0.18688141104674041
+    pid_controller.ki: 0.0487990472511919
+    pid_controller.kd: 0.5934392304837678
+    geometric_optimizer.curvature_weight: 67.00733748147815
+    geometric_optimizer.distance_weight: 0.648783850757262
+    generic.v_min: 1.206216398358416
+    generic.v_max: 2.6621618760987267
+  current_score: 983.7352961627493
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 113
+  current_params:
+    pid_controller.kp: 3.9860509207824757
+    pid_controller.ki: 0.02690782285411842
+    pid_controller.kd: 0.053008021483151875
+    geometric_optimizer.curvature_weight: 139.32958902770756
+    geometric_optimizer.distance_weight: 7.231614738131411
+    generic.v_min: 19.96905186206535
+    generic.v_max: 9.663113368951837
+  current_score: 1014.8532383778759
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 114
+  current_params:
+    pid_controller.kp: 0.038506422113603896
+    pid_controller.ki: 1.2774272531262167
+    pid_controller.kd: 0.044822724774774565
+    geometric_optimizer.curvature_weight: 1847.9176822672114
+    geometric_optimizer.distance_weight: 9.491404691715738
+    generic.v_min: 8.97708301944112
+    generic.v_max: 1.545273664240396
+  current_score: 1002.8499405456764
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 115
+  current_params:
+    pid_controller.kp: 4.907564149539976
+    pid_controller.ki: 0.6308524191648318
+    pid_controller.kd: 0.024211212894467152
+    geometric_optimizer.curvature_weight: 1983.6188793149115
+    geometric_optimizer.distance_weight: 7.391465926436148
+    generic.v_min: 9.616899194345738
+    generic.v_max: 6.35804997059168
+  current_score: 1005.0175485255724
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 116
+  current_params:
+    pid_controller.kp: 4.833617252481329
+    pid_controller.ki: 1.979413639418538
+    pid_controller.kd: 0.4771222677011917
+    geometric_optimizer.curvature_weight: 44.08226435490815
+    geometric_optimizer.distance_weight: 1.2970400184525024
+    generic.v_min: 11.337815796775306
+    generic.v_max: 3.8861761624299205
+  current_score: 1009.9530918145394
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 117
+  current_params:
+    pid_controller.kp: 4.994934771773404
+    pid_controller.ki: 1.9819802021352524
+    pid_controller.kd: 4.869406075057046
+    geometric_optimizer.curvature_weight: 1806.3579469547692
+    geometric_optimizer.distance_weight: 3.092013757530469
+    generic.v_min: 8.645654621163786
+    generic.v_max: 16.024695705510297
+  current_score: 1005.3760551433535
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 118
+  current_params:
+    pid_controller.kp: 2.039554988387573
+    pid_controller.ki: 0.64380720568782
+    pid_controller.kd: 0.33082572988636155
+    geometric_optimizer.curvature_weight: 1991.1484466499649
+    geometric_optimizer.distance_weight: 0.7502306715381136
+    generic.v_min: 19.981206661145407
+    generic.v_max: 17.56819954339781
+  current_score: 1016.3576262596268
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 119
+  current_params:
+    pid_controller.kp: 0.027321457685516862
+    pid_controller.ki: 1.9949800077246806
+    pid_controller.kd: 4.965920829060431
+    geometric_optimizer.curvature_weight: 1729.7591894896593
+    geometric_optimizer.distance_weight: 4.887031646282047
+    generic.v_min: 18.713525291525446
+    generic.v_max: 1.6571453447551145
+  current_score: 1015.6605160051932
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 120
+  current_params:
+    pid_controller.kp: 2.318406949301552
+    pid_controller.ki: 1.5222152341372421
+    pid_controller.kd: 0.16024021122462653
+    geometric_optimizer.curvature_weight: 1568.026774442753
+    geometric_optimizer.distance_weight: 4.803033780781094
+    generic.v_min: 1.1887058726186202
+    generic.v_max: 5.317923640951316
+  current_score: 1001.7550357691705
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 121
+  current_params:
+    pid_controller.kp: 4.796058237774411
+    pid_controller.ki: 0.628558438300992
+    pid_controller.kd: 4.900899119831853
+    geometric_optimizer.curvature_weight: 1869.335522471336
+    geometric_optimizer.distance_weight: 3.8378440466571395
+    generic.v_min: 19.946258017998836
+    generic.v_max: 4.393689299465775
+  current_score: 1016.4242980598418
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 122
+  current_params:
+    pid_controller.kp: 4.946385446889513
+    pid_controller.ki: 0.03771705684402949
+    pid_controller.kd: 4.895740463076783
+    geometric_optimizer.curvature_weight: 1809.9773929154173
+    geometric_optimizer.distance_weight: 3.5214892429740434
+    generic.v_min: 1.2529825489211952
+    generic.v_max: 15.867349175917065
+  current_score: 996.065533204651
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 123
+  current_params:
+    pid_controller.kp: 0.1668084496693584
+    pid_controller.ki: 0.08155928677769443
+    pid_controller.kd: 0.2112022749105941
+    geometric_optimizer.curvature_weight: 0.7270775856718094
+    geometric_optimizer.distance_weight: 3.1195701274065963
+    generic.v_min: 1.2076034895328867
+    generic.v_max: 9.56101988483073
+  current_score: 998.9419915647148
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 124
+  current_params:
+    pid_controller.kp: 4.909749846021927
+    pid_controller.ki: 1.0324201507119755
+    pid_controller.kd: 4.786392163486694
+    geometric_optimizer.curvature_weight: 228.49480583969344
+    geometric_optimizer.distance_weight: 0.4656898354121198
+    generic.v_min: 1.254190194518019
+    generic.v_max: 13.035758952250948
+  current_score: 1001.3531706648786
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 125
+  current_params:
+    pid_controller.kp: 0.05816151548706295
+    pid_controller.ki: 0.016366972430830854
+    pid_controller.kd: 4.731516475145171
+    geometric_optimizer.curvature_weight: 1040.4967126716151
+    geometric_optimizer.distance_weight: 0.8500235842381311
+    generic.v_min: 13.833716146468374
+    generic.v_max: 7.672099722532057
+  current_score: 1011.8428139354133
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 126
+  current_params:
+    pid_controller.kp: 1.6565566668851803
+    pid_controller.ki: 1.9853671122505983
+    pid_controller.kd: 4.890167720336388
+    geometric_optimizer.curvature_weight: 12.733176677931727
+    geometric_optimizer.distance_weight: 2.3567648474372844
+    generic.v_min: 7.432408209298251
+    generic.v_max: 15.436873658439563
+  current_score: 1004.4193044246524
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 127
+  current_params:
+    pid_controller.kp: 3.2739183482779715
+    pid_controller.ki: 0.012440504970783198
+    pid_controller.kd: 4.970575234393184
+    geometric_optimizer.curvature_weight: 230.89683846459113
+    geometric_optimizer.distance_weight: 7.070482586253161
+    generic.v_min: 10.181950051071038
+    generic.v_max: 13.506253309101448
+  current_score: 1004.5757464979976
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 128
+  current_params:
+    pid_controller.kp: 4.931124315492518
+    pid_controller.ki: 1.983538553865522
+    pid_controller.kd: 4.845292031174326
+    geometric_optimizer.curvature_weight: 161.07147165317562
+    geometric_optimizer.distance_weight: 1.6529141748900924
+    generic.v_min: 1.4859607800225163
+    generic.v_max: 5.486187634251613
+  current_score: 1003.6367414656642
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 129
+  current_params:
+    pid_controller.kp: 4.819261303894287
+    pid_controller.ki: 0.0028392414446658525
+    pid_controller.kd: 0.2397714787572242
+    geometric_optimizer.curvature_weight: 1423.3522525436626
+    geometric_optimizer.distance_weight: 5.545259565662804
+    generic.v_min: 6.074952490458847
+    generic.v_max: 16.429608212472445
+  current_score: 1002.0181806870505
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 130
+  current_params:
+    pid_controller.kp: 2.0579805215545948
+    pid_controller.ki: 0.01599054755786145
+    pid_controller.kd: 0.04281509083421509
+    geometric_optimizer.curvature_weight: 1969.4445558679456
+    geometric_optimizer.distance_weight: 7.576448160662216
+    generic.v_min: 6.809746379236664
+    generic.v_max: 17.83991438999913
+  current_score: 1002.6196571573655
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 131
+  current_params:
+    pid_controller.kp: 2.02022586722407
+    pid_controller.ki: 0.028669092359270516
+    pid_controller.kd: 3.190398794442921
+    geometric_optimizer.curvature_weight: 18.22915453428009
+    geometric_optimizer.distance_weight: 3.203103023719767
+    generic.v_min: 1.0007664388661999
+    generic.v_max: 18.132378582170066
+  current_score: 983.071824948949
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 132
+  current_params:
+    pid_controller.kp: 1.103395628418584
+    pid_controller.ki: 0.61352866915873
+    pid_controller.kd: 4.852725863101939
+    geometric_optimizer.curvature_weight: 1788.9177444917561
+    geometric_optimizer.distance_weight: 7.6458792710316335
+    generic.v_min: 1.0339454225404199
+    generic.v_max: 2.606371492596623
+  current_score: 995.4240013526386
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 133
+  current_params:
+    pid_controller.kp: 4.952499580197816
+    pid_controller.ki: 1.8751993202415362
+    pid_controller.kd: 0.05642755440379677
+    geometric_optimizer.curvature_weight: 1590.8228508125362
+    geometric_optimizer.distance_weight: 2.9557199158414678
+    generic.v_min: 19.973601692347145
+    generic.v_max: 11.948138505745977
+  current_score: 1018.1067071288857
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 134
+  current_params:
+    pid_controller.kp: 0.0876112157971254
+    pid_controller.ki: 0.6306370085485292
+    pid_controller.kd: 4.6505835446120445
+    geometric_optimizer.curvature_weight: 39.222246671022596
+    geometric_optimizer.distance_weight: 9.107830736691893
+    generic.v_min: 10.180821093685198
+    generic.v_max: 5.341275603739244
+  current_score: 1000.6925540540448
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 135
+  current_params:
+    pid_controller.kp: 4.970058299786188
+    pid_controller.ki: 1.9883444047213163
+    pid_controller.kd: 4.927967273595479
+    geometric_optimizer.curvature_weight: 74.22213959102143
+    geometric_optimizer.distance_weight: 0.42831918951268705
+    generic.v_min: 15.261635461127838
+    generic.v_max: 16.53482791795841
+  current_score: 1011.2636408321432
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 136
+  current_params:
+    pid_controller.kp: 0.08843097864222661
+    pid_controller.ki: 0.02813729790118758
+    pid_controller.kd: 3.732142756734717
+    geometric_optimizer.curvature_weight: 54.52749922341861
+    geometric_optimizer.distance_weight: 2.9073666224948496
+    generic.v_min: 1.6106260284682712
+    generic.v_max: 9.582233813200498
+  current_score: 968.8623056029674
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 137
+  current_params:
+    pid_controller.kp: 1.080645937100265
+    pid_controller.ki: 0.012991206267223058
+    pid_controller.kd: 3.1628111119122804
+    geometric_optimizer.curvature_weight: 1988.5112840855882
+    geometric_optimizer.distance_weight: 1.5494734469408502
+    generic.v_min: 1.0415209199673914
+    generic.v_max: 12.522799235377663
+  current_score: 991.4937013191728
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 138
+  current_params:
+    pid_controller.kp: 0.1939783442689891
+    pid_controller.ki: 1.2944569196098832
+    pid_controller.kd: 0.14467201798882393
+    geometric_optimizer.curvature_weight: 188.8756181402496
+    geometric_optimizer.distance_weight: 2.9077346319512936
+    generic.v_min: 19.94349559682169
+    generic.v_max: 9.891043148013697
+  current_score: 1011.4657380346182
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 139
+  current_params:
+    pid_controller.kp: 0.22309253982865654
+    pid_controller.ki: 0.0017915927621150467
+    pid_controller.kd: 4.772115797149301
+    geometric_optimizer.curvature_weight: 1845.781969092461
+    geometric_optimizer.distance_weight: 9.708090696578823
+    generic.v_min: 19.949815976166793
+    generic.v_max: 3.3104363013991405
+  current_score: 1017.629138328103
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 140
+  current_params:
+    pid_controller.kp: 4.990542035489009
+    pid_controller.ki: 0.009781819058421572
+    pid_controller.kd: 0.8567114519525011
+    geometric_optimizer.curvature_weight: 113.73809626038314
+    geometric_optimizer.distance_weight: 5.338423491223498
+    generic.v_min: 1.50103249282225
+    generic.v_max: 19.21600075892986
+  current_score: 995.8203164518203
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 141
+  current_params:
+    pid_controller.kp: 0.03047036737441112
+    pid_controller.ki: 0.25341789030995626
+    pid_controller.kd: 0.16862007254357939
+    geometric_optimizer.curvature_weight: 50.723860683651324
+    geometric_optimizer.distance_weight: 2.3183097891079636
+    generic.v_min: 9.735099325506134
+    generic.v_max: 12.07046662820345
+  current_score: 1000.5343434743965
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 142
+  current_params:
+    pid_controller.kp: 4.930186412639505
+    pid_controller.ki: 1.8548950834828768
+    pid_controller.kd: 0.2989693663407928
+    geometric_optimizer.curvature_weight: 1657.7654908703057
+    geometric_optimizer.distance_weight: 7.451073625872312
+    generic.v_min: 1.6132193486626507
+    generic.v_max: 3.8695419647821896
+  current_score: 996.7590032978101
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 143
+  current_params:
+    pid_controller.kp: 0.11268048120214148
+    pid_controller.ki: 1.2568135988318703
+    pid_controller.kd: 4.9155876795277695
+    geometric_optimizer.curvature_weight: 1827.307109490043
+    geometric_optimizer.distance_weight: 4.222659048391871
+    generic.v_min: 1.318575545911971
+    generic.v_max: 11.616296937082067
+  current_score: 1000.6685769129333
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 144
+  current_params:
+    pid_controller.kp: 2.000918891618814
+    pid_controller.ki: 1.9895885941612672
+    pid_controller.kd: 0.5954313798421907
+    geometric_optimizer.curvature_weight: 35.369565234199655
+    geometric_optimizer.distance_weight: 8.337841163513191
+    generic.v_min: 1.3941165417249057
+    generic.v_max: 12.895174709665215
+  current_score: 1001.1432893229016
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 145
+  current_params:
+    pid_controller.kp: 3.632810367351684
+    pid_controller.ki: 0.8292768198169114
+    pid_controller.kd: 3.1726059736743357
+    geometric_optimizer.curvature_weight: 925.873075300424
+    geometric_optimizer.distance_weight: 8.874881232707834
+    generic.v_min: 14.617269007216288
+    generic.v_max: 16.79767852358792
+  current_score: 1010.8727727611223
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 146
+  current_params:
+    pid_controller.kp: 0.022418330810570212
+    pid_controller.ki: 0.7727023179934467
+    pid_controller.kd: 0.04967796213712739
+    geometric_optimizer.curvature_weight: 677.3287376960932
+    geometric_optimizer.distance_weight: 7.959739415845019
+    generic.v_min: 1.1657090688597507
+    generic.v_max: 3.756993722853081
+  current_score: 995.4963961754999
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 147
+  current_params:
+    pid_controller.kp: 1.909668898759802
+    pid_controller.ki: 1.911237537625741
+    pid_controller.kd: 0.2534955342745055
+    geometric_optimizer.curvature_weight: 1973.0285392753603
+    geometric_optimizer.distance_weight: 0.2210809064620234
+    generic.v_min: 12.094304479401071
+    generic.v_max: 7.675076894692342
+  current_score: 1007.0319874402796
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 148
+  current_params:
+    pid_controller.kp: 4.994756515091293
+    pid_controller.ki: 0.8479098328354033
+    pid_controller.kd: 0.15044230310830967
+    geometric_optimizer.curvature_weight: 50.97001853871654
+    geometric_optimizer.distance_weight: 9.598846546866419
+    generic.v_min: 18.63217992793523
+    generic.v_max: 4.4242158876079465
+  current_score: 1014.969024261132
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 149
+  current_params:
+    pid_controller.kp: 4.5625342403263325
+    pid_controller.ki: 0.8426902115770547
+    pid_controller.kd: 0.055897644401006204
+    geometric_optimizer.curvature_weight: 1971.2618897621335
+    geometric_optimizer.distance_weight: 3.377607810936947
+    generic.v_min: 1.142836479177359
+    generic.v_max: 17.67167010619978
+  current_score: 1000.955448453067
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645
+- iteration: 150
+  current_params:
+    pid_controller.kp: 4.879741820408138
+    pid_controller.ki: 1.9591690291076345
+    pid_controller.kd: 4.614673180055701
+    geometric_optimizer.curvature_weight: 108.33079563666617
+    geometric_optimizer.distance_weight: 5.428194030564407
+    generic.v_min: 19.577394011168675
+    generic.v_max: 17.95252733808027
+  current_score: 1004.464246040125
+  best_params:
+    pid_controller.kp: 0.0
+    pid_controller.ki: 0.0
+    pid_controller.kd: 5.0
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 20.0
+  best_score: 936.3313733943645

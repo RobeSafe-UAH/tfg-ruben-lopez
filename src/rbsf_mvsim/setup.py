@@ -1,3 +1,6 @@
+"""
+Setup script for the rbsf_mvsim package.
+"""
 from setuptools import find_packages, setup
 import os
 from glob import glob
@@ -28,13 +31,16 @@ setup(
         (os.path.join('share', package_name, 'rosbags'),
             glob(os.path.join('rosbags', 'traxxas*'))),
         (os.path.join('share', package_name, 'config'),
-            glob(os.path.join('config', '*.yaml')))
+            glob(os.path.join('config', '*.yaml'))),
+        (os.path.join('share', package_name, 'rbsf_mvsim'), glob('rbsf_mvsim/*.xml')),
+        (os.path.join('share', package_name, 'rbsf_mvsim'), glob('rbsf_mvsim/*.yaml')),
+        (os.path.join('share', package_name, 'rbsf_mvsim'), glob('rbsf_mvsim/*.png')),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'ackermann_msgs'],
     zip_safe=True,
-    maintainer='Fernando Villa',
-    maintainer_email='fernando.villa@edu.uah.es',
-    description='ROS2 package for saving some custom mvsim worlds developed as part of Fernando Villa`s final degree project',
+    maintainer='Ruben Lopez',
+    maintainer_email='r.lopezr@edu.uah.es',
+    description='ROS2 package for nvsim testing of planning and control as part of Ruben Lopez Final Degree Project',
     license='Apache-2.0',
     extras_require={
         'test': [
@@ -43,12 +49,14 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'lidar_logger = rbsf_mvsim.nodes.lidar_logger_node:main',
-            'detector_node = rbsf_mvsim.nodes.detector_node:main',
-            'visualization_detector_node = rbsf_mvsim.nodes.visualization_detector_node:main',
-            'tracker_node = rbsf_mvsim.nodes.tracker_node:main',
-            'visualization_tracker_node = rbsf_mvsim.nodes.visualization_tracker_node:main',
-            'detector_w_track = rbsf_mvsim.nodes.detector_w_track:main',
+            'path_publisher = rbsf_mvsim.nodes.path_publisher:main',
+            'waypoint_logger = rbsf_mvsim.nodes.waypoint_logger:main',
+            'controller_node = rbsf_mvsim.nodes.controller_node:main',
+            'metrics_evaluator = rbsf_mvsim.nodes.metrics_evaluator:main',
+            'offline_planner_node = rbsf_mvsim.nodes.offline_planner_node:main',
+            'auto_param_tuner = rbsf_mvsim.nodes.auto_param_tuner:main',
+            'centerline_generator = rbsf_mvsim.nodes.centerline_generator:main',
+            'ackermann_to_twist = rbsf_mvsim.nodes.ackermann_to_twist:main',
         ],
     },
 )

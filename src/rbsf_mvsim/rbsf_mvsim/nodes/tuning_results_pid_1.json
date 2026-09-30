@@ -1,0 +1,543 @@
+{
+  "params_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/nodes/params.yaml",
+  "iterations": 20,
+  "tunable_keys": [
+    "pid_controller.kp",
+    "pid_controller.ki",
+    "pid_controller.kd"
+  ],
+  "bounds": {
+    "pid_controller.kp": [
+      0.0,
+      5.0
+    ],
+    "pid_controller.ki": [
+      0.0,
+      2.0
+    ],
+    "pid_controller.kd": [
+      0.0,
+      5.0
+    ]
+  },
+  "best_params": {
+    "pid_controller.kp": 0.24308354364438303,
+    "pid_controller.ki": 0.0038105402196653925,
+    "pid_controller.kd": 0.5762740707530543
+  },
+  "best_result": {
+    "objective_score": 172.12747617279078,
+    "score": 172.12747617279078,
+    "lap_completed": true,
+    "lap_time": 171.5803415775299,
+    "avg_cte": 0.10852302772247595,
+    "avg_speed_error": 0.004519456648504631,
+    "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777359140.json",
+    "lap_time_source": "metrics_file.lap_time",
+    "reason": "ok",
+    "objective_breakdown": {
+      "lap_time_term": 171.5803415775299,
+      "cte_term": 0.5426151386123798,
+      "speed_error_term": 0.004519456648504631
+    }
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "params": {
+        "pid_controller.kp": 0.19698452977691966,
+        "pid_controller.ki": 0.0,
+        "pid_controller.kd": 0.6398580070107769
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      }
+    },
+    {
+      "iteration": 1,
+      "params": {
+        "pid_controller.kp": 0.09198237873238627,
+        "pid_controller.ki": 0.037244592690173814,
+        "pid_controller.kd": 0.3925637641779744
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 2,
+      "params": {
+        "pid_controller.kp": 0.044315578034054115,
+        "pid_controller.ki": 0.0,
+        "pid_controller.kd": 0.5372854819360734
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 3,
+      "params": {
+        "pid_controller.kp": 0.0929825136089356,
+        "pid_controller.ki": 0.017650795239997068,
+        "pid_controller.kd": 0.7681821917652039
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 4,
+      "params": {
+        "pid_controller.kp": 0.11063034439181763,
+        "pid_controller.ki": 0.0,
+        "pid_controller.kd": 0.6932199810494515
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 5,
+      "params": {
+        "pid_controller.kp": 0.12700915804955004,
+        "pid_controller.ki": 0.007229534369620783,
+        "pid_controller.kd": 0.6685123274263198
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 6,
+      "params": {
+        "pid_controller.kp": 0.23408517659528633,
+        "pid_controller.ki": 0.0,
+        "pid_controller.kd": 0.5903406937203743
+      },
+      "result": {
+        "objective_score": 172.31830125799573,
+        "score": 172.31830125799573,
+        "lap_completed": true,
+        "lap_time": 171.80369019508362,
+        "avg_cte": 0.1020194770911464,
+        "avg_speed_error": 0.004513677456381943,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777358292.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.80369019508362,
+          "cte_term": 0.510097385455732,
+          "speed_error_term": 0.004513677456381943
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 7,
+      "params": {
+        "pid_controller.kp": 0.25548654543931654,
+        "pid_controller.ki": 0.012288817305655043,
+        "pid_controller.kd": 0.6301762202321012
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 8,
+      "params": {
+        "pid_controller.kp": 0.21995772415449122,
+        "pid_controller.ki": 0.0,
+        "pid_controller.kd": 0.5552613033172379
+      },
+      "result": {
+        "objective_score": 172.49831448146836,
+        "score": 172.49831448146836,
+        "lap_completed": true,
+        "lap_time": 171.93327140808105,
+        "avg_cte": 0.11210941732572398,
+        "avg_speed_error": 0.004495986758695383,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777358722.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.93327140808105,
+          "cte_term": 0.5605470866286199,
+          "speed_error_term": 0.004495986758695383
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 9,
+      "params": {
+        "pid_controller.kp": 0.21813909717684288,
+        "pid_controller.ki": 0.005144067358555602,
+        "pid_controller.kd": 0.602346624869327
+      },
+      "result": {
+        "objective_score": 173.00700411205568,
+        "score": 173.00700411205568,
+        "lap_completed": true,
+        "lap_time": 172.3801121711731,
+        "avg_cte": 0.12392226825003376,
+        "avg_speed_error": 0.007280599632417333,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777358931.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 172.3801121711731,
+          "cte_term": 0.6196113412501688,
+          "speed_error_term": 0.007280599632417333
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 10,
+      "params": {
+        "pid_controller.kp": 0.24308354364438303,
+        "pid_controller.ki": 0.0038105402196653925,
+        "pid_controller.kd": 0.5762740707530543
+      },
+      "result": {
+        "objective_score": 172.12747617279078,
+        "score": 172.12747617279078,
+        "lap_completed": true,
+        "lap_time": 171.5803415775299,
+        "avg_cte": 0.10852302772247595,
+        "avg_speed_error": 0.004519456648504631,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777359140.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.5803415775299,
+          "cte_term": 0.5426151386123798,
+          "speed_error_term": 0.004519456648504631
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 11,
+      "params": {
+        "pid_controller.kp": 0.22865644599906046,
+        "pid_controller.ki": 0.0014967882872034314,
+        "pid_controller.kd": 0.5870154730773953
+      },
+      "result": {
+        "objective_score": 172.35346929732103,
+        "score": 172.35346929732103,
+        "lap_completed": true,
+        "lap_time": 171.78011870384216,
+        "avg_cte": 0.11373366584327538,
+        "avg_speed_error": 0.004682264262500395,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777359354.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.78011870384216,
+          "cte_term": 0.5686683292163769,
+          "speed_error_term": 0.004682264262500395
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 12,
+      "params": {
+        "pid_controller.kp": 0.2315151068250702,
+        "pid_controller.ki": 0.002030647197166488,
+        "pid_controller.kd": 0.5635295508556144
+      },
+      "result": {
+        "objective_score": 172.29248355618952,
+        "score": 172.29248355618952,
+        "lap_completed": true,
+        "lap_time": 171.72875475883484,
+        "avg_cte": 0.11180903035480237,
+        "avg_speed_error": 0.004683645580697912,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777359562.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.72875475883484,
+          "cte_term": 0.5590451517740118,
+          "speed_error_term": 0.004683645580697912
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 13,
+      "params": {
+        "pid_controller.kp": 0.24833174428601393,
+        "pid_controller.ki": 0.0013955255494366415,
+        "pid_controller.kd": 0.5811455152765662
+      },
+      "result": {
+        "objective_score": 172.18841463971626,
+        "score": 172.18841463971626,
+        "lap_completed": true,
+        "lap_time": 171.65011191368103,
+        "avg_cte": 0.10672141552183265,
+        "avg_speed_error": 0.00469564842605939,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777359772.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.65011191368103,
+          "cte_term": 0.5336070776091633,
+          "speed_error_term": 0.00469564842605939
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 14,
+      "params": {
+        "pid_controller.kp": 0.2473692593662229,
+        "pid_controller.ki": 0.004579596368463492,
+        "pid_controller.kd": 0.5727013605310391
+      },
+      "result": {
+        "objective_score": 173.0618547552984,
+        "score": 173.0618547552984,
+        "lap_completed": true,
+        "lap_time": 172.4517924785614,
+        "avg_cte": 0.12056330434571262,
+        "avg_speed_error": 0.00724575500846317,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777359981.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 172.4517924785614,
+          "cte_term": 0.6028165217285631,
+          "speed_error_term": 0.00724575500846317
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 15,
+      "params": {
+        "pid_controller.kp": 0.24726053051157065,
+        "pid_controller.ki": 0.004981074132943741,
+        "pid_controller.kd": 0.579161406716225
+      },
+      "result": {
+        "objective_score": 172.96629665416765,
+        "score": 172.96629665416765,
+        "lap_completed": true,
+        "lap_time": 172.37195801734924,
+        "avg_cte": 0.11743365659134732,
+        "avg_speed_error": 0.007170353861685454,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777360195.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 172.37195801734924,
+          "cte_term": 0.5871682829567366,
+          "speed_error_term": 0.007170353861685454
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 16,
+      "params": {
+        "pid_controller.kp": 0.24071649315788837,
+        "pid_controller.ki": 0.0030744277019576147,
+        "pid_controller.kd": 0.5747433445379505
+      },
+      "result": {
+        "objective_score": 172.2257401050945,
+        "score": 172.2257401050945,
+        "lap_completed": true,
+        "lap_time": 171.68206310272217,
+        "avg_cte": 0.10781951381796429,
+        "avg_speed_error": 0.004579433282522184,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777360404.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.68206310272217,
+          "cte_term": 0.5390975690898214,
+          "speed_error_term": 0.004579433282522184
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 17,
+      "params": {
+        "pid_controller.kp": 0.2409628539951745,
+        "pid_controller.ki": 0.004260424210328464,
+        "pid_controller.kd": 0.5777210723436715
+      },
+      "result": {
+        "objective_score": 172.82898294857029,
+        "score": 172.82898294857029,
+        "lap_completed": true,
+        "lap_time": 172.25004291534424,
+        "avg_cte": 0.11441200015412574,
+        "avg_speed_error": 0.006880032455416976,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777360613.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 172.25004291534424,
+          "cte_term": 0.5720600007706287,
+          "speed_error_term": 0.006880032455416976
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 18,
+      "params": {
+        "pid_controller.kp": 0.24426590328868075,
+        "pid_controller.ki": 0.003471530400259227,
+        "pid_controller.kd": 0.5749163920283926
+      },
+      "result": {
+        "objective_score": 172.3100734314489,
+        "score": 172.3100734314489,
+        "lap_completed": true,
+        "lap_time": 171.76008248329163,
+        "avg_cte": 0.10906868041911279,
+        "avg_speed_error": 0.004647546061716366,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777360822.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 171.76008248329163,
+          "cte_term": 0.545343402095564,
+          "speed_error_term": 0.004647546061716366
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 19,
+      "params": {
+        "pid_controller.kp": 0.24410379758157777,
+        "pid_controller.ki": 0.003933498428760435,
+        "pid_controller.kd": 0.5768033855181406
+      },
+      "result": {
+        "objective_score": 172.93963642675902,
+        "score": 172.93963642675902,
+        "lap_completed": true,
+        "lap_time": 172.34000444412231,
+        "avg_cte": 0.11849670747171331,
+        "avg_speed_error": 0.007148445278161779,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777361031.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 172.34000444412231,
+          "cte_term": 0.5924835373585666,
+          "speed_error_term": 0.007148445278161779
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 20,
+      "params": {
+        "pid_controller.kp": 0.24226509493394496,
+        "pid_controller.ki": 0.004017695901073336,
+        "pid_controller.kd": 0.5757067803887794
+      },
+      "result": {
+        "objective_score": 172.82974999879977,
+        "score": 172.82974999879977,
+        "lap_completed": true,
+        "lap_time": 172.24902367591858,
+        "avg_cte": 0.11474819915914408,
+        "avg_speed_error": 0.006985327085451519,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777361241.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 172.24902367591858,
+          "cte_term": 0.5737409957957205,
+          "speed_error_term": 0.006985327085451519
+        }
+      },
+      "status": "sin mejora"
+    }
+  ],
+  "timestamp": 1777361243
+}

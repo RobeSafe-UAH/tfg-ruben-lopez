@@ -33,13 +33,13 @@
         <!--   Motor controller -->
         <controller class="twist_front_steer_pid">
             <!-- Params -->
-            <KP>1</KP>
-            <KI>1.0</KI>
-            <I_MAX>1.0</I_MAX>
-            <KD>0.0</KD>
+            <KP>1.0</KP>
+            <KI>0.0</KI>
+            <I_MAX>0.0</I_MAX>
+            <KD>0.2</KD>
             <V>0.0</V>
             <W>0</W>
-            <max_torque>5</max_torque>
+            <max_torque>0.5</max_torque>
         </controller>
 
         <!-- Available types: 
@@ -59,13 +59,15 @@
             <rear_left_right_split>0.5</rear_left_right_split>
             <rear_left_right_bias>1.5</rear_left_right_bias>
         </drivetrain>
+        <!-- <drivetrain type="open_4wd">
+        </drivetrain> -->
 
     </dynamics>
 
     <!-- Friction force simulation -->
     <friction class="default">
         <mu>0.8</mu>
-        <C_damping>0.01</C_damping>
+        <C_damping>0.0</C_damping>
     </friction>
 
     <!--<friction class="wardiagnemma">

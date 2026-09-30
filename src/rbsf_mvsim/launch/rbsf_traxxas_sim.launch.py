@@ -1,3 +1,4 @@
+"""Launch file to orchestrate nodes and their configuration for Traxxas simulation."""
 from launch import LaunchDescription
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
@@ -8,37 +9,38 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     """
-        Launch file description: Orchest a bunch of nodes and its configuration.
-        Import from 'general launch' from ROS2 and adapted due the project 
-        'Diseño de un robot autónomo de carreras con ROS2'.
-    """
+    Generates the launch description for the Traxxas simulation.
+    Imported from 'general launch' from ROS2 and adapted for the project
+    'Design of an autonomous racing robot with ROS2'.
 
-    # args that can be set from the command line or a default will be used
+    Returns:
+        LaunchDescription: The configured launch description object.
+    """
     world_file_launch_arg = DeclareLaunchArgument(
         "world_file",
-        default_value= os.path.join(get_package_share_directory('rbsf_mvsim'),'rbsf_mvsim','rbsf_f1tenth_obs.world.xml'),
+        default_value=os.path.join(get_package_share_directory('rbsf_mvsim'), 'rbsf_mvsim', 'rbsf_f1tenth_obs.world.xml'),
         description='Path to the *.world.xml file to load')
-
 
     rviz_config_file_arg = DeclareLaunchArgument(
         'rviz_config_file',
-        default_value=os.path.join(get_package_share_directory('rbsf_mvsim'),'rbsf_mvsim','rbsf_f1tenth_ros2.rviz'),
+        default_value=os.path.join(get_package_share_directory('rbsf_mvsim'), 'rbsf_mvsim', 'rbsf_f1tenth_ros2.rviz'),
         description='Path to the configuration file for rviz'
     )
 
     headless_launch_arg = DeclareLaunchArgument(
-        "headless", default_value='False')
+        "headless", default_value='False'
+    )
 
     do_fake_localization_arg = DeclareLaunchArgument(
         "do_fake_localization",
         default_value='False',
-        description='publish fake identity tf "map" -> "odom"'
+        description='Publish fake identity tf "map" -> "odom"'
     )
 
     publish_tf_odom2baselink_arg = DeclareLaunchArgument(
         "publish_tf_odom2baselink",
         default_value='True',
-        description='publish tf "odom" -> "base_link"'
+        description='Publish tf "odom" -> "base_link"'
     )
 
     force_publish_vehicle_namespace_arg = DeclareLaunchArgument(
@@ -50,19 +52,19 @@ def generate_launch_description():
     eps_arg = DeclareLaunchArgument(
         'eps',
         default_value="0.4",
-        description='DBSCAN parameter: Maximum distance to consider adjacent two points'
+        description='DBSCAN parameter: Maximum distance to consider two points adjacent'
     )
 
     min_samples_arg = DeclareLaunchArgument(
         'min_samples',
         default_value="10",
-        description='DBSCAN parameter: Minimum quantity of samples to be consider a cluster'
+        description='DBSCAN parameter: Minimum quantity of samples to be considered a cluster'
     )
 
     min_range_arg = DeclareLaunchArgument(
         'min_range',
         default_value="0.1",
-        description='Minimun working distance of LiDAR'
+        description='Minimum working distance of LiDAR'
     )
 
     max_range_arg = DeclareLaunchArgument(
@@ -74,13 +76,13 @@ def generate_launch_description():
     max_obs_size_arg = DeclareLaunchArgument(
         'max_obs_size',
         default_value="0.55",
-        description='Maximum cars length to consider an obstacle'
+        description='Maximum car length to consider an obstacle'
     )
 
     laser_topic_arg = DeclareLaunchArgument(
         'laser_topic',
         default_value="/laser1",
-        description='Topic where the detector extract the LiDAR information'
+        description='Topic where the detector extracts the LiDAR information'
     )
 
     distance_function_arg = DeclareLaunchArgument(
@@ -98,25 +100,13 @@ def generate_launch_description():
     hit_counter_max_arg = DeclareLaunchArgument(
         'hit_counter_max',
         default_value="100",
-        description='Maximum hits of a Track without see it'
+        description='Maximum hits of a track without seeing it'
     )
 
     initialization_delay_arg = DeclareLaunchArgument(
         'initialization_delay',
         default_value="3",
-        description='Minimun numer of hits to be considered a Track'
-    )
-
-    max_obs_size_arg = DeclareLaunchArgument(
-        'max_obs_size',
-        default_value="0.55",
-        description='Maximum cars length to consider an obstacle'
-    )
-
-    laser_topic_arg = DeclareLaunchArgument(
-        'laser_topic',
-        default_value="/laser1",
-        description='Topic where the detector extract the LiDAR information'
+        description='Minimum number of hits to be considered a track'
     )
 
     slam_params_file_arg = DeclareLaunchArgument(
@@ -149,59 +139,15 @@ def generate_launch_description():
         distance_threshold_arg,
         hit_counter_max_arg,
         initialization_delay_arg,
-        laser_topic_arg,
         slam_params_file_arg,
         use_sim_time_arg,
-
-        # Declaration of the 'rviz2' node, remapping the '/tf/' and '/tf_static'
-        # topics to their respective topics prefixed with the namespace of
-        # robot 1 ('/r1'). If no configuration file is detected, a new one
-        # is opened.
         Node(
             package='rviz2',
             executable='rviz2',
             name='rviz',
-            # remappings=[
-            #     ('/tf','/r1/tf'),
-            #     ('/tf_static','/r1/tf_static')],
             arguments=[] if LaunchConfiguration('rviz_config_file') == '' 
                 else ['-d', LaunchConfiguration('rviz_config_file')]
         ),
-
-        # Declaration of the 'detector' node, which perceives the environment,
-        # detects obstacles and filters them.
-        Node(
-            package='rbsf_mvsim',
-            executable='visualization_detector_node',
-            name='detector',
-            parameters=[{
-                # 'use_sim_time': True,
-                'eps': LaunchConfiguration('eps'),
-                'min_samples': LaunchConfiguration('min_samples'),
-                'min_range': LaunchConfiguration('min_range'),
-                'max_range': LaunchConfiguration('max_range'),
-                'max_obs_size': LaunchConfiguration('max_obs_size'),
-                'laser_topic': LaunchConfiguration('laser_topic')
-            }]
-        ),
-
-        # Declaration of the 'tracker' node, which perceives the environment,
-        # detects obstacles, filters them, and tracks them. It allows you to
-        # inject the necessary parameters for the detector and tracker.
-        Node(
-            package='rbsf_mvsim',
-            executable='visualization_tracker_node',
-            name='tracker',
-            parameters=[{
-                'use_sim_time': True,
-                'distance_function': LaunchConfiguration('distance_function'),
-                'distance_threshold': LaunchConfiguration('distance_threshold'),
-                'hit_counter_max': LaunchConfiguration('hit_counter_max'),
-                'initialization_delay': LaunchConfiguration('initialization_delay'),
-                'max_obs_size': LaunchConfiguration('max_obs_size')
-            }]
-        ),
-
         Node(
             package='mvsim',
             executable='mvsim_node',
@@ -214,16 +160,5 @@ def generate_launch_description():
                 "publish_tf_odom2baselink": LaunchConfiguration('publish_tf_odom2baselink'),
                 "force_publish_vehicle_namespace": LaunchConfiguration('force_publish_vehicle_namespace'),
             }]
-        ),
-
-        Node(
-            package='slam_toolbox',
-            executable='async_slam_toolbox_node',
-            name='slam_toolbox',
-            output='screen',
-            parameters=[
-                    LaunchConfiguration('slam_params_file'),
-                    {"use_sim_time": LaunchConfiguration('use_sim_time')}
-                ]
         )
     ])

@@ -1,0 +1,1524 @@
+metadata:
+  tunable_keys:
+  - pure_pursuit.lookahead_distance
+  - geometric_optimizer.curvature_weight
+  - geometric_optimizer.distance_weight
+  - generic.v_min
+  - generic.v_max
+  bounds:
+    pure_pursuit.lookahead_distance:
+      low: 0.5
+      high: 7.0
+    geometric_optimizer.curvature_weight:
+      low: 0.0
+      high: 2000.0
+    geometric_optimizer.distance_weight:
+      low: 0.0
+      high: 10.0
+    generic.v_min:
+      low: 1.0
+      high: 20.0
+    generic.v_max:
+      low: 1.0
+      high: 20.0
+tuning_history:
+- iteration: 1
+  current_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  current_score: 97.43470971126582
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 2
+  current_params:
+    pure_pursuit.lookahead_distance: 5.677529414591515
+    geometric_optimizer.curvature_weight: 366.8695797323276
+    geometric_optimizer.distance_weight: 7.796910002727695
+    generic.v_min: 12.340153000983255
+    generic.v_max: 9.470822304218235
+  current_score: 985.9960144027785
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 3
+  current_params:
+    pure_pursuit.lookahead_distance: 1.149836952817019
+    geometric_optimizer.curvature_weight: 918.4977839317345
+    geometric_optimizer.distance_weight: 3.337086111390219
+    generic.v_min: 3.7144695405168755
+    generic.v_max: 13.366880986028207
+  current_score: 733.3310280452123
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 4
+  current_params:
+    pure_pursuit.lookahead_distance: 0.8666752636761518
+    geometric_optimizer.curvature_weight: 1443.9975445336497
+    geometric_optimizer.distance_weight: 9.385527090157504
+    generic.v_min: 1.0147965509792722
+    generic.v_max: 19.85201962653314
+  current_score: 733.2837165349417
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 5
+  current_params:
+    pure_pursuit.lookahead_distance: 4.513629812580158
+    geometric_optimizer.curvature_weight: 1223.306320976562
+    geometric_optimizer.distance_weight: 0.07066305219717407
+    generic.v_min: 1.4381860757868994
+    generic.v_max: 10.970718544909396
+  current_score: 107.73566980711486
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 6
+  current_params:
+    pure_pursuit.lookahead_distance: 3.0990963161491614
+    geometric_optimizer.curvature_weight: 93.33132642723086
+    geometric_optimizer.distance_weight: 9.737555188414595
+    generic.v_min: 5.4226554681757815
+    generic.v_max: 2.7215222561235954
+  current_score: 578.6488967008776
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 7
+  current_params:
+    pure_pursuit.lookahead_distance: 4.519509060665068
+    geometric_optimizer.curvature_weight: 764.9239825343257
+    geometric_optimizer.distance_weight: 9.832308858067885
+    generic.v_min: 9.868494971711621
+    generic.v_max: 17.338867727990095
+  current_score: 985.0496780341646
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 8
+  current_params:
+    pure_pursuit.lookahead_distance: 4.921999000820569
+    geometric_optimizer.curvature_weight: 900.9985039390862
+    geometric_optimizer.distance_weight: 0.1326496115986653
+    generic.v_min: 18.901833358012208
+    generic.v_max: 11.702476139065249
+  current_score: 993.9902454265819
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 9
+  current_params:
+    pure_pursuit.lookahead_distance: 3.0052072665094554
+    geometric_optimizer.curvature_weight: 31.932504440428396
+    geometric_optimizer.distance_weight: 2.3089382562214906
+    generic.v_min: 5.579483854494224
+    generic.v_max: 13.982006857683707
+  current_score: 930.7246778264818
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 10
+  current_params:
+    pure_pursuit.lookahead_distance: 4.464978275587036
+    geometric_optimizer.curvature_weight: 1666.3898234723292
+    geometric_optimizer.distance_weight: 1.733646535077721
+    generic.v_min: 8.430151543891578
+    generic.v_max: 4.462485667973185
+  current_score: 984.6912246973557
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 11
+  current_params:
+    pure_pursuit.lookahead_distance: 5.409849167064743
+    geometric_optimizer.curvature_weight: 850.3117489824896
+    geometric_optimizer.distance_weight: 2.079416628681889
+    generic.v_min: 11.78630622857984
+    generic.v_max: 1.5949525566556133
+  current_score: 986.0127183996137
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 12
+  current_params:
+    pure_pursuit.lookahead_distance: 1.6022538087929301
+    geometric_optimizer.curvature_weight: 40.22041576193331
+    geometric_optimizer.distance_weight: 0.6179533984779063
+    generic.v_min: 2.8624962865950074
+    generic.v_max: 6.06334980342387
+  current_score: 104.99687088218343
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 13
+  current_params:
+    pure_pursuit.lookahead_distance: 5.32202152390692
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 5.241827078189359
+  current_score: 588.3499112048022
+  best_params:
+    pure_pursuit.lookahead_distance: 1.5
+    geometric_optimizer.curvature_weight: 1.0
+    geometric_optimizer.distance_weight: 1.0
+    generic.v_min: 3.0
+    generic.v_max: 6.0
+  best_score: 97.43470971126582
+- iteration: 14
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3983374769444468
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.5630382254365313
+    generic.v_min: 3.1165988484501717
+    generic.v_max: 5.956382317854638
+  current_score: 92.56146030347261
+  best_params:
+    pure_pursuit.lookahead_distance: 1.3983374769444468
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.5630382254365313
+    generic.v_min: 3.1165988484501717
+    generic.v_max: 5.956382317854638
+  best_score: 92.56146030347261
+- iteration: 15
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  current_score: 91.0261786061001
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 16
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2147476771173449
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 3.239666712928754
+    generic.v_max: 5.954344698165099
+  current_score: 108.70799589167667
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 17
+  current_params:
+    pure_pursuit.lookahead_distance: 1.325112616035858
+    geometric_optimizer.curvature_weight: 552.7999066269596
+    geometric_optimizer.distance_weight: 5.685463021122915
+    generic.v_min: 3.3846658023380423
+    generic.v_max: 5.694257144147262
+  current_score: 99.55895568406706
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 18
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2644503061802346
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 1.6092414762872962
+    generic.v_min: 2.692533647085896
+    generic.v_max: 5.564092285876995
+  current_score: 98.86135042523568
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 19
+  current_params:
+    pure_pursuit.lookahead_distance: 4.566201792798851
+    geometric_optimizer.curvature_weight: 1329.1982663497286
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 10.774224366215003
+  current_score: 107.74229654130131
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 20
+  current_params:
+    pure_pursuit.lookahead_distance: 4.896279262079705
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 11.673342614284039
+  current_score: 125.8114770930153
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 21
+  current_params:
+    pure_pursuit.lookahead_distance: 3.910437951530578
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 10.548537883962666
+  current_score: 108.02875205154099
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 22
+  current_params:
+    pure_pursuit.lookahead_distance: 0.938956786696
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 3.0078706075031767
+    generic.v_max: 5.5065655295544484
+  current_score: 105.90233620241223
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 23
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2915784942621844
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 3.134840948640425
+    generic.v_max: 5.263340802825119
+  current_score: 110.84765431854046
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 24
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2770991920952266
+    geometric_optimizer.curvature_weight: 59.937749658612766
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.6748152058222585
+    generic.v_max: 6.339180923641232
+  current_score: 104.46416748887107
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 25
+  current_params:
+    pure_pursuit.lookahead_distance: 3.7331842314757986
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.7730476324690791
+    generic.v_min: 1.5704625145948445
+    generic.v_max: 9.5840871039709
+  current_score: 587.9704807130797
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 26
+  current_params:
+    pure_pursuit.lookahead_distance: 4.344139991155302
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 5.0293209326664705
+    generic.v_min: 1.0
+    generic.v_max: 10.956737393764275
+  current_score: 107.94495518889524
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 27
+  current_params:
+    pure_pursuit.lookahead_distance: 4.814542493249701
+    geometric_optimizer.curvature_weight: 908.5485247382154
+    geometric_optimizer.distance_weight: 1.344354457442911
+    generic.v_min: 1.0
+    generic.v_max: 11.721890353231013
+  current_score: 107.08505982626205
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 28
+  current_params:
+    pure_pursuit.lookahead_distance: 3.69199129832234
+    geometric_optimizer.curvature_weight: 760.1821752567715
+    geometric_optimizer.distance_weight: 7.327916702715848
+    generic.v_min: 1.0
+    generic.v_max: 10.820127844734275
+  current_score: 107.89689617295979
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 29
+  current_params:
+    pure_pursuit.lookahead_distance: 0.5
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.0
+    generic.v_max: 12.014835243603919
+  current_score: 989.1410412145008
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 30
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3704657419971247
+    geometric_optimizer.curvature_weight: 27.987765013771597
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 1.834052551507586
+    generic.v_max: 5.873352716318171
+  current_score: 109.53066522846251
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 31
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3144130134883474
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 6.638382403014367
+    generic.v_min: 4.584850534263923
+    generic.v_max: 6.187216776431283
+  current_score: 936.6799160336184
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 32
+  current_params:
+    pure_pursuit.lookahead_distance: 4.6589601218083
+    geometric_optimizer.curvature_weight: 1380.3670963213724
+    geometric_optimizer.distance_weight: 1.6443521522914453
+    generic.v_min: 1.3569251542413214
+    generic.v_max: 11.72757831167283
+  current_score: 107.31433820178458
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 33
+  current_params:
+    pure_pursuit.lookahead_distance: 1.343929019198398
+    geometric_optimizer.curvature_weight: 1328.0600555299472
+    geometric_optimizer.distance_weight: 5.36125385446021
+    generic.v_min: 2.0539011713354665
+    generic.v_max: 4.769636132485399
+  current_score: 122.30126351467548
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 34
+  current_params:
+    pure_pursuit.lookahead_distance: 1.4672513003606884
+    geometric_optimizer.curvature_weight: 1192.8194035196734
+    geometric_optimizer.distance_weight: 8.646543954796796
+    generic.v_min: 3.226715697258337
+    generic.v_max: 6.133287442841534
+  current_score: 99.4843012430322
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 35
+  current_params:
+    pure_pursuit.lookahead_distance: 3.8766140916292158
+    geometric_optimizer.curvature_weight: 1483.6003143404578
+    geometric_optimizer.distance_weight: 7.671085161746588
+    generic.v_min: 1.0
+    generic.v_max: 12.329648818950648
+  current_score: 107.58032291231238
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 36
+  current_params:
+    pure_pursuit.lookahead_distance: 4.640870323001036
+    geometric_optimizer.curvature_weight: 233.84927207991248
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 12.721184740282505
+  current_score: 107.19510177577571
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 37
+  current_params:
+    pure_pursuit.lookahead_distance: 1.5882757599641588
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 8.547248811363682
+    generic.v_min: 1.7193216113976493
+    generic.v_max: 5.154818695090723
+  current_score: 111.89016777198766
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 38
+  current_params:
+    pure_pursuit.lookahead_distance: 4.7218016142559565
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 0.33348195237476286
+    generic.v_min: 1.5157106503071325
+    generic.v_max: 10.736823499035895
+  current_score: 107.24959743835375
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 39
+  current_params:
+    pure_pursuit.lookahead_distance: 0.5380900338209195
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 2.941861514496602
+    generic.v_max: 3.7767174543996633
+  current_score: 968.2388941990439
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 40
+  current_params:
+    pure_pursuit.lookahead_distance: 1.4631966406606516
+    geometric_optimizer.curvature_weight: 528.702566663545
+    geometric_optimizer.distance_weight: 5.910551599595911
+    generic.v_min: 3.212565614717353
+    generic.v_max: 5.720837894359139
+  current_score: 101.80477140191513
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 41
+  current_params:
+    pure_pursuit.lookahead_distance: 4.369492677232226
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 8.109979181497305
+    generic.v_min: 1.0
+    generic.v_max: 12.15796224688019
+  current_score: 107.30538607547774
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 42
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2617550057369242
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 8.254344379770238
+    generic.v_min: 2.081068125734294
+    generic.v_max: 5.284873930267174
+  current_score: 117.9957947226811
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 43
+  current_params:
+    pure_pursuit.lookahead_distance: 5.360090685198196
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 9.670892786170352
+    generic.v_min: 1.7236940350704228
+    generic.v_max: 11.073439950996445
+  current_score: 588.0591980642946
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 44
+  current_params:
+    pure_pursuit.lookahead_distance: 1.0278982514083943
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 8.853554773258454
+    generic.v_min: 2.994148260842988
+    generic.v_max: 5.388420148685762
+  current_score: 106.98081272938228
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 45
+  current_params:
+    pure_pursuit.lookahead_distance: 1.5144107518570185
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.9179561219499472
+    generic.v_max: 7.782664577868029
+  current_score: 127.47525981841216
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 46
+  current_params:
+    pure_pursuit.lookahead_distance: 1.0224847258112806
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 9.54718072966026
+    generic.v_min: 2.904094738631197
+    generic.v_max: 6.544499282153141
+  current_score: 92.80212243057595
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 47
+  current_params:
+    pure_pursuit.lookahead_distance: 1.6321207018489092
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 8.035672309821566
+    generic.v_min: 1.1181911834279197
+    generic.v_max: 4.462876478753876
+  current_score: 120.29781336646577
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 48
+  current_params:
+    pure_pursuit.lookahead_distance: 3.528046470265925
+    geometric_optimizer.curvature_weight: 1588.585549698456
+    geometric_optimizer.distance_weight: 4.253080081719554
+    generic.v_min: 1.0
+    generic.v_max: 14.891992585033556
+  current_score: 108.15980940366924
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 49
+  current_params:
+    pure_pursuit.lookahead_distance: 4.611890168525163
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 5.561917196238274
+    generic.v_min: 1.4478129302690155
+    generic.v_max: 8.467799657984353
+  current_score: 942.5126543692455
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 50
+  current_params:
+    pure_pursuit.lookahead_distance: 1.0893796024836135
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 5.096268464284121
+    generic.v_min: 2.9464372451492737
+    generic.v_max: 5.791400817219929
+  current_score: 105.62096877081538
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 51
+  current_params:
+    pure_pursuit.lookahead_distance: 0.9354664330621076
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.7698437717204634
+    generic.v_max: 6.787319239757871
+  current_score: 93.87543458615534
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 52
+  current_params:
+    pure_pursuit.lookahead_distance: 3.9145065418571425
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 4.007421654736356
+    generic.v_min: 1.0
+    generic.v_max: 14.350473602156752
+  current_score: 108.16619966628367
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 53
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3080924967746728
+    geometric_optimizer.curvature_weight: 1001.2406619676806
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 3.1916855746909794
+    generic.v_max: 5.746085263202008
+  current_score: 101.80210858272615
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 54
+  current_params:
+    pure_pursuit.lookahead_distance: 0.8889773506251648
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 2.6548489027253606
+    generic.v_min: 2.8314626046994964
+    generic.v_max: 6.475711509420002
+  current_score: 621.5971233676327
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 55
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2683330046965147
+    geometric_optimizer.curvature_weight: 911.2288356006887
+    geometric_optimizer.distance_weight: 4.017198283289533
+    generic.v_min: 3.1443746839434077
+    generic.v_max: 5.9128651021856315
+  current_score: 102.14958068700264
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 56
+  current_params:
+    pure_pursuit.lookahead_distance: 4.612468997571006
+    geometric_optimizer.curvature_weight: 1702.1299545703466
+    geometric_optimizer.distance_weight: 0.06827515603471264
+    generic.v_min: 1.391249133910998
+    generic.v_max: 11.718449178051342
+  current_score: 107.21656084218952
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 57
+  current_params:
+    pure_pursuit.lookahead_distance: 4.514678854316434
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 3.071512259354121
+    generic.v_min: 1.0
+    generic.v_max: 11.884960368360366
+  current_score: 107.42937722512937
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 58
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2710243158427037
+    geometric_optimizer.curvature_weight: 194.64710304753078
+    geometric_optimizer.distance_weight: 0.6175551215165271
+    generic.v_min: 3.276934438532263
+    generic.v_max: 5.847309837428855
+  current_score: 100.4321342410716
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 59
+  current_params:
+    pure_pursuit.lookahead_distance: 1.712328977029038
+    geometric_optimizer.curvature_weight: 1382.568058004739
+    geometric_optimizer.distance_weight: 0.25018844442093274
+    generic.v_min: 1.7171666160654526
+    generic.v_max: 7.897113591582352
+  current_score: 111.90362647866091
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 60
+  current_params:
+    pure_pursuit.lookahead_distance: 1.0727887803996747
+    geometric_optimizer.curvature_weight: 730.3352465426451
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.9265193861379437
+    generic.v_max: 6.489884174519831
+  current_score: 102.89463807756626
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 61
+  current_params:
+    pure_pursuit.lookahead_distance: 1.1961179692271653
+    geometric_optimizer.curvature_weight: 1595.7842500588079
+    geometric_optimizer.distance_weight: 5.780209965174363
+    generic.v_min: 3.0306017327945094
+    generic.v_max: 5.640071562361507
+  current_score: 105.11308248438877
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 62
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3817902884739766
+    geometric_optimizer.curvature_weight: 195.33888916014274
+    geometric_optimizer.distance_weight: 0.1521676643625298
+    generic.v_min: 2.98515518463393
+    generic.v_max: 6.1048869905968175
+  current_score: 103.66089586306154
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 63
+  current_params:
+    pure_pursuit.lookahead_distance: 1.5861739870047804
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 2.3583884291740502
+    generic.v_min: 1.8716664105947094
+    generic.v_max: 6.480665815546731
+  current_score: 104.29189573128816
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 64
+  current_params:
+    pure_pursuit.lookahead_distance: 1.2842324397719227
+    geometric_optimizer.curvature_weight: 132.14842026152772
+    geometric_optimizer.distance_weight: 4.199686532643713
+    generic.v_min: 3.2042425229588645
+    generic.v_max: 5.798574762119154
+  current_score: 101.61668236467158
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 65
+  current_params:
+    pure_pursuit.lookahead_distance: 3.698633045406362
+    geometric_optimizer.curvature_weight: 471.77036885812845
+    geometric_optimizer.distance_weight: 9.858594256148448
+    generic.v_min: 1.0
+    generic.v_max: 11.107520241176298
+  current_score: 106.71046635876205
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 66
+  current_params:
+    pure_pursuit.lookahead_distance: 4.290980694726869
+    geometric_optimizer.curvature_weight: 1421.2614515693656
+    geometric_optimizer.distance_weight: 4.729571080301225
+    generic.v_min: 1.0
+    generic.v_max: 11.462878992057922
+  current_score: 107.93326708549513
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 67
+  current_params:
+    pure_pursuit.lookahead_distance: 3.768067313243989
+    geometric_optimizer.curvature_weight: 1729.4393210321007
+    geometric_optimizer.distance_weight: 4.377755545621839
+    generic.v_min: 1.0
+    generic.v_max: 15.285498180197937
+  current_score: 108.29800381686937
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 68
+  current_params:
+    pure_pursuit.lookahead_distance: 1.4460496840428694
+    geometric_optimizer.curvature_weight: 1193.5478013725406
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 3.1397063473851525
+    generic.v_max: 5.721901040375142
+  current_score: 102.79192205029983
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 69
+  current_params:
+    pure_pursuit.lookahead_distance: 1.5951854047894491
+    geometric_optimizer.curvature_weight: 56.11685133520395
+    geometric_optimizer.distance_weight: 7.542175049903326
+    generic.v_min: 1.947104873870562
+    generic.v_max: 7.192381358892432
+  current_score: 108.72396219797052
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 70
+  current_params:
+    pure_pursuit.lookahead_distance: 0.9918395825133715
+    geometric_optimizer.curvature_weight: 120.40948228779921
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.8332674161416396
+    generic.v_max: 6.54279653152617
+  current_score: 102.67594701202
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 71
+  current_params:
+    pure_pursuit.lookahead_distance: 1.5168655496028212
+    geometric_optimizer.curvature_weight: 1968.1580139950488
+    geometric_optimizer.distance_weight: 2.883291193802905
+    generic.v_min: 2.461040892877959
+    generic.v_max: 6.370859791040046
+  current_score: 109.77274451837455
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 72
+  current_params:
+    pure_pursuit.lookahead_distance: 1.6555395710115253
+    geometric_optimizer.curvature_weight: 212.59828597028726
+    geometric_optimizer.distance_weight: 9.057381045613
+    generic.v_min: 1.264597368845056
+    generic.v_max: 6.330455173229707
+  current_score: 114.75143005340954
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 73
+  current_params:
+    pure_pursuit.lookahead_distance: 3.680308135566119
+    geometric_optimizer.curvature_weight: 833.4864767226179
+    geometric_optimizer.distance_weight: 2.4489153111991477
+    generic.v_min: 1.0
+    generic.v_max: 14.30794144028382
+  current_score: 108.40012164535405
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 74
+  current_params:
+    pure_pursuit.lookahead_distance: 1.6391082708787108
+    geometric_optimizer.curvature_weight: 1283.0405575216535
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.8070547077171737
+    generic.v_max: 6.511674664150889
+  current_score: 104.0087700082262
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 75
+  current_params:
+    pure_pursuit.lookahead_distance: 1.0233690623945537
+    geometric_optimizer.curvature_weight: 1593.2707098113196
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.8216738260606244
+    generic.v_max: 6.266471021709135
+  current_score: 104.95716420211433
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 76
+  current_params:
+    pure_pursuit.lookahead_distance: 4.7651635995139605
+    geometric_optimizer.curvature_weight: 817.263989913363
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 11.881511191340211
+  current_score: 107.01312503018534
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 77
+  current_params:
+    pure_pursuit.lookahead_distance: 3.6052183915725675
+    geometric_optimizer.curvature_weight: 1364.194452535411
+    geometric_optimizer.distance_weight: 9.159402537942583
+    generic.v_min: 1.0
+    generic.v_max: 11.044501219318958
+  current_score: 108.21987772419585
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 78
+  current_params:
+    pure_pursuit.lookahead_distance: 4.746761489140677
+    geometric_optimizer.curvature_weight: 1728.7505110450177
+    geometric_optimizer.distance_weight: 3.264807146375306
+    generic.v_min: 1.0
+    generic.v_max: 13.431669926020856
+  current_score: 106.6445710250449
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 79
+  current_params:
+    pure_pursuit.lookahead_distance: 3.5902158548020866
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 4.6337455319593355
+    generic.v_min: 1.0
+    generic.v_max: 16.018213930413644
+  current_score: 587.976787911605
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 80
+  current_params:
+    pure_pursuit.lookahead_distance: 1.201833321510139
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 5.720341860457437
+    generic.v_min: 3.032086440065906
+    generic.v_max: 5.837228009695206
+  current_score: 103.88561890892571
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 81
+  current_params:
+    pure_pursuit.lookahead_distance: 3.815791972287269
+    geometric_optimizer.curvature_weight: 1895.0469862645298
+    geometric_optimizer.distance_weight: 4.328130930816246
+    generic.v_min: 1.0
+    generic.v_max: 14.984069055676965
+  current_score: 108.31033273268977
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 82
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3444625270805768
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 1.6068225312992335
+    generic.v_min: 2.670861521320858
+    generic.v_max: 5.656932794210305
+  current_score: 98.61132195852662
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 83
+  current_params:
+    pure_pursuit.lookahead_distance: 1.076758901970678
+    geometric_optimizer.curvature_weight: 1895.138435797101
+    geometric_optimizer.distance_weight: 10.0
+    generic.v_min: 2.8121411985522413
+    generic.v_max: 6.812366854831923
+  current_score: 103.52167086428284
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 84
+  current_params:
+    pure_pursuit.lookahead_distance: 4.928581765258267
+    geometric_optimizer.curvature_weight: 297.54879380181086
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0
+    generic.v_max: 12.947418191073101
+  current_score: 586.8774268886502
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 85
+  current_params:
+    pure_pursuit.lookahead_distance: 4.668581397370872
+    geometric_optimizer.curvature_weight: 838.1098953332794
+    geometric_optimizer.distance_weight: 3.903903177853392
+    generic.v_min: 1.0
+    generic.v_max: 13.490819588186149
+  current_score: 106.43471763229485
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 86
+  current_params:
+    pure_pursuit.lookahead_distance: 4.674135290284204
+    geometric_optimizer.curvature_weight: 1826.4472174159625
+    geometric_optimizer.distance_weight: 3.96808455791175
+    generic.v_min: 1.0
+    generic.v_max: 13.479443686744897
+  current_score: 107.14533591395266
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 87
+  current_params:
+    pure_pursuit.lookahead_distance: 3.576613693192566
+    geometric_optimizer.curvature_weight: 1715.090226969081
+    geometric_optimizer.distance_weight: 4.0726171196237395
+    generic.v_min: 1.0
+    generic.v_max: 14.670659059304269
+  current_score: 108.50433499914362
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 88
+  current_params:
+    pure_pursuit.lookahead_distance: 4.795012970832715
+    geometric_optimizer.curvature_weight: 1894.4327752051925
+    geometric_optimizer.distance_weight: 0.0
+    generic.v_min: 1.0089459373203464
+    generic.v_max: 11.444482569992575
+  current_score: 585.9614297274242
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 89
+  current_params:
+    pure_pursuit.lookahead_distance: 4.181067418712177
+    geometric_optimizer.curvature_weight: 671.9622911632258
+    geometric_optimizer.distance_weight: 5.556166980375499
+    generic.v_min: 1.014772916384303
+    generic.v_max: 11.478128954906762
+  current_score: 107.2297637975958
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 90
+  current_params:
+    pure_pursuit.lookahead_distance: 4.562105503563352
+    geometric_optimizer.curvature_weight: 279.6042042605397
+    geometric_optimizer.distance_weight: 0.16073043432054862
+    generic.v_min: 1.0
+    generic.v_max: 12.674296077808787
+  current_score: 107.29063679870103
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 91
+  current_params:
+    pure_pursuit.lookahead_distance: 4.791231474393293
+    geometric_optimizer.curvature_weight: 569.3143453747936
+    geometric_optimizer.distance_weight: 1.9304032812002936
+    generic.v_min: 1.0
+    generic.v_max: 11.585018550094624
+  current_score: 585.9485207715276
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 92
+  current_params:
+    pure_pursuit.lookahead_distance: 4.718082993320372
+    geometric_optimizer.curvature_weight: 933.0856576253929
+    geometric_optimizer.distance_weight: 0.5214173318401341
+    generic.v_min: 1.0
+    generic.v_max: 12.32801354429023
+  current_score: 107.25427516549341
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 93
+  current_params:
+    pure_pursuit.lookahead_distance: 4.688745727844228
+    geometric_optimizer.curvature_weight: 2000.0
+    geometric_optimizer.distance_weight: 0.5528836845231221
+    generic.v_min: 1.6175501971854256
+    generic.v_max: 10.75530691777639
+  current_score: 107.27142502673851
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 94
+  current_params:
+    pure_pursuit.lookahead_distance: 4.721783650026243
+    geometric_optimizer.curvature_weight: 1701.44955398921
+    geometric_optimizer.distance_weight: 3.9287567139920436
+    generic.v_min: 1.0165663901422353
+    generic.v_max: 18.2200890614963
+  current_score: 106.97086113741082
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 95
+  current_params:
+    pure_pursuit.lookahead_distance: 4.638993036582493
+    geometric_optimizer.curvature_weight: 898.785692092416
+    geometric_optimizer.distance_weight: 4.172441871710518
+    generic.v_min: 1.0
+    generic.v_max: 13.42107657379165
+  current_score: 106.62622673935662
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 96
+  current_params:
+    pure_pursuit.lookahead_distance: 4.60424022749193
+    geometric_optimizer.curvature_weight: 1949.8198371844105
+    geometric_optimizer.distance_weight: 1.2639112265344083
+    generic.v_min: 1.6547879475786935
+    generic.v_max: 11.147915669414122
+  current_score: 107.44752870031601
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 97
+  current_params:
+    pure_pursuit.lookahead_distance: 4.6753071151374135
+    geometric_optimizer.curvature_weight: 991.1399586816497
+    geometric_optimizer.distance_weight: 0.7630267320054382
+    generic.v_min: 1.0
+    generic.v_max: 10.145509849055184
+  current_score: 107.86395420882694
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 98
+  current_params:
+    pure_pursuit.lookahead_distance: 4.668203794230431
+    geometric_optimizer.curvature_weight: 1689.7822150749041
+    geometric_optimizer.distance_weight: 4.217287477525358
+    generic.v_min: 1.049986762746435
+    generic.v_max: 10.42143598913718
+  current_score: 107.38808430730514
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 99
+  current_params:
+    pure_pursuit.lookahead_distance: 1.3020609227955129
+    geometric_optimizer.curvature_weight: 907.1281318593246
+    geometric_optimizer.distance_weight: 4.5154967454676616
+    generic.v_min: 3.048208664445313
+    generic.v_max: 4.2155684555667055
+  current_score: 117.15814829210365
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001
+- iteration: 100
+  current_params:
+    pure_pursuit.lookahead_distance: 4.561783072639591
+    geometric_optimizer.curvature_weight: 1917.5292145882695
+    geometric_optimizer.distance_weight: 1.3369971554998443
+    generic.v_min: 1.4977489296224071
+    generic.v_max: 18.59934301638527
+  current_score: 107.04555723047272
+  best_params:
+    pure_pursuit.lookahead_distance: 1.2342336434201506
+    geometric_optimizer.curvature_weight: 0.0
+    geometric_optimizer.distance_weight: 0.31075366887396844
+    generic.v_min: 3.268022684155235
+    generic.v_max: 5.901123083053625
+  best_score: 91.0261786061001

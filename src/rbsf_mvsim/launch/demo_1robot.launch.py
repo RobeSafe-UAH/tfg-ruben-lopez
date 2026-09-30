@@ -1,7 +1,4 @@
-# ROS2 launch file for single robot demo world
-# Invokes mvsim/launch/launch_world.launch.py
-# See: https://mvsimulator.readthedocs.io/en/latest/mvsim_node.html
-
+"""ROS2 launch file for single robot demo world."""
 import os
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription
@@ -9,12 +6,15 @@ from launch.substitutions import LaunchConfiguration
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
-
 def generate_launch_description():
-    # Get mvsim package directory
+    """
+    Generates the launch description for the single robot demo world.
+
+    Returns:
+        LaunchDescription: The configured launch description object.
+    """
     mvsim_dir = get_package_share_directory('mvsim')
 
-    # World and configuration files
     world_file = os.path.join(
         mvsim_dir, 'mvsim_tutorial', 'demo_1robot.world.xml'
     )
@@ -22,65 +22,59 @@ def generate_launch_description():
         mvsim_dir, 'mvsim_tutorial', 'demo_1robot_ros2.rviz'
     )
 
-    # Launch configuration variables (no defaults here)
     headless = LaunchConfiguration('headless')
     do_fake_localization = LaunchConfiguration('do_fake_localization')
     publish_tf_odom2baselink = LaunchConfiguration('publish_tf_odom2baselink')
     publish_log_topics = LaunchConfiguration('publish_log_topics')
-    force_publish_vehicle_namespace = LaunchConfiguration(
-        'force_publish_vehicle_namespace')
+    force_publish_vehicle_namespace = LaunchConfiguration('force_publish_vehicle_namespace')
     use_rviz = LaunchConfiguration('use_rviz')
 
-    # Create launch description
-    ld = LaunchDescription()
+    launch_description = LaunchDescription()
 
-    # Declare launch arguments (defaults defined here)
-    ld.add_action(
+    launch_description.add_action(
         DeclareLaunchArgument(
             'headless',
             default_value='False',
             description='Run in headless mode'
         )
     )
-    ld.add_action(
+    launch_description.add_action(
         DeclareLaunchArgument(
             'do_fake_localization',
             default_value='True',
             description='Publish fake identity tf "map" -> "odom"'
         )
     )
-    ld.add_action(
+    launch_description.add_action(
         DeclareLaunchArgument(
             'publish_tf_odom2baselink',
             default_value='True',
             description='Publish tf "odom" -> "base_link"'
         )
     )
-    ld.add_action(
+    launch_description.add_action(
         DeclareLaunchArgument(
             'force_publish_vehicle_namespace',
             default_value='False',
             description='Use vehicle name namespace even if there is only one vehicle'
         )
     )
-    ld.add_action(
+    launch_description.add_action(
         DeclareLaunchArgument(
             'use_rviz',
             default_value='True',
             description='Whether to launch RViz2'
         )
     )
-    ld.add_action(
+    launch_description.add_action(
         DeclareLaunchArgument(
             'publish_log_topics',
             default_value='False',
-            description='Publish every CSV-logger column as a std_msgs/Float64 topic per vehicle. '
-                        'High-rate, disabled by default.'
+            description='Publish every CSV-logger column as a std_msgs/Float64 topic per vehicle.'
         )
     )
 
-    # Include world launch file
-    ld.add_action(
+    launch_description.add_action(
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
                 os.path.join(
@@ -102,4 +96,4 @@ def generate_launch_description():
         )
     )
 
-    return ld
+    return launch_description

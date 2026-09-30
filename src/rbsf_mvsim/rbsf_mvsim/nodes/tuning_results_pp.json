@@ -1,0 +1,567 @@
+{
+  "params_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/nodes/params.yaml",
+  "iterations": 20,
+  "tunable_keys": [
+    "geometric_optimizer.v_min",
+    "geometric_optimizer.v_max",
+    "pure_pursuit.lookahead_distance"
+  ],
+  "bounds": {
+    "geometric_optimizer.v_min": [
+      1.0,
+      20.0
+    ],
+    "geometric_optimizer.v_max": [
+      5.0,
+      40.0
+    ],
+    "pure_pursuit.lookahead_distance": [
+      0.5,
+      7.0
+    ]
+  },
+  "best_params": {
+    "geometric_optimizer.v_min": 1.0823562098770578,
+    "geometric_optimizer.v_max": 11.142580370350704,
+    "pure_pursuit.lookahead_distance": 1.5492848666118366
+  },
+  "best_result": {
+    "objective_score": 54.422422807145125,
+    "score": 54.422422807145125,
+    "lap_completed": true,
+    "lap_time": 53.66851592063904,
+    "avg_cte": 0.07144904116149646,
+    "avg_speed_error": 0.3966616806986041,
+    "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777234184.json",
+    "lap_time_source": "metrics_file.lap_time",
+    "reason": "ok",
+    "objective_breakdown": {
+      "lap_time_term": 53.66851592063904,
+      "cte_term": 0.3572452058074823,
+      "speed_error_term": 0.3966616806986041
+    }
+  },
+  "history": [
+    {
+      "iteration": 0,
+      "params": {
+        "geometric_optimizer.v_min": 1.432967628516273,
+        "geometric_optimizer.v_max": 9.724817140495327,
+        "pure_pursuit.lookahead_distance": 1.450887646850551
+      },
+      "result": {
+        "objective_score": 54.90380105572889,
+        "score": 54.90380105572889,
+        "lap_completed": true,
+        "lap_time": 54.22869062423706,
+        "avg_cte": 0.06452044924489245,
+        "avg_speed_error": 0.35250818526736927,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777232546.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 54.22869062423706,
+          "cte_term": 0.3226022462244622,
+          "speed_error_term": 0.35250818526736927
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "params": {
+        "geometric_optimizer.v_min": 1.1704622509049394,
+        "geometric_optimizer.v_max": 10.469708994298804,
+        "pure_pursuit.lookahead_distance": 1.3272405254341497
+      },
+      "result": {
+        "objective_score": 1000000.0,
+        "score": 1000000.0,
+        "lap_completed": false,
+        "lap_time": null,
+        "avg_cte": null,
+        "avg_speed_error": null,
+        "metrics_file": null,
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "timeout sin vuelta completa",
+        "objective_breakdown": null
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 2,
+      "params": {
+        "geometric_optimizer.v_min": 1.051295249159109,
+        "geometric_optimizer.v_max": 9.353959086888677,
+        "pure_pursuit.lookahead_distance": 1.3996013843131991
+      },
+      "result": {
+        "objective_score": 55.46474954338377,
+        "score": 55.46474954338377,
+        "lap_completed": true,
+        "lap_time": 54.75053119659424,
+        "avg_cte": 0.07333061167142818,
+        "avg_speed_error": 0.34756528843238155,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777232739.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 54.75053119659424,
+          "cte_term": 0.3666530583571409,
+          "speed_error_term": 0.34756528843238155
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 3,
+      "params": {
+        "geometric_optimizer.v_min": 1.1729625880963128,
+        "geometric_optimizer.v_max": 10.077833045295268,
+        "pure_pursuit.lookahead_distance": 1.5150497392277644
+      },
+      "result": {
+        "objective_score": 54.85065202706333,
+        "score": 54.85065202706333,
+        "lap_completed": true,
+        "lap_time": 54.09992790222168,
+        "avg_cte": 0.07395510382189624,
+        "avg_speed_error": 0.38094860573217215,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777232829.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 54.09992790222168,
+          "cte_term": 0.3697755191094812,
+          "speed_error_term": 0.38094860573217215
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 4,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 9.432035911396614,
+        "pure_pursuit.lookahead_distance": 1.556977004543866
+      },
+      "result": {
+        "objective_score": 55.180844083480096,
+        "score": 55.180844083480096,
+        "lap_completed": true,
+        "lap_time": 54.49272060394287,
+        "avg_cte": 0.06887855075129178,
+        "avg_speed_error": 0.3437307257807646,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777232920.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 54.49272060394287,
+          "cte_term": 0.3443927537564589,
+          "speed_error_term": 0.3437307257807646
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 5,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 10.305046982626207,
+        "pure_pursuit.lookahead_distance": 1.537563848125691
+      },
+      "result": {
+        "objective_score": 54.71382413404236,
+        "score": 54.71382413404236,
+        "lap_completed": true,
+        "lap_time": 53.96001577377319,
+        "avg_cte": 0.07275545837822227,
+        "avg_speed_error": 0.3900310683780584,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233011.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.96001577377319,
+          "cte_term": 0.36377729189111135,
+          "speed_error_term": 0.3900310683780584
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 6,
+      "params": {
+        "geometric_optimizer.v_min": 1.2290397073991004,
+        "geometric_optimizer.v_max": 9.794671399194671,
+        "pure_pursuit.lookahead_distance": 1.4764251245732551
+      },
+      "result": {
+        "objective_score": 54.88207316058047,
+        "score": 54.88207316058047,
+        "lap_completed": true,
+        "lap_time": 54.20868110656738,
+        "avg_cte": 0.06379492453988878,
+        "avg_speed_error": 0.35441743131364395,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233102.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 54.20868110656738,
+          "cte_term": 0.3189746226994439,
+          "speed_error_term": 0.35441743131364395
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 7,
+      "params": {
+        "geometric_optimizer.v_min": 1.084076806172976,
+        "geometric_optimizer.v_max": 10.69126695508965,
+        "pure_pursuit.lookahead_distance": 1.568863190384905
+      },
+      "result": {
+        "objective_score": 54.55298267395733,
+        "score": 54.55298267395733,
+        "lap_completed": true,
+        "lap_time": 53.81134605407715,
+        "avg_cte": 0.07093444418156829,
+        "avg_speed_error": 0.38696439897233653,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233192.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.81134605407715,
+          "cte_term": 0.35467222090784145,
+          "speed_error_term": 0.38696439897233653
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 8,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 10.284428558911952,
+        "pure_pursuit.lookahead_distance": 1.5255508818259305
+      },
+      "result": {
+        "objective_score": 54.669271595669734,
+        "score": 54.669271595669734,
+        "lap_completed": true,
+        "lap_time": 53.94847345352173,
+        "avg_cte": 0.06914754614039004,
+        "avg_speed_error": 0.3750604114460557,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233282.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.94847345352173,
+          "cte_term": 0.3457377307019502,
+          "speed_error_term": 0.3750604114460557
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 9,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 10.945320894022396,
+        "pure_pursuit.lookahead_distance": 1.583686840068816
+      },
+      "result": {
+        "objective_score": 54.53723033661807,
+        "score": 54.53723033661807,
+        "lap_completed": true,
+        "lap_time": 53.759833335876465,
+        "avg_cte": 0.07406248429292002,
+        "avg_speed_error": 0.407084579277011,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233372.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.759833335876465,
+          "cte_term": 0.3703124214646001,
+          "speed_error_term": 0.407084579277011
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 10,
+      "params": {
+        "geometric_optimizer.v_min": 1.0872946540987443,
+        "geometric_optimizer.v_max": 11.241054365297884,
+        "pure_pursuit.lookahead_distance": 1.556394310667208
+      },
+      "result": {
+        "objective_score": 54.455659292215906,
+        "score": 54.455659292215906,
+        "lap_completed": true,
+        "lap_time": 53.704020977020264,
+        "avg_cte": 0.0706767978175914,
+        "avg_speed_error": 0.39825432610768063,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233462.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.704020977020264,
+          "cte_term": 0.353383989087957,
+          "speed_error_term": 0.39825432610768063
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 11,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 11.061485629314976,
+        "pure_pursuit.lookahead_distance": 1.5772351364597708
+      },
+      "result": {
+        "objective_score": 54.46942330061934,
+        "score": 54.46942330061934,
+        "lap_completed": true,
+        "lap_time": 53.709580421447754,
+        "avg_cte": 0.07293836323113068,
+        "avg_speed_error": 0.39515106301593333,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233552.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.709580421447754,
+          "cte_term": 0.3646918161556534,
+          "speed_error_term": 0.39515106301593333
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 12,
+      "params": {
+        "geometric_optimizer.v_min": 1.0,
+        "geometric_optimizer.v_max": 11.102918061336016,
+        "pure_pursuit.lookahead_distance": 1.5316669695833998
+      },
+      "result": {
+        "objective_score": 54.53949769225664,
+        "score": 54.53949769225664,
+        "lap_completed": true,
+        "lap_time": 53.75136065483093,
+        "avg_cte": 0.07586153447989469,
+        "avg_speed_error": 0.4088293650262324,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233643.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.75136065483093,
+          "cte_term": 0.37930767239947344,
+          "speed_error_term": 0.4088293650262324
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 13,
+      "params": {
+        "geometric_optimizer.v_min": 1.1382083206731664,
+        "geometric_optimizer.v_max": 11.053626696139023,
+        "pure_pursuit.lookahead_distance": 1.5658460492397948
+      },
+      "result": {
+        "objective_score": 54.57240442195176,
+        "score": 54.57240442195176,
+        "lap_completed": true,
+        "lap_time": 53.791176080703735,
+        "avg_cte": 0.07707023657985745,
+        "avg_speed_error": 0.3958771583487357,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233734.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.791176080703735,
+          "cte_term": 0.38535118289928727,
+          "speed_error_term": 0.3958771583487357
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 14,
+      "params": {
+        "geometric_optimizer.v_min": 1.1288710945198,
+        "geometric_optimizer.v_max": 11.300740297312478,
+        "pure_pursuit.lookahead_distance": 1.5494624195513158
+      },
+      "result": {
+        "objective_score": 54.488519547931126,
+        "score": 54.488519547931126,
+        "lap_completed": true,
+        "lap_time": 53.72033619880676,
+        "avg_cte": 0.07385065944434499,
+        "avg_speed_error": 0.3989300519026401,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233823.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.72033619880676,
+          "cte_term": 0.36925329722172495,
+          "speed_error_term": 0.3989300519026401
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 15,
+      "params": {
+        "geometric_optimizer.v_min": 1.127816297832175,
+        "geometric_optimizer.v_max": 11.331898717401295,
+        "pure_pursuit.lookahead_distance": 1.5619964158668878
+      },
+      "result": {
+        "objective_score": 54.7416019364723,
+        "score": 54.7416019364723,
+        "lap_completed": true,
+        "lap_time": 53.90420627593994,
+        "avg_cte": 0.08508406060951343,
+        "avg_speed_error": 0.4119753574847933,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777233914.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.90420627593994,
+          "cte_term": 0.42542030304756717,
+          "speed_error_term": 0.4119753574847933
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 16,
+      "params": {
+        "geometric_optimizer.v_min": 1.0643315039710155,
+        "geometric_optimizer.v_max": 11.18392516640173,
+        "pure_pursuit.lookahead_distance": 1.553424344789215
+      },
+      "result": {
+        "objective_score": 54.43011895025445,
+        "score": 54.43011895025445,
+        "lap_completed": true,
+        "lap_time": 53.6890709400177,
+        "avg_cte": 0.06909896391112395,
+        "avg_speed_error": 0.39555319068113215,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777234003.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.6890709400177,
+          "cte_term": 0.3454948195556198,
+          "speed_error_term": 0.39555319068113215
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 17,
+      "params": {
+        "geometric_optimizer.v_min": 1.032002248292067,
+        "geometric_optimizer.v_max": 11.238791901156398,
+        "pure_pursuit.lookahead_distance": 1.5578361628417408
+      },
+      "result": {
+        "objective_score": 55.225205206407345,
+        "score": 55.225205206407345,
+        "lap_completed": true,
+        "lap_time": 54.33254289627075,
+        "avg_cte": 0.08904619544274915,
+        "avg_speed_error": 0.4474313329228445,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777234094.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 54.33254289627075,
+          "cte_term": 0.44523097721374577,
+          "speed_error_term": 0.4474313329228445
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 18,
+      "params": {
+        "geometric_optimizer.v_min": 1.0823562098770578,
+        "geometric_optimizer.v_max": 11.142580370350704,
+        "pure_pursuit.lookahead_distance": 1.5492848666118366
+      },
+      "result": {
+        "objective_score": 54.422422807145125,
+        "score": 54.422422807145125,
+        "lap_completed": true,
+        "lap_time": 53.66851592063904,
+        "avg_cte": 0.07144904116149646,
+        "avg_speed_error": 0.3966616806986041,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777234184.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.66851592063904,
+          "cte_term": 0.3572452058074823,
+          "speed_error_term": 0.3966616806986041
+        }
+      },
+      "status": "MEJORA"
+    },
+    {
+      "iteration": 19,
+      "params": {
+        "geometric_optimizer.v_min": 1.1067973529780204,
+        "geometric_optimizer.v_max": 11.166145007148426,
+        "pure_pursuit.lookahead_distance": 1.5518209132659664
+      },
+      "result": {
+        "objective_score": 54.55837385080713,
+        "score": 54.55837385080713,
+        "lap_completed": true,
+        "lap_time": 53.780040979385376,
+        "avg_cte": 0.0764966476472516,
+        "avg_speed_error": 0.39584963318549116,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777234274.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.780040979385376,
+          "cte_term": 0.382483238236258,
+          "speed_error_term": 0.39584963318549116
+        }
+      },
+      "status": "sin mejora"
+    },
+    {
+      "iteration": 20,
+      "params": {
+        "geometric_optimizer.v_min": 1.0627495008771228,
+        "geometric_optimizer.v_max": 11.182281244565532,
+        "pure_pursuit.lookahead_distance": 1.5465668717151617
+      },
+      "result": {
+        "objective_score": 54.51361715931769,
+        "score": 54.51361715931769,
+        "lap_completed": true,
+        "lap_time": 53.74986147880554,
+        "avg_cte": 0.0732602764792334,
+        "avg_speed_error": 0.39745429811598426,
+        "metrics_file": "/sim_ws/src/ruben_f1tenth/ruben_f1tenth/metrics/lap_1_1777234364.json",
+        "lap_time_source": "metrics_file.lap_time",
+        "reason": "ok",
+        "objective_breakdown": {
+          "lap_time_term": 53.74986147880554,
+          "cte_term": 0.366301382396167,
+          "speed_error_term": 0.39745429811598426
+        }
+      },
+      "status": "sin mejora"
+    }
+  ],
+  "timestamp": 1777234365
+}

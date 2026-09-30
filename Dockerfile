@@ -29,6 +29,9 @@ RUN apt-get update --fix-missing && \
                        '~nros-humble-rqt*' \
                        ros-$ROS_DISTRO-rviz2 \
                        ros-$ROS_DISTRO-mvsim \
+                       ros-$ROS_DISTRO-nav2-lifecycle-manager \
+                       ros-$ROS_DISTRO-nav2-map-server \
+                       ros-$ROS_DISTRO-ackermann-msgs \
                        ros-$ROS_DISTRO-teleop-twist-keyboard \
                        ros-$ROS_DISTRO-slam-toolbox \
     && pip install pandas \
